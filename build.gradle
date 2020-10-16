@@ -4,7 +4,7 @@ plugins {
 }
 
 group = 'de.nrw.schule.svws'
-version = '0.0.1'
+version = '0.0.2'
 
 
 
@@ -43,10 +43,36 @@ publishing {
     }
 }
 
+task copyFiles(type: Copy) {
+    into "$buildDir/output"
+    from "files"
+}
+
+task signSchild3(type:Exec) {
+	dependsOn "copyFiles"
+	workingDir file("${buildDir}/output")
+	commandLine System.getenv("SVWS_SIGNTOOL_PATH"), "sign", "/fd", "sha256", "/f", System.getenv("SVWS_CERTIFICATE_PATH"), "/p", System.getenv("SVWS_CERTIFICATE_PASSWORD"), "-tr", "http://sha256timestamp.ws.symantec.com/sha256/timestamp", "Schild30.exe" 
+}
+
+task signMigrateDB(type:Exec) {
+	dependsOn "copyFiles"
+	workingDir file("${buildDir}/output")
+	commandLine System.getenv("SVWS_SIGNTOOL_PATH"), "sign", "/fd", "sha256", "/f", System.getenv("SVWS_CERTIFICATE_PATH"), "/p", System.getenv("SVWS_CERTIFICATE_PASSWORD"), "-tr", "http://sha256timestamp.ws.symantec.com/sha256/timestamp", "MigrateDB.exe" 
+}
+
+task signSchiLDDBConfig(type:Exec) {
+	dependsOn "copyFiles"
+	workingDir file("${buildDir}/output")
+	commandLine System.getenv("SVWS_SIGNTOOL_PATH"), "sign", "/fd", "sha256", "/f", System.getenv("SVWS_CERTIFICATE_PATH"), "/p", System.getenv("SVWS_CERTIFICATE_PASSWORD"), "-tr", "http://sha256timestamp.ws.symantec.com/sha256/timestamp", "SchiLD_DBConfig.exe" 
+}
+
 task doZip(type: Zip) {
+	dependsOn "signSchild3"
+	dependsOn "signMigrateDB"
+	dependsOn "signSchiLDDBConfig"
     archiveFileName = "files.zip"
     destinationDirectory = file("$buildDir")
-    from "$projectDir/files"
+    from "$buildDir/output"
 }
 
 assemble.dependsOn doZip
