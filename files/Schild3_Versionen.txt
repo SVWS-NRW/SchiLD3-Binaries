@@ -1,0 +1,33 @@
+MigrateDB
+=========
+
+Version 1.0.6 
+-------------
+-Es gibt im Startfenster nun einen Schalter "Migration ist schon erfolgt, nur Datenbank-Konfigurationsdatei für SchILD3 anlegen". Damit kann für ein Datenbankschema, in das bereits bei der Installation des svws-Servers migriert wurde, eine sdbcfg-Konfigurationsdatei angelegt werden, damit ein Zugriff über SchILD3 möglich ist. Als Dateiname wird der Name des Schemas verwendet.
+
+SchILD3
+========
+
+Version 3.0.8
+-------------
+-Bei allen Grafiken (Fotos, Schullogo) wird nun auf die Base64-Felder in der Datenbank zugegriffen (gilt auch für die Darstellung in Reports). Beim Speichern in der Datenbank werden die jpg/png-Dateien "on the fly" ins Base64-Format konvertiert, bei der Darstellung umgekehrt wieder von Base64 in das jeweilige Grafikformat.
+Im Prinzip könnten damit die bisherigen Felder aus der Datenbank entfern werden.
+
+-Es werden jetzt auch SQLite-Datenbanken unterstützt. Diese sollten aber später nur für Schulungszwecke (oder als Backup) verwendet werden, im Produktivbetrieb sollten SQLite-Datenbanken nicht verwendet werden!
+
+-Die "Ribbongroups" für den Aufruf der verschiedenen Berechnungsalgorithmen (Versetzung/Abschluss, FHR, BK-Abschluss, Abitur) wurden vereinheitlicht
+
+-Die Spaltenbreiten für Tabellendarstellungen werden nun benutzerbezogen in der Registry gespeichert.
+Wichtig: Das Verfahren wurde gegenüber der Vorgängerversion geändert, d.h. die gewünschten Spaltenbreiten müssen nochmals (einmalig) angepasst werden.
+
+-Bei der Auswahl von Lehrkräften (z.B. als Klassenlehrer, Fachlehrer, Abteilungsleiter) reagierte nicht auf Tastatureingaben, ist nun korrigiert.
+
+-Die Sortierung der Notenliste für Teilleistungen wurde geändert, es erscheint jetzt zuerst die volle Note, dann die "Plus-" und ""Minus-Note" (also z.B. 2, 2+, 2-)
+
+-Es wurden verschiedenen Änderungen gemacht, damit das Programm auch bei kleineren Bildschirmauflösungen benutzt werden kann. Absolutes Minimum sind aber 1024 x 768 Pixel.
+
+-Beim Ausdruck von Reports, die auf die Datenquelle "KlassenLehrer" (die alle Lehrkräfte liefert, die in einer Klasse unterrichten) kam es zu einer Fehlermeldung. Ist nun korrigiert.
+
+-Korrektur diverser Schreibfehler.
+
+ 
