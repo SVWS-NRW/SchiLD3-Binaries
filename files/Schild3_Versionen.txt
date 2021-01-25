@@ -8,6 +8,30 @@ Version 1.0.6
 SchILD3
 ========
 
+Version 3.0.9
+-------------
+-Alle Bezüge auf das Feld "Bildungsgang" in der Tabelle "SchuelerLernabschnitte" wurden entfernt
+
+-Die Datenquellen "Bereich_I", "Bereich_II", "Bereich_III_1", Bereich_III_2" und "Bereich_III_3" wurden aus der Reportig entfernt.
+
+-Bei SQLite-Datenbanken gab es eine Fehlermeldung, wenn z.B. durch eine Filterung eine leere Datenmenge geliefert wurde. Dies wir nun abgefangen.
+
+-Das Layout des Karteireiters "BK-Abschluss" wurde überarbeitet
+
+-Bei der Bearbeitung der Kataloge wurden umfangreiche Anpassungen gemacht. So sind gibt es jetzt "katalogspezifische" RibbonGroups ("Extra-Optionen"), über die bestimte Funktionen für den betreffenden Katalog aktiviert werden können (sofern für den betreffenden Katalog Extra-Optionen verfügbar sind)
+
+-Alle Grid-Darstellungen für Kataloge verfügen nun über ein Eingabefeld "Suche..."
+
+-Die Anzeige von Fotos im "schwebenden" Fenster funktioniert wieder
+
+-Eine Markierung in der Schülerliste kann nun auch per Doppelklick aktviert werden
+
+-Der "Schnellfilter SchILD2" wurde überarbeitet
+
+-Die Basisroutinen für Gruppenfunktionen wurden überarbeitet
+
+
+
 Version 3.0.8
 -------------
 -Bei allen Grafiken (Fotos, Schullogo) wird nun auf die Base64-Felder in der Datenbank zugegriffen (gilt auch für die Darstellung in Reports). Beim Speichern in der Datenbank werden die jpg/png-Dateien "on the fly" ins Base64-Format konvertiert, bei der Darstellung umgekehrt wieder von Base64 in das jeweilige Grafikformat.
