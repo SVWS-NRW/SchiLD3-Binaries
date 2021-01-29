@@ -8,6 +8,14 @@ Version 1.0.6
 SchILD3
 ========
 
+Version 3.0.10
+--------------
+-Es gibt keine "Ribbongroups" mehr für den Aufruf der verschiedenen Berechnungsalgorithmen (Versetzung/Abschluss, FHR, BK-Abschluss, Abitur usw.). Es finden sich jetzt vielmehr oberhalb der entsprechenden Grids für die Fächer (z.B. Abiturfächer) Toolbars mit Schaltern für die jeweiligen Funktionen (ähnlich wie in SchILD2). Bitte mal prüfen, ob das den Arbeitsablauf besser unterstützt.
+
+-Das Layout für der Karteireiter "Akt. Halbjahr>>Allgemeine Angaben" wurde überarbeitet. Für die unterschiedlichen Bemerkungsfelder (Zeugnsibemerkungen, Arbeits- und Sozialverhalten usw.) gibt es nun einen eigenen Karteireiter"Bemerkungen".
+
+-Der Bereich "Zeugnis/Abschluss" ist jetzt auf dem Karteireiter "Akt. Halbjahr" immer sichtbar (wie in SchILD2), unabhängig davon, welcher "Unterreiter" (Allgemeine Angaben, Leistungsdate usw.) ausgewählt ist.
+
 Version 3.0.9
 -------------
 -Alle Bezüge auf das Feld "Bildungsgang" in der Tabelle "SchuelerLernabschnitte" wurden entfernt
