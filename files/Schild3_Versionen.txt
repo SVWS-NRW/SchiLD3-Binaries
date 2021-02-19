@@ -8,6 +8,10 @@ Version 1.0.6
 SchILD3
 ========
 
+Version 3.0.11
+--------------
+-Diverse Änderungen/Korrekturen aufgrund der Meldungen bei Github
+
 Version 3.0.10
 --------------
 -Es gibt keine "Ribbongroups" mehr für den Aufruf der verschiedenen Berechnungsalgorithmen (Versetzung/Abschluss, FHR, BK-Abschluss, Abitur usw.). Es finden sich jetzt vielmehr oberhalb der entsprechenden Grids für die Fächer (z.B. Abiturfächer) Toolbars mit Schaltern für die jeweiligen Funktionen (ähnlich wie in SchILD2). Bitte mal prüfen, ob das den Arbeitsablauf besser unterstützt.
