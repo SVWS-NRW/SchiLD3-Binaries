@@ -21,6 +21,8 @@ Version 3.0.12
 -Die Benutzerverwaltung konnte nicht aufgerufen werden, nun korrigiert
 Hinweis: Bei einer SQLite-Datenbank kommt es beim Aufruf von "Aktuelle Datenbanknutzer zeigen" zu einer Fehlermeldung. Die Ursache ist wohl, dass der Treiber den Befehl "Max(LoginTime)" nicht mit dem korrekten Datentyp zurückliefert. Da SQLite aber nur für Schulungszwecke benutzt werden soll, dürfte das unerheblich sein.
 
+-Beim Gruppenprozess "Noten, Mahnungen, Fehlstunden eingeben" kam es zu einer Fehlermeldung, nun behoben.
+
 
 Version 3.0.11
 --------------
