@@ -8,6 +8,20 @@ Version 1.0.6
 SchILD3
 ========
 
+Version 3.0.12
+--------------
+-Alle "Ja/Nein"-Optionen bei Filter I und dem Gruppenprozess "Allgemeine Angaben ändern" wurden auf "Boolean-Selector" geändert
+
+-Die Erweiterungen bei KAoA-Eingabe für BKs wurden umgesetzt, bitte prüfen, ob das Feld "BK_Anlagen" in der Tabelle "Schildintern_KAoA_Merkmal" enthalten ist.
+
+-Die Speicherung der globalen Einstellungen erfolgt nun in der Tabelle SVWS_Client_Konfiguration_Global
+
+-Die Speicherung der individuellen Einstellungen erfolgt nun in der Tabelle SVWS_Client_Konfiguration_Benutzer. Ausnahme sind "bildschirmabhängige" Einstellungen, diese werden weiterhin in der Registry gespeichert
+
+-Die Benutzerverwaltung konnte nicht aufgerufen werden, nun korrigiert
+Hinweis: Bei einer SQLite-Datenbank kommt es beim Aufruf von "Aktuelle Datenbanknutzer zeigen" zu einer Fehlermeldung. Die Ursache ist wohl, dass der Treiber den Befehl "Max(LoginTime)" nicht mit dem korrekten Datentyp zurückliefert. Da SQLite aber nur für Schulungszwecke benutzt werden soll, dürfte das unerheblich sein.
+
+
 Version 3.0.11
 --------------
 -Diverse Änderungen/Korrekturen aufgrund der Meldungen bei Github
