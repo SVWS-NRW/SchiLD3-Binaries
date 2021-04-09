@@ -1,12 +1,34 @@
 MigrateDB
 =========
 
+Version 1.0.7 
+-------------
+-Es kann jetzt auch in eine MSSQL-Datenbank migriert werden.
+Wichtig: Dies funktioniert nur, wenn der SVWS-Server in der aktuellen Entwicklungsversion läuft.
+
 Version 1.0.6 
 -------------
 -Es gibt im Startfenster nun einen Schalter "Migration ist schon erfolgt, nur Datenbank-Konfigurationsdatei für SchILD3 anlegen". Damit kann für ein Datenbankschema, in das bereits bei der Installation des svws-Servers migriert wurde, eine sdbcfg-Konfigurationsdatei angelegt werden, damit ein Zugriff über SchILD3 möglich ist. Als Dateiname wird der Name des Schemas verwendet.
 
 SchILD3
 ========
+
+Version 3.0.13
+--------------
+-Es wurden diverse Jira-Tickets bearbeitet
+
+-Für die Testphase wurde der Zwang zur Verwendung eines regelkonformen Kennwortes ausgesetzt
+
+-Das Programm startet nun auch mit einer MSSQl-Datenbank.
+Wichtig: Bei MSSQL kommt es aufgrund der verwendeten Collation bei allen Abfragen auf die korrekte Groß/Kleinschreibung der Feldnamen an. Dies ist bei MariaDB nicht der Fall, hier müssen nur die Tabellennamen die korrekte Schreibweise haben, und das auch nur unter Linux). Ob alle Abfragen korekt funktionieren, wurde noch nicht bis ins Detail getestet, falls Fehlermeldungen der Art "Feld XY nicht gefunden" erscheinen, bitte entsprechendes Jira-Ticket eröffnen.
+
+-Beim Programmstart kann nun auch optional geprüft werden, ob eine Verbindung zum SVWS-Server hergstellt werden kann. Dazu muss das Programm mit dem Parameter "-SVWSServerTest:" gestartet werden.
+Beispiel:
+
+SchILD30.exe -SVWSServerTest:
+
+Es erscheint dann ein Dialogfenster, in dem das Kennwort für den Datenbankbenutzer "root" (bei MariaDB) oder "sa" (bei MSSQL) eingegeben werden kann. Als URL ist derzeit "https://localhost" fest vorgegeben. Es wird dann versucht, eine Verbindung zum SVWS-Server herzustellen und eine entsprechende Meldung ausgegeben. 
+ 
 
 Version 3.0.12
 --------------
