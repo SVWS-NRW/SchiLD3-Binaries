@@ -13,6 +13,18 @@ Version 1.0.6
 SchILD3
 ========
 
+Version 3.0.14
+--------------
+-Der Test, ob eine Verbindung zum SVWS-Server hergstellt werden kann, wird jetzt immer beim Start (bzw. nach Auswahl einer Datenbank) durchgeführt. Es wird jetzt ein Testbefehl verwendet, der keine root- bzw. sa-Berechtigung erfordert, es muss daher auch kein Kennwort mehr eingegeben werden. In der Titelzeile des Hauptfensters wird dann angezeigt, ob der Verbindungstest erfolgreich war.
+
+-Im Reportexplorer wird ja die Breite der Spalten gespeichert. Es ist in manchen Fällen vorgekommen, dass für die Breite der Verzeichnisliste viel zu hohe Werte gespeichert wurden, was beim nächsten Aufruf dazu führte, dass die Reportliste nicht angezeigt werden konnte. Das ist nun unterbunden, wenn die Breiten beim Laden zu hoch sind (im Verhältnis zur Bildschirmbreite), werden sie passend reduziert.
+
+-Es wurden noch diverse Änderungen/Korrekturen bei Gruppenprozessen gemacht.
+
+-Es wurden diverse Tickets aus GitHub bearbeitet
+
+-Es wurden diverse Schreibfehler korrigiert
+
 Version 3.0.13
 --------------
 -Es wurden diverse Jira-Tickets bearbeitet
