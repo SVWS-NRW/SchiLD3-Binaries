@@ -30,6 +30,18 @@ Es wird jetzt auch die URL zum SVWSServer in der .sdbcfg-Datei gespeichert.
 SchILD3
 ========
 
+Version 3.0.16
+--------------
+-Es wurde eine Anzahl von Fenstern, die bisher separat (als "schwebende" Fenster) erschienen, in die Programmoberfläche integriert. Weitere werden noch folgen.
+
+-Die Katalogverwaltung wurde komplett überarbeitet. Die Auswahl der Einzelkataloge (Staatsangehörigkeiten, Verkehrsprachen usw.) erfolgt jetzt über ein "Backstage-Menü" (ähnlich wie bei "Verwaltung") auf der linken Seite des Programmfensters. In den Ribbons erfolgt nur noch die Auswahl der "Katalog-Rubrik" (Allgemeine Kataloge, Schulbezogen Kataloge)
+
+-Der Import/Exort wurde ebenfalls überarbeitet, es steht jetzt auch der Logineo-Export zur Verfügung
+
+-Weitere Anpassung zur "Konsilidierung" der Programmoberfläche (z.B. bei den Daten der Schule) folgen in Kürze
+
+-Es wurden einige in Github gemeldete Fehler behoben.
+
 Version 3.0.15
 --------------
 -Der Test, ob eine Verbindung zum SVWS-Server hergstellt werden kann, wurde nochmal überarbeitet. Damit dieser ausgeführt werden kann, muss aber in der betreffenden sdbcfg-Datei (die die Datenbankparameter enthält) auch die URL des SVWS-Servers enthalten sein. Dazu entweder die Datei mit dem Programm "SchILD_DBConfig.exe" öffnen, bearbeiten und speichern oder über einen Editor in der Datei die Zeile
