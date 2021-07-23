@@ -1,34 +1,13 @@
-SchILD_DBConfig
-===============
-
-Version 2.0.5
--------------
--Es kann jetzt auch die URL des SVWS-Servers eingegeben werden, diese wird auch in die sdbcfg-Datei geschrieben. 
-
--Optional kann beim Verbindungstest auch der SVWS-Servr berücksichtigt werden.
-
-MigrateDB
-=========
-
-Version 1.0.8
--------------
-In die erzeugten sdbcfg-Dateien wird jetzt auch die URL des SVWS-Servers geschrieben.
-
-Version 1.0.7 
--------------
--Es kann jetzt auch in eine MSSQL-Datenbank migriert werden.
-Wichtig: Dies funktioniert nur, wenn der SVWS-Server in der aktuellen Entwicklungsversion läuft.
-
-Version 1.0.6 
--------------
--Es gibt im Startfenster nun einen Schalter "Migration ist schon erfolgt, nur Datenbank-Konfigurationsdatei für SchILD3 anlegen". Damit kann für ein Datenbankschema, in das bereits bei der Installation des svws-Servers migriert wurde, eine sdbcfg-Konfigurationsdatei angelegt werden, damit ein Zugriff über SchILD3 möglich ist. Als Dateiname wird der Name des Schemas verwendet.
-
-Version 1.0.8
--------------
-Es wird jetzt auch die URL zum SVWSServer in der .sdbcfg-Datei gespeichert.
-
 SchILD3
 ========
+
+Version 3.0.17
+--------------
+-Die Verwaltung der Kataloge wude nochmals überarbeitet. Alle Kataloge (allgemeine und schulbezogen) sind nun über ein "Backstage-Menü" aufrufbar. Die Kataloge wurden auch von den "Ribbob-Bars" getrennt und haben nun einen eigenen Bereich mit (jeweils auf den betreffenden Katalog bezognenen) Bearbeitungskomponenten.
+
+-Bei manchen Katalogen wurden "eingefrorene" Spalten definiert (z.B. Schulkatalog). Dies bedeutet, dass bestimmte Spalten am Anfang des Tabellengitters immer sichtbar sind, auch wenn man weiter nach rechts scrollt, weil der verfügbare Platt nicht ausreicht, um das Tabllngitter komplett darzustellen.
+
+-Diverse Korrekturen und Designanpassungen an der Programoberfläche.
 
 Version 3.0.16
 --------------
@@ -157,3 +136,31 @@ Wichtig: Das Verfahren wurde gegenüber der Vorgängerversion geändert, d.h. di
 -Korrektur diverser Schreibfehler.
 
  
+SchILD_DBConfig
+===============
+
+Version 2.0.5
+-------------
+-Es kann jetzt auch die URL des SVWS-Servers eingegeben werden, diese wird auch in die sdbcfg-Datei geschrieben. 
+
+-Optional kann beim Verbindungstest auch der SVWS-Servr berücksichtigt werden.
+
+MigrateDB
+=========
+
+Version 1.0.8
+-------------
+In die erzeugten sdbcfg-Dateien wird jetzt auch die URL des SVWS-Servers geschrieben.
+
+Version 1.0.7 
+-------------
+-Es kann jetzt auch in eine MSSQL-Datenbank migriert werden.
+Wichtig: Dies funktioniert nur, wenn der SVWS-Server in der aktuellen Entwicklungsversion läuft.
+
+Version 1.0.6 
+-------------
+-Es gibt im Startfenster nun einen Schalter "Migration ist schon erfolgt, nur Datenbank-Konfigurationsdatei für SchILD3 anlegen". Damit kann für ein Datenbankschema, in das bereits bei der Installation des svws-Servers migriert wurde, eine sdbcfg-Konfigurationsdatei angelegt werden, damit ein Zugriff über SchILD3 möglich ist. Als Dateiname wird der Name des Schemas verwendet.
+
+Version 1.0.8
+-------------
+Es wird jetzt auch die URL zum SVWSServer in der .sdbcfg-Datei gespeichert.
