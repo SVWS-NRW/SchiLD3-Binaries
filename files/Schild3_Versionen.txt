@@ -1,6 +1,19 @@
 SchILD3
 ========
 
+Version 3.0.18
+--------------
+-Der Bereich "Werkzeuge" wurde überarbeitet. Bei allen "Werkzeug-Einträgen" in der Menüliste, die über kein eigenes Fenster verfügen, wird nun (beim Aufruf) ein Informationstext im rechten Fensterteil angezeigt.
+Beispiel "Fehlende Abschnittsdaten anlegen":
+"Es wird geprüft, ob es für alle Schüler mit Status "Aktiv" einen Eintrag für den aktuellen Abschnitt (Halbjahr, Quartal, Semester) gibt. Falls ein solcher nicht existiert, wird er mit den aktuellen Angaben bei den Individualdaten (z.B. Jahrgang, Klasse) angelegt. Wenn schon ein Eintrag für den aktuellen Abschnitt existiert, so wird dieser nicht verändert."
+Korrekturen und Verbesserungsvorschläge für die Formulierugen der Hinweise sind erwünscht.
+
+-Es steht jetzt auch der IServ-Export zur Verfügung.
+
+-Es wurden weitere Fenster, die bisher separat (als "schwebende" Fenster) erschienen, in die Programmoberfläche integriert.
+
+-Es wurden einige in Github gemeldete Fehler behoben.
+
 Version 3.0.17
 --------------
 -Die Verwaltung der Kataloge wude nochmals überarbeitet. Alle Kataloge (allgemeine und schulbezogen) sind nun über ein "Backstage-Menü" aufrufbar. Die Kataloge wurden auch von den "Ribbob-Bars" getrennt und haben nun einen eigenen Bereich mit (jeweils auf den betreffenden Katalog bezognenen) Bearbeitungskomponenten.
@@ -147,6 +160,10 @@ Version 2.0.5
 
 MigrateDB
 =========
+
+Version 1.0.10
+--------------
+Wenn eine MDB manuell zur Migration ausgewählt wurde und der Dateipfad Leerzeichen enthielt, kam es zu einer Fehlermeldung. Nun behoben.
 
 Version 1.0.8
 -------------
