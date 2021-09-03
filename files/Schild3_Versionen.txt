@@ -1,6 +1,21 @@
 SchILD3
 ========
 
+Version 3.0.19
+--------------
+-In manchen Fällen wurden Schüler- oder Lehrerfotos nicht angezeigt, obwohl sie korrekt in der Datenbank gespeichert waren. Nun korrigiert.
+
+-Das Programm greift nun bei den Adressen der Schüler und Erziehungsberechtigten auf eine NRW-Straßenliste zu. Bei der Auswahl erfolgt eine automatische Filterung auf den Ortsnamen, daher muss dieser auch bei Eingabe der Straße schon vorhanden sein. Der Katalog ist aber nur eine "Vorschlagsliste", d.h. es können auch weiterhin Einträge gemacht werden, die nicht im Katalog enthalten sind.
+WICHTIG: Die Nutzung der Straßenliste setzt eine Trennung von Straße und Hausnr. voraus. Falls noch nicht geschehen, muss der Menüpunkt "Verwaltung>>Werkzeuge>>Straßen und Hausnr. bei Schülerdaten trennen" aufgerufen werden.
+HINWEIS: Bei den Ertiehungsberechtigten gab es noch keine separaten Felder für Straßenname und Hausnr., diese werden von einem aktuellen Update des SVWS-Servers angelegt.
+
+-Die Anordnung der Bemerkungsfelder auf dem Karteireiter "Akt. Halbjahr>>Bemerkungen" wurde überarbeitet
+
+-Ein Fehler beim IServ-Export wurde korrigiert.
+
+-Es wurden weitere in Github gemeldete Fehler behoben.
+
+
 Version 3.0.18
 --------------
 -Der Bereich "Werkzeuge" wurde überarbeitet. Bei allen "Werkzeug-Einträgen" in der Menüliste, die über kein eigenes Fenster verfügen, wird nun (beim Aufruf) ein Informationstext im rechten Fensterteil angezeigt.
