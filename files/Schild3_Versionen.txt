@@ -1,6 +1,16 @@
 SchILD3
 ========
 
+Version 3.0.20
+--------------
+-Es gibt keine durch die Schule bearbeitbaren Kataloge für Staatsangehörigkeiten und Verkehrssprachen mehr. Es wird nun auf die entsprechenden "Statistik-Kataloge" zugegriffen.
+
+-Die Eingabe der Schulleitung (bei den allgemeinen Angaben der Schule) wurde geändert. Es ist nun auch möglich, eine Historie zu verwalten.
+Wichtig: Da hier auf neue Tabellen in der Datenbank zugegriffen wird, funktioniert das nur mit einer Datenbank, die mit einer aktuellen Version des SVWS-Servers migriert wurde.
+ 
+-Es wurden weitere in Github gemeldete Fehler behoben.
+
+
 Version 3.0.19
 --------------
 -In manchen Fällen wurden Schüler- oder Lehrerfotos nicht angezeigt, obwohl sie korrekt in der Datenbank gespeichert waren. Nun korrigiert.
