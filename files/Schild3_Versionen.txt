@@ -1,6 +1,12 @@
 SchILD3
 ========
 
+Version 3.0.21
+--------------
+-Die Verwendung des Feldes "SchulnrEigner" wurde komplett aus dem Programm entfernt.
+
+-Alle Adressangaben wurden auf eine getrennte Speicherung von Straßenname und Hausnr. umgestellt.
+
 Version 3.0.20
 --------------
 -Es gibt keine durch die Schule bearbeitbaren Kataloge für Staatsangehörigkeiten und Verkehrssprachen mehr. Es wird nun auf die entsprechenden "Statistik-Kataloge" zugegriffen.
