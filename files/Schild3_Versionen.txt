@@ -1,6 +1,19 @@
 SchILD3
 ========
 
+Version 3.0.22
+--------------
+An folgenden Stellen wurde das Programm an die neue Struktur der Tabelle "SchuelerSprachenfolge" angepasst:
+-Programmoberfläche
+-Reportausgabe
+-GeR-Berechnung
+-Export in Schnittstellendate
+-Import aus Schnittstellendatei
+
+An folgenden Punkten sind noch Anpasseungen notwendig:
+-LuPO-Export
+-Übergabe an Abituralgorithmus
+
 Version 3.0.21
 --------------
 -Die Verwendung des Feldes "SchulnrEigner" wurde komplett aus dem Programm entfernt.
