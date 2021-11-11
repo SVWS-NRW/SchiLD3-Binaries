@@ -1,16 +1,22 @@
 SchILD3
 ========
 
+Version 3.0.23
+--------------
+-Die neue Struktur der Tabelle "SchuelerSprachenfolge" wurde an allen relevanten Stellen angepasst
+
+-Es gibt nun auf dem Karteireiter "Laufbahninfo" auch einen Bereich für die Eingabe von Sprachprüfungen
+
 Version 3.0.22
 --------------
 An folgenden Stellen wurde das Programm an die neue Struktur der Tabelle "SchuelerSprachenfolge" angepasst:
 -Programmoberfläche
 -Reportausgabe
 -GeR-Berechnung
--Export in Schnittstellendate
+-Export in Schnittstellendatei
 -Import aus Schnittstellendatei
 
-An folgenden Punkten sind noch Anpasseungen notwendig:
+An folgenden Punkten sind noch Anpassungen notwendig:
 -LuPO-Export
 -Übergabe an Abituralgorithmus
 
