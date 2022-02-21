@@ -1,6 +1,17 @@
 SchILD3
 ========
 
+Version 3.0.26
+--------------
+Weitere Anpassungen an neue DB-Struktur
+-Daten der Lehrkräfte können bearbeitet werden
+
+-Kurslisten können ausgegeben werden
+
+-Angaben zu Klassenlehrer werde in Reports wieder ausgegeben
+
+
+
 Version 3.0.23
 --------------
 -Die neue Struktur der Tabelle "SchuelerSprachenfolge" wurde an allen relevanten Stellen angepasst
