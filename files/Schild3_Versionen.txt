@@ -1,6 +1,25 @@
 SchILD3
 ========
 
+Version 3.0.27
+--------------
+-Korrektur einiger in Jira genannten Reportprobleme
+
+-Anpassung aller Lehrerdatenquellen an neue DB-Struktur
+
+-Anpassung der Datenquelle SchuelerKAoADaten an neue DB-Struktur
+
+-Korrektur Feiniger ehler bei der Lehrerbearbeitung
+
+-Umstellung der PLZ-Felder auf Ort_ID in folgenden Tabellen
+Schueler
+SchuelerErzAdr
+K_Lehrer
+K_AllgAdr
+
+-Anpassung der Report-Datenquellen zu diesen Tabellen
+
+
 Version 3.0.26
 --------------
 Weitere Anpassungen an neue DB-Struktur
