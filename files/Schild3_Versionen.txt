@@ -1,6 +1,16 @@
 SchILD3
 ========
 
+Version 3.0.28
+--------------
+-Anpassung der Benutzerverwaltung an die neue Datenbankstruktur
+Hinweis: In der Benutzerverwaltung stehen die Optionen zum Bearbeiten einzelner Benutzer (Anlegen, Bearbeiten, demnächst auch Löschen) über die rechte Maustaste zur Verfügung.
+Beim Neuanlegen von Benutzern wird derzeit der Benutzername als Kennwort eingetragen. Das kann in Zukunft auch durch ein zufällig erzeugtes Initialkennwort ersetzt werden, dazu muss aber erst eine Datenquelle mit Benutzerdaten geschaffen werden, damit diese Informationen auch ausgegeben werden können.
+
+-Filter I:
+Einige Optionen (im wesentlichen solche, die sich auf Stammdaten und den aktuellen Abschnitt beziehen) wurden auf die neue Datenbankstruktur angepasst
+
+
 Version 3.0.27
 --------------
 -Korrektur einiger in Jira genannten Reportprobleme
