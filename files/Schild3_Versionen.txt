@@ -1,6 +1,10 @@
 SchILD3
 ========
 
+Version 3.0.29
+--------------
+-Anpassung aller Optionen in Filter I an die neue Datenbankstruktur
+
 Version 3.0.28
 --------------
 -Anpassung der Benutzerverwaltung an die neue Datenbankstruktur
@@ -19,7 +23,7 @@ Version 3.0.27
 
 -Anpassung der Datenquelle SchuelerKAoADaten an neue DB-Struktur
 
--Korrektur Feiniger ehler bei der Lehrerbearbeitung
+-Korrektur einiger Fehler bei der Lehrerbearbeitung
 
 -Umstellung der PLZ-Felder auf Ort_ID in folgenden Tabellen
 Schueler
