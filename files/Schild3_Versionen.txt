@@ -1,6 +1,16 @@
 SchILD3
 ========
 
+Version 3.0.30
+--------------
+-Es wurden noch einige Fehler im Filter I behoben
+Hinweis: Bei den "Checked Comobobox"-Komponenten (zur Mehrfachauswahl von Optionen) bewirkt das reine Anklicken eines Eintrages noch keine Auswahl desselben, dazu muss das Häkchen angeklickt werden. Ansonsten würde bei der Taststurbedienung das Häkchen automatsich aktiviert, wenn man mit den Pfeiltasten der Tastatur zwischen den Einträgen wechselt. Wenn bei Tastaturbedienung ein Eintrag aktiviert werden woll, muss die Eingabetaste gedrückt werden.
+
+-Bei der Zuweisung eines Kennwortes zu einem Benutzer kam es zu einer Fehlermeldung, nun behoben
+
+-Der Gruupenprozess "Individualdaten ändern" wurde an die neue Datenbankstruktur angepasst
+
+
 Version 3.0.29
 --------------
 -Anpassung aller Optionen in Filter I an die neue Datenbankstruktur
