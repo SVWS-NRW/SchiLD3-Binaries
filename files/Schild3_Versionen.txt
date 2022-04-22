@@ -1,6 +1,10 @@
 SchILD3
 ========
 
+Version 3.0.31
+--------------
+-Die Gruppenprozesse in den Bereichen "Allgemeines" und "Fächer" (bis einschl. "Kurse zuweisen (mehrere)") wurden überarbeitet und an die geänderte Datenbankstruktur angepasst.
+
 Version 3.0.30
 --------------
 -Es wurden noch einige Fehler im Filter I behoben
@@ -8,7 +12,7 @@ Hinweis: Bei den "Checked Comobobox"-Komponenten (zur Mehrfachauswahl von Option
 
 -Bei der Zuweisung eines Kennwortes zu einem Benutzer kam es zu einer Fehlermeldung, nun behoben
 
--Der Gruupenprozess "Individualdaten ändern" wurde an die neue Datenbankstruktur angepasst
+-Der Gruppenprozess "Individualdaten ändern" wurde an die neue Datenbankstruktur angepasst
 
 
 Version 3.0.29
