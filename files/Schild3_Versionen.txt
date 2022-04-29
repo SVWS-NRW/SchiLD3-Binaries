@@ -1,5 +1,13 @@
 SchILD3
 ========
+Version 3.0.32
+--------------
+-Es wurden diverse Fehlermeldungen, die bei BK-Datenbanken auftraten, behoben
+
+-Das Layout wurde in bestimmten Bereichen an die Bildschirmauflösung angepasst. So wird z.B. der Bereich "Aktuelle Laubahndaten" bei einer Bildschirmauflösung > 1400 Pixeln breiter dargstellt.
+
+-Es wurden weitere Gruppenprozesse im Bereich "Fächer" an die geänderte Datenbankstruktur angepasst.
+
 
 Version 3.0.31
 --------------
