@@ -8,6 +8,8 @@ Version 3.0.32
 
 -Es wurden weitere Gruppenprozesse im Bereich "Fächer" an die geänderte Datenbankstruktur angepasst.
 
+-In der Reporting wurde ein (durch einen falschen Datenbankeintrag verursachter) Fehler in Zusammenhang mit den "Schuljahresabschnitten" abgefangen.
+
 
 Version 3.0.31
 --------------
