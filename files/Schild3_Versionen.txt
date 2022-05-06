@@ -11,6 +11,8 @@ Version 3.0.33
 
 -Die Gruppenprozesse für Teilleistungen wurden überarbeitet und an die geänderte Datenbankstruktur angepasst.
 
+-Die URL für den SVWS-Server wurde geändert, die Verbindung sollte jetzt wieder funktionieren
+
 
 Version 3.0.32
 --------------
