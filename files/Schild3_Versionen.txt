@@ -1,5 +1,17 @@
 SchILD3
 ========
+
+Version 3.0.33
+--------------
+-Mehrere berichtete Fehler korrigiert
+
+-Bei einer BK-Datenbank kam es bei der Druckausgabe zu einer Fehlermeldung "Feld Fachklasse nicht gefunden", nun beseitigt
+
+-Die Performance beim Scrollen durch die Schülermenge wurde verbessert, bitte mal ausprobieren.
+
+-Die Gruppenprozesse für Teilleistungen wurden überarbeitet und an die geänderte Datenbankstruktur angepasst.
+
+
 Version 3.0.32
 --------------
 -Es wurden diverse Fehlermeldungen, die bei BK-Datenbanken auftraten, behoben.
