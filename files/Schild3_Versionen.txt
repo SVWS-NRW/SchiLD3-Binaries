@@ -1,6 +1,18 @@
 SchILD3
 ========
 
+Version 3.0.34
+--------------
+-Die Abfrage für die Anzeige der Schülerdaten wurde nochmals überarbeitet, was jetzt einen deutlichen Geschwindigkeitszuwachs bei Scrollen zur Folge haben sollte. Bitte mal Erfahrungswerte mitteilen.
+
+-Der Schülername wird jetzt immer oberhalb der "Detail-Karteireiter" angezeigt
+
+-Der Prozess zum Halbjahres-, Quartals und Schuljahreswechsel wurde wegen der geänderten Datenbankstruktur komplett überarbeitet. Bitte mal mit verschiedenen Schulformen testet, dabei insbesondere prüfen, ob in allen "Versetzungskonstellationen" auch die korrekte Folgeklasse ermittelt wird.
+Hinweis: In Kürze wird es diesen Prozess auch als "Vorbereitung für das nächste Schuljahr (bzw. Habljahr, Quartal) geben. Der Unterschied wird nur sein, dass am Ende die SuS nicht explizit versetzt werden und dass bei der Schule "als Organisation" die Angaben zum aktuellen Abschnitt nicht geändert werden. Das Ergebnis wird also so sein, dass alle notwendigen Angaben für den Folgeabschnitt existieren (für besagte Planung), die SuS und die Schule aber noch im aktuellen Abschnitt verbleiben.
+
+-Einige Githaub-Fehler behoben.
+
+
 Version 3.0.33
 --------------
 -Mehrere berichtete Fehler korrigiert
