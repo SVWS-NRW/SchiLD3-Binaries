@@ -1,6 +1,23 @@
 SchILD3
 ========
 
+Version 3.0.35
+--------------
+-Die "jährliche Löschfunktion" (automatisch im Dezember aufgerufen oder manuell über "Verwaltung>>Werkzeuge>>Daten gemäß Löschfristen löschen") wurde an die geänderte Datenbankstruktur angepasst.
+
+-Der Vorgang "Ankreuzkompetenzen holen" wurde überarbeitet und an die geänderte Datenbankstruktur angepasst.
+
+-Es wurden weitere Gruppenprozesse an die geänderte Datenbankstruktur angepasst. Dies betrifft alle "Gruppenprozess-Schalter", deren Beschriftung fett ist.
+
+-Die Abiturprozesse wurde nochmals überarbeitet und an die Strukturänderungen in Folge der Migration angepasst.
+
+-Gruppenprozesse für Abitur jetzt verfügbar.
+
+-Die Verbindung zum SVWS-Server sollte jetzt wieder funktionieren (getestet mit Server-Version 0.2.10)
+
+-Diverse Fehler in Github bearbeitet.
+
+
 Version 3.0.34
 --------------
 -Die Abfrage für die Anzeige der Schülerdaten wurde nochmals überarbeitet, was jetzt einen deutlichen Geschwindigkeitszuwachs bei Scrollen zur Folge haben sollte. Bitte mal Erfahrungswerte mitteilen.
