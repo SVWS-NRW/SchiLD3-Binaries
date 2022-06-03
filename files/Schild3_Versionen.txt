@@ -1,5 +1,23 @@
+MigrateDB
+=========
+Version 1.0.11
+--------------
+-Es stehen jetzt drei "Use cases" zur Verfügung.
+	1. Installation auf Einzelplatzrechner
+	2. Installation auf einem Server der Schule
+	3. Expertenmodus I
+
+-Die erzeugten sdbcfg-Dateien werden nun im Arbeitsverzeichnis abgelegt. Das setzt voraus, dass das Programm im Verzeichnis von SchILD3.0 ausgeführt wird (um das Arbeistverzeichnis ermitteln zu können).
+
+
 SchILD3
 ========
+Version 3.0.36
+--------------
+-Der Speicherort für die sdbcfg-Dateien wurde geändert. Diese werden nun im Verzeichnis \sdbcfg unterhalb des Arbeitsverzeichnisses verwaltet.
+Wichtig: Um auf die bisher verwendeten Datenbanken zugreifen zu können, muss daher der Ordner \sdbcfg aus dem Programmverzeichnis in das Arbeitsverzeichnis verschoben werden.
+
+
 
 Version 3.0.35
 --------------
