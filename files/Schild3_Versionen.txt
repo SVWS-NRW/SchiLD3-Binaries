@@ -1,5 +1,12 @@
 MigrateDB
 =========
+Version 1.0.12
+--------------
+-Es steht ein weiterer "Use case" zur Verfügung:
+"Lokale Programminstallation, Datenbank läuft auf Server"
+Bei dieser Option sind alle Parameter manuell einzugeben, da ja kein Zugriff auf die Konfigurationsdatei des SVWS-Servers besteht.
+
+
 Version 1.0.11
 --------------
 -Es stehen jetzt drei "Use cases" zur Verfügung.
@@ -12,6 +19,16 @@ Version 1.0.11
 
 SchILD3
 ========
+Version 3.0.37
+--------------
+-Weitere Gruppenprozesse (für ZP10) angepasst
+
+-Der Export im "Schnittstellenformat SchILD-NRW" wude an die geänderte Datenbankstruktur angepasst.
+
+-Die Bearbeitung der Abteilungen ist nun möglich.
+
+-Filterung auf Abteilungen und Standorte wurde umgesetzt.
+
 Version 3.0.36
 --------------
 -Der Speicherort für die sdbcfg-Dateien wurde geändert. Diese werden nun im Verzeichnis \sdbcfg unterhalb des Arbeitsverzeichnisses verwaltet.
