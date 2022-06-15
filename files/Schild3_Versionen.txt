@@ -1,5 +1,9 @@
 MigrateDB
 =========
+Version 1.0.13
+--------------
+-Im "Expertenmodus" wurde das Arbeitsverzeichnis nicht korrekt ermittelt, nun korrigiert.
+
 Version 1.0.12
 --------------
 -Es steht ein weiterer "Use case" zur Verfügung:
@@ -19,6 +23,10 @@ Version 1.0.11
 
 SchILD3
 ========
+Version 3.0.38
+--------------
+-Test Skalierung Menüeinträge für Kataloge
+
 Version 3.0.37
 --------------
 -Weitere Gruppenprozesse (für ZP10) angepasst
