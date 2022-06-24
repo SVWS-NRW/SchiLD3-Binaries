@@ -23,9 +23,36 @@ Version 1.0.11
 
 SchILD3
 ========
-Version 3.0.38
+Version 3.0.39
 --------------
--Test Skalierung Menüeinträge für Kataloge
+Es wurden folgende Anpassungen an der Oberfläche durchgeführt:
+-Im Hauptfenster wird immer die gleiche Überschrift (mit der Information zur Datenbank) gezeigt.
+
+-Das (maximierte) Hauptfenster sollte nicht mehr "springen", wenn ein anderes Fenster (z.B. Anzeige Bemerkungen) aufgerufen wird.
+
+-Bei einer ganz frischen Neuinstallation wurde die Breite der Tabellenspalten ungünstig dargestellt. Dies wurde nun verbessert, bitte mal testen.
+
+-Bei den "Ribbon-Reitern" für "Konfessionen" und "Verwaltung" bleibt nun die Ribbon-Leiste sichtbar (obwohl leer), um ein einheitliches Erscheinungbild gewährleisten.
+
+-Es wurde testweise eine Möglichkeit geschaffen, die Schrifthöhe (in Punkt) bei den Menüeinträgen für "Kataloge" und "Verwaltung" über eine externe Datei (Backstage.Ini im Programmverzeichnis) einzustellen. Die Datei hat zwei Bereiche ("Kataloge", Verwaltung"), in jedem dieser Bereiche gibt es Zeilen, wo die Schriftgrößen für unterschiedliche Windows-Skalierungen und Bildschirmauflösungen (vertikal, in folgenden Stufen: bis 1000, bis 1500, bis 2000, bis 5000) wie folgt eingetragen werden können:
+
+Caption_<Windows-Skalierung>_<vert. Bildschirmaufllöung bis Pixel>=<Schriftgröße>
+Items_<Windows-Skalierung>_<vert. Bildschirmaufllöung bis Pixel>=<Schriftgröße>
+
+In Zeilen, die mit "Caption" beginnen, wird die Schriftgröße für die entsprechende Überschrift ("Verwaltung") festgelegt, in Zeilen, die mit "Items" beginnen, wird die Schriftgröße für die "Menüeinträge" definiert.
+Hinweis: Bei den Katalogen gibt es keine Haupt-Überschrift, dafür aber zwei "Zwischen-Überschriften". Deren Schriftgröße wird aus dem für Caption eingegeben Wert minus 2 ermittelt.
+
+Beispiel:
+Windows-Skalierung=100
+vertikale Bidschirmauflösung=1080
+
+Bei dieser Konstellation muss die Schriftgröße in folgenden Zeilen eingetragen werden (1500: Weil 1080 > 1000 als nächstkleinere Auflösung, aber kleiner 1500 als nächsthöhere Auflösung)
+Caption_100_1500=15
+Items_100_1500=11
+
+Bitte mal mit unterschiedlichen Konstellationen ausprobieren und die optimalen Schriftgrößen mitteilen.	
+ 
+
 
 Version 3.0.37
 --------------
