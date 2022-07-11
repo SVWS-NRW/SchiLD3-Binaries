@@ -23,6 +23,10 @@ Version 1.0.11
 
 SchILD3
 ========
+Version 3.0.40
+--------------
+-Der Export für de Statistik wurde an die geänderte Datenbankstruktur angepasst.
+
 Version 3.0.39
 --------------
 Es wurden folgende Anpassungen an der Oberfläche durchgeführt:
