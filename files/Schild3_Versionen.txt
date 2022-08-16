@@ -23,6 +23,15 @@ Version 1.0.11
 
 SchILD3
 ========
+Version 3.0.41
+--------------
+-Diverse Fehler in Github bearbeitet.
+
+-Es stehen nun die Bearbeitungsmöglichkeiten für Lernplattformen (Katalog, SuS, LuL, Schnittstellen-Export und -Import) zur Verfügung.
+Hinweis: Der Export in den Formaten Logineo, IServ und SDS ist noch nicht umgesetzt.
+
+-Reportverwaltung: Die Datenquelle "Schueler" wird nun an die Datenquellen "Kurs" und "Klassen" gekoppelt. Sie fungiert dann als Unterdatenquelle, sie kann die Datenquellen "KursSchueler", "KursSchueler_mit_Fotos", "KlassenSchueler" ersetzen, die mittelfristig wegfallen werden.
+
 Version 3.0.40
 --------------
 -Der Export für de Statistik wurde an die geänderte Datenbankstruktur angepasst.
