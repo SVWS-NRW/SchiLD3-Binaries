@@ -23,6 +23,15 @@ Version 1.0.11
 
 SchILD3
 ========
+Version 3.0.42
+--------------
+-Export für Lernplattformen umgesetzt (Ausnahme: Logineo XML)
+
+-Duplikatsabgleich für BKs überarbeitet
+
+-Weitere Fehler aus Github bearbeitet.
+
+
 Version 3.0.41
 --------------
 -Diverse Fehler in Github bearbeitet.
