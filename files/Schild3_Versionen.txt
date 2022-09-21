@@ -18,11 +18,21 @@ Version 1.0.11
 	2. Installation auf einem Server der Schule
 	3. Expertenmodus I
 
--Die erzeugten sdbcfg-Dateien werden nun im Arbeitsverzeichnis abgelegt. Das setzt voraus, dass das Programm im Verzeichnis von SchILD3.0 ausgeführt wird (um das Arbeistverzeichnis ermitteln zu können).
+-Die erzeugten sdbcfg-Dateien werden nun im Arbeitsverzeichnis abgelegt. Das setzt voraus, dass das Programm im Verzeichnis von SchILD3.0 ausgeführt wird (um das Arbeitsverzeichnis ermitteln zu können).
 
 
 SchILD3
 ========
+Version 3.0.43
+--------------
+-Der Halb- und Schuljahreswechsel wurde komplett neu als "Wizard" konzipiert, es ist jetzt u.a. möglich, neue Lernabschnitte (optional mit Fächerübernahme) für den neuen Abschnitt anzulegen, ohne die SuS auch zu versetzen.
+
+-Filter I wurde optisch noch etwas "verschönert"
+
+-Beim der "Schnellfilter in neuer Version" wird jetzt nicht mehr automatisch gefiltert, sondern erst nach Aktvierung des "Häkchen-Schalters" (wie beim "Schnellfilter nach SchILD2-Art")
+
+-Diverse Fehler aus Github behoben.
+
 Version 3.0.42
 --------------
 -Export für Lernplattformen umgesetzt (Ausnahme: Logineo XML)
