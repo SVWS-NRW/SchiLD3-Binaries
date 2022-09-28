@@ -23,6 +23,22 @@ Version 1.0.11
 
 SchILD3
 ========
+Version 3.0.44
+--------------
+-Der neue Halb- und Schuljahreswechsel war versehentlich nur in der Entwicklungsumgebung verfügbar, jetzt ist er freigeschaltet.
+
+-Weitere Exporte umgesetzt:
+Logineo XML
+Export an Schulträger
+Abitur-Export (in SchILD2 als Plugin umgesetzt, nun im Programm fest integriert)
+ZP10-Export (dito)
+KommMit-Export (dito)
+
+-Es gibt jetzt wieder die Möglichkeit, die Liste der SuS nach verschiedenen Kriterien zu sortieren.
+
+-Diverse Fehler aus Github behoben
+
+
 Version 3.0.43
 --------------
 -Der Halb- und Schuljahreswechsel wurde komplett neu als "Wizard" konzipiert, es ist jetzt u.a. möglich, neue Lernabschnitte (optional mit Fächerübernahme) für den neuen Abschnitt anzulegen, ohne die SuS auch zu versetzen.
