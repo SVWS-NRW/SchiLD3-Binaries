@@ -4,7 +4,7 @@ plugins {
 }
 
 group = 'de.nrw.schule.svws'
-version = '0.0.46'
+version = '0.0.47'
 
 
 
@@ -51,19 +51,19 @@ task copyFiles(type: Copy) {
 task signSchild3(type:Exec) {
 	dependsOn "copyFiles"
 	workingDir file("${buildDir}/output")
-	commandLine System.getenv("SVWS_SIGNTOOL_PATH"), "sign", "/fd", "sha256", "/f", System.getenv("SVWS_CERTIFICATE_PATH"), "/p", System.getenv("SVWS_CERTIFICATE_PASSWORD"), "-tr", "http://sha256timestamp.ws.symantec.com/sha256/timestamp", "Schild30.exe" 
+	commandLine System.getenv("SVWS_SIGNTOOL_PATH"), "sign", "/fd", "sha256", "/f", System.getenv("SVWS_CERTIFICATE_PATH"), "/p", System.getenv("SVWS_CERTIFICATE_PASSWORD"), "-tr", "http://sha256timestamp.ws.symantec.com/sha256/timestamp", "-td", "sha256", "Schild30.exe" 
 }
 
 task signMigrateDB(type:Exec) {
 	dependsOn "copyFiles"
 	workingDir file("${buildDir}/output")
-	commandLine System.getenv("SVWS_SIGNTOOL_PATH"), "sign", "/fd", "sha256", "/f", System.getenv("SVWS_CERTIFICATE_PATH"), "/p", System.getenv("SVWS_CERTIFICATE_PASSWORD"), "-tr", "http://sha256timestamp.ws.symantec.com/sha256/timestamp", "MigrateDB.exe" 
+	commandLine System.getenv("SVWS_SIGNTOOL_PATH"), "sign", "/fd", "sha256", "/f", System.getenv("SVWS_CERTIFICATE_PATH"), "/p", System.getenv("SVWS_CERTIFICATE_PASSWORD"), "-tr", "http://sha256timestamp.ws.symantec.com/sha256/timestamp", "-td", "sha256", "MigrateDB.exe" 
 }
 
 task signSchiLDDBConfig(type:Exec) {
 	dependsOn "copyFiles"
 	workingDir file("${buildDir}/output")
-	commandLine System.getenv("SVWS_SIGNTOOL_PATH"), "sign", "/fd", "sha256", "/f", System.getenv("SVWS_CERTIFICATE_PATH"), "/p", System.getenv("SVWS_CERTIFICATE_PASSWORD"), "-tr", "http://sha256timestamp.ws.symantec.com/sha256/timestamp", "SchiLD_DBConfig.exe" 
+	commandLine System.getenv("SVWS_SIGNTOOL_PATH"), "sign", "/fd", "sha256", "/f", System.getenv("SVWS_CERTIFICATE_PATH"), "/p", System.getenv("SVWS_CERTIFICATE_PASSWORD"), "-tr", "http://sha256timestamp.ws.symantec.com/sha256/timestamp", "-td", "sha256", "SchiLD_DBConfig.exe" 
 }
 
 task doZip(type: Zip) {
