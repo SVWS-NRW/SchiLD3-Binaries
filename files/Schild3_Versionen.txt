@@ -23,6 +23,13 @@ Version 1.0.11
 
 SchILD3
 ========
+Version 3.0.45
+--------------
+-Das Laden des Statistik-Gliederungskataloges wurde als erstes Beispiel für einen direkten API-Aufruf beim SVWS-Server umgesetzt. Das setzt natürlich voraus, dass der SVWS-Server auch erreichbar ist. Falls dies nicht der Fall ist, wird beim Start ein Fehlerprotokoll ausgegeben. Das Programm läuft aber trotzdem weiter. Der Gliederungskatalog wird bei den allgemeinen Angaben zur Schule verwendet.
+
+-Weitere Fehler aus Github behoben
+
+
 Version 3.0.44
 --------------
 -Der neue Halb- und Schuljahreswechsel war versehentlich nur in der Entwicklungsumgebung verfügbar, jetzt ist er freigeschaltet.
