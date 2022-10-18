@@ -23,6 +23,20 @@ Version 1.0.11
 
 SchILD3
 ========
+Version 3.0.46
+--------------
+-Der Zugriff aus folgende allgemeine Kataloge wurde umgestellt auf API-Aufrufe des SVWS-Servers:
+Schulgliederungen
+Förderschwerpunkte
+Verkehrssprachen
+Nationalitäten
+Straßen
+Konfessionen
+allgem. Merkmale
+
+Damit sind nicht die "schuleigenen" Kataloge gemeint (z.B. Schulgliederungen der eigenen Schule), sondern die "Basiskataloge", aus denen für die schuleigenen Kataloge ausgewählt wird.
+Wichtig: Damit das funktioniert muss die Version 0.2.18 des SVWS-Servers installiert sein.
+
 Version 3.0.45
 --------------
 -Das Laden des Statistik-Gliederungskataloges wurde als erstes Beispiel für einen direkten API-Aufruf beim SVWS-Server umgesetzt. Das setzt natürlich voraus, dass der SVWS-Server auch erreichbar ist. Falls dies nicht der Fall ist, wird beim Start ein Fehlerprotokoll ausgegeben. Das Programm läuft aber trotzdem weiter. Der Gliederungskatalog wird bei den allgemeinen Angaben zur Schule verwendet.
