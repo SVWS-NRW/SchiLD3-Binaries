@@ -23,6 +23,31 @@ Version 1.0.11
 
 SchILD3
 ========
+Version 3.0.47
+--------------
+Es wurden weitere Kataloge/Tabellen/Views auf API-Aufrufe des SVWS-Servers umgestellt:
+-Statkue_Fachklasse
+-Statkue_Einschulungsart
+-Statkue_Organisationsform
+-Schildintern_HSchStatus
+-Schildintern_Laender
+-Schildintern_PrfSemAbschl
+-Schildintern_AbiturInfos
+-Schildintern_Datenart
+-Schildintern_DQR_Niveaus
+-Schildintern_TextExport
+-Schildintern_FilterFehlendeEintraegeSchild3
+-Schildintern_UnicodeUmwandlung
+-Schildintern_Fachgruppen
+-SchulleitungFunktion
+-Klassenarten
+
+WICHTIG: Es muss die Version 0.2.21 des SVWS-Servers installiert sein
+
+Es wurde die Möglichkeit geschaffen, Datenquellen für die Reportausgabe dynamisch über einen API-Aufruf des SVWS-Servers zu erstellen. 
+
+Weitere Fehler aus Github behoben.
+
 Version 3.0.46
 --------------
 -Der Zugriff aus folgende allgemeine Kataloge wurde umgestellt auf API-Aufrufe des SVWS-Servers:
