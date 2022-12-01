@@ -40,6 +40,8 @@ Statkue_ZulFaecher
 Statkue_ZulJahrgaenge
 Statkue_ZulKuArt
 
+Bei den Lehrkräften wurde das Feld für den Masern-Impfnachweis entfernt.
+
 
 Version 3.0.49
 --------------
