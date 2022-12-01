@@ -27,6 +27,20 @@ Version 1.0.11
 
 SchILD3
 ========
+
+Version 3.0.50
+--------------
+Es wurden alle Schlüsseltabellen mit "Lehrer-Daten" auf API-Aufrufe des SVWS-Servers umgestellt. Noch nicht umgestellt sind folgende Tabellen:
+Statkue_Abgangsart
+Statkue_SchuelerErsteSchulformSekI
+Schildintern_K_Schulnote
+Statkue_Herkunftsart
+Statkue_Herkunftsschulform
+Statkue_ZulFaecher
+Statkue_ZulJahrgaenge
+Statkue_ZulKuArt
+
+
 Version 3.0.49
 --------------
 Es wurden weitere Kataloge/Tabellen/Views auf API-Aufrufe des SVWS-Servers umgestellt:
