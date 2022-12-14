@@ -27,6 +27,16 @@ Version 1.0.11
 
 SchILD3
 ========
+Version 3.0.51
+--------------
+Es wurden die folgenden Schlüsseltabellen auf PI-Aufrufe des SVWS-Servers umgestellt:
+Statkue_Abgangsart
+Statkue_SchuelerErsteSchulformSekI
+Schildintern_K_Schulnote
+Statkue_ZulFaecher
+Statkue_ZulJahrgaenge
+Statkue_ZulKuArt
+
 
 Version 3.0.50
 --------------
