@@ -1,5 +1,11 @@
+Hinweis: Alle Programm wurden auf die aktuelle Version 11.3 der Entwicklungsumgebung umgestellt.
+
 MigrateDB
 =========
+Version 1.0.15
+--------------
+-Im "Expertenmodus" wurde die Datenbank-Konfigurationsdatei (sdbcfg) manchmal zweimal angelegt (einmal mit dem Schema-Namen, einmal mit dem Namen der UDL-Datei, die dabei verwendet wurde). Nun korrigiert.
+
 Version 1.0.14
 --------------
 -Im "Expertenmodus" kann nun der Name der Datenbank-Konfigurationsdatei (sdbcfg) eingegeben werden, Vorgabe ist der jeweilige Schema-Name.
@@ -24,9 +30,23 @@ Version 1.0.11
 
 -Die erzeugten sdbcfg-Dateien werden nun im Arbeitsverzeichnis abgelegt. Das setzt voraus, dass das Programm im Verzeichnis von SchILD3.0 ausgeführt wird (um das Arbeitsverzeichnis ermitteln zu können).
 
+SchILD_DBConfig
+===============
+Version 2.0.5
+---------------
+-Es stehen jetzt nur noch die Datenbankformate "MARIADB" und "SQLITE" zur Verfügung
+
+-Es werden jetzt automatsich die Angaben aus der Datei  "C:\ProgramData\SVWS-Server\res\svwsconfig.json" ausgelesen (bzw. aus dem Verzeichnis, das bei der Installtion des SVWS-Servers als Datenverzeichnis angegeben wurde).
+
+-Das Programm ersetzt im Prinzip die Punkte 1 und 2 in MigrateDB.exe
+
 
 SchILD3
 ========
+Version 3.0.52
+--------------
+Es wurden auch die Schlüsseltabellen "Statkue_Herkunftsart" und "Statkue_Herkunftsschulform" auf API-Aufrufe umgestellt.
+
 Version 3.0.51
 --------------
 Es wurden die folgenden Schlüsseltabellen auf PI-Aufrufe des SVWS-Servers umgestellt:
