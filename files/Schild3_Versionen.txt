@@ -43,6 +43,10 @@ Version 2.0.5
 
 SchILD3
 ========
+Version 3.0.53
+--------------
+Durch die Umstellung auf die neue IDE kam es zu einem Fehler in einer Komponente, der sich u.a. bei Aufruf von Filter I äußerte. Nun behoben.
+
 Version 3.0.52
 --------------
 Es wurden auch die Schlüsseltabellen "Statkue_Herkunftsart" und "Statkue_Herkunftsschulform" auf API-Aufrufe umgestellt.
