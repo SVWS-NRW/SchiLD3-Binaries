@@ -43,6 +43,11 @@ Version 2.0.5
 
 SchILD3
 ========
+Version 3.0.54
+--------------
+-Einige Anpassungen für hochauflösende Monitore (noch nicht abgeschlossen!). Bitte prüfen, ob sich das Programm auf solchen Monitoren jetzt starten lässt.
+
+
 Version 3.0.53
 --------------
 Durch die Umstellung auf die neue IDE kam es zu einem Fehler in einer Komponente, der sich u.a. bei Aufruf von Filter I äußerte. Nun behoben.
