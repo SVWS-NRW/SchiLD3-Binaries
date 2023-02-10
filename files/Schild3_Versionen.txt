@@ -43,6 +43,19 @@ Version 2.0.5
 
 SchILD3
 ========
+Version 3.0.55
+--------------
+-Ergänzungen für Datenquellen, deren Definition dynamisch vom SVWS-Server geliefert werden (siehe https://github.com/SVWS-NRW/Schild3-BetaTest/issues/436)
+
+-Die Definitionen der für den Text-/Excel-Export verfügbaren Felder werden jetzt auch durch den SVWS-Server bereitgestellt. Wegen der geänderten Datenbankstruktur mussten dabei größere Anpassungen bei den Felddefinitionen gemacht werden. Daher bitte den Export mal testen. In Fällen, wo eine Abfrage für ein Feld zu einem Fehler führt, wird in die Exportdatei nicht der jeweilige Feldinhalt, sondern eine Fehlermeldung ausgegeben. Die Meldungen müssen gesammelt und in einer Folgeversion des SVWS-Servers korrigiert werden.
+
+-Klassen und Klassenleitungen
+Bei der Bearbeitung der Klassen ("Kataloge>>Klassen/Versetzungstabelle") kann jetzt auf jeden vergangenen Abschnitt zugegriffen werden (z.B. um nächträglich die Klassenleitungen zu bearbeiten).
+Auf dem Karteireiter "Akt. Halbjahr" werden nun die Klassenleitungen des betreffenden Abschnittes in einer kleinen Tabelle angezeigt, somit können hier auch mehr als zwei Personen erscheinen.
+Wichtig: Die Angaben können hier nicht geändert werden, es gibt keine "schülerbezogen" Eingabe der Klassenleitung mehr.
+
+-Weitere Fehler aus Github behoben.
+
 Version 3.0.54
 --------------
 -Einige Anpassungen für hochauflösende Monitore (noch nicht abgeschlossen!). Bitte prüfen, ob sich das Programm auf solchen Monitoren jetzt starten lässt.
