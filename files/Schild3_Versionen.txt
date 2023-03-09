@@ -51,6 +51,16 @@ Version 2.0.5
 
 SchILD3
 ========
+Version 3.0.59
+--------------
+-Bei der Durchführung der Gesamtprüfung für die Statistik kam es zu einem Fehler bei der PDF-Ausgabe und der Erstellung der Exportdateien. Grund war eine Inkompatibilität der Compilereinstellung von SchILD und den Statistik-Komponenten von IT-NRW. Nun funktioniert es.
+
+-Weitere Ergänzungen für Datenquellen, deren Definition dynamisch vom SVWS-Server geliefert werden (siehe https://github.com/SVWS-NRW/Schild3-BetaTest/issues/436). 
+
+-Bestimmte Programmeinstellungen (Breite von Tabellenspalten, Splitter-Positionen) werden nun unabhängig von der jeweiligen Bildschirmauflösung gespeichert.
+
+-Weitere Fehler aus Github behoben.
+
 Version 3.0.56
 --------------
 -Das Verzeichnis <SVWS-Arbeitsverzeichnis>\sdbcfg wurde auf <SVWS-Arbeitsverzeichnis>\Connection-Files, die Dateiendung der Datenbankkonfigurationsdateien auf .con umgestellt.
