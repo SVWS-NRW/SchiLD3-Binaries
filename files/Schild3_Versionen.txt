@@ -51,6 +51,14 @@ Version 2.0.5
 
 SchILD3
 ========
+Version 3.0.60
+--------------
+-Die Sortierung der neuen dynamischen Datenquellen arbeitete manchmal nicht korrekt, nun behoben
+
+-Letzte "dpi-aware" Version. Die dynamische Anpassung an die Bildschirmauflösung bringt nach allen Erfahrungen nur Probleme, daher wird in Zukunft wieder auf das nicht ganz so elegante, aber gut funktionierende Verfahren ähnlich wie in SchILD2 zurückgestellt. Bis dahein brauchen Darstellungsprobleme nicht mehr gemeldet zu werden.
+
+-Weitere Fehler aus Github behoben.
+ 
 Version 3.0.59
 --------------
 -Bei der Durchführung der Gesamtprüfung für die Statistik kam es zu einem Fehler bei der PDF-Ausgabe und der Erstellung der Exportdateien. Grund war eine Inkompatibilität der Compilereinstellung von SchILD und den Statistik-Komponenten von IT-NRW. Nun funktioniert es.
