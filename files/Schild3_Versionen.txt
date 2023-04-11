@@ -51,6 +51,18 @@ Version 2.0.5
 
 SchILD3
 ========
+Version 3.0.63
+--------------
+-Die Anwendung ist nun nicht mehr "dpi-aware", das sollte dazu führen, dass der Wechsel zu einer anderen Bildschirm-Ausflösung nun flüssiger abläuft und viele der genannten Darstellungsprobleme behoben sind.
+
+-Es wird nun eine neue "Ribbon-Komponenten" verwendet, diese ist besser konfigurierbar als die bisherige. 
+
+-Die Liste der "Actions" wurde aufgeräumt, die Beschriftungen und Icons der meisten Schaltflächen können über eine kleinen externe Datenbank (Schild_Icons.db3 im Verzeichnis \Keytabs) konfiguriert werden, ohne dass eine Änderung im Programmcode notwendig ist.
+
+-Die Reportvorlagen für den "Schnellzugriff" werden nun personen-bezogen verwaltet. Es können aber nur Reportvorlage in die Schnellzugriffsliste übernommen werden, die im Verzeichnis "\SchILD-Reports\Standard\Schnellzugriff" liegen.
+
+-Weitere Fehler aus Github behoben.
+
 Version 3.0.60
 --------------
 -Die Sortierung der neuen dynamischen Datenquellen arbeitete manchmal nicht korrekt, nun behoben
