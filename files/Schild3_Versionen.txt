@@ -51,6 +51,12 @@ Version 2.0.5
 
 SchILD3
 ========
+Version 3.0.64
+--------------
+-Bei den Verkehrssprachen war versehentlich ein falsches Schlüsselfeld verwendet worden, so dass die aus SchILD2 übernommenen Einträge nicht angezeigt wurden, nun korrigiert.
+
+-Weitere Fehler aus Github behoben.
+
 Version 3.0.63
 --------------
 -Die Anwendung ist nun nicht mehr "dpi-aware", das sollte dazu führen, dass der Wechsel zu einer anderen Bildschirm-Ausflösung nun flüssiger abläuft und viele der genannten Darstellungsprobleme behoben sind.
