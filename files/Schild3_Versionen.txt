@@ -56,7 +56,9 @@ Version 3.0.66
 -Die Markierung und die Filterung auf dieselbe wurde nach einem Brainstorming nochmal überarbeitet. Die "temporäre Schülerliste" ist wieder entfernt worden, dafür wird aber die "Häkchen-Markierung" für die Dauer der Sitzung intern gespeichert. Die Markierungen können dauerhaft gespeichert werden, bei Programmende erscheint eine entsprechende Abfrage (sofern Markierungen vorhanden sind). 
 Wichtig: Die Speicherung erfolgt benutzer-bezogen.
 
-Bitte mal testen. 
+Bitte mal testen.
+
+-Direkt nach einer Migration wurde bei einer Neueingabe das kommende Schuljahr nicht korrekt bezeichnet (im Fenster, wo das Schuljahr ausgewählt wird), nun behoben.
 
 
 Version 3.0.65
