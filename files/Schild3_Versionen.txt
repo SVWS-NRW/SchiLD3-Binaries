@@ -51,6 +51,14 @@ Version 2.0.5
 
 SchILD3
 ========
+Version 3.0.66
+--------------
+-Die Markierung und die Filterung auf dieselbe wurde nach einem Brainstorming nochmal überarbeitet. Die "temporäre Schülerliste" ist wieder entfernt worden, dafür wird aber die "Häkchen-Markierung" für die Dauer der Sitzung intern gespeichert. Die Markierungen können dauerhaft gespeichert werden, bei Programmende erscheint eine entsprechende Abfrage (sofern Markierungen vorhanden sind). 
+Wichtig: Die Speicherung erfolgt benutzer-bezogen.
+
+Bitte mal testen. 
+
+
 Version 3.0.65
 --------------
 -Testweise wurde die Option geschaffen eine "temporäre Schülerliste" zu verwalten. Diese ist vergleichbar mit der aus SchILD2 bekannten "dauerhaften" Markierung (und wird auch z.B. über Doppelklick aktiviert). Im Gegensatz zu SchILD2 ist das nun aber auf die Dauer der Sitzung beschränkt. Es gibt damit folgende Möglichkeiten, bestimmte Datensätze individuell zu markieren:
