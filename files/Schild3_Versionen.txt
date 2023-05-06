@@ -44,14 +44,23 @@ Version 2.0.5
 ---------------
 -Es stehen jetzt nur noch die Datenbankformate "MARIADB" und "SQLITE" zur Verfügung
 
--Es werden jetzt automatsich die Angaben aus der Datei  "C:\ProgramData\SVWS-Server\res\svwsconfig.json" ausgelesen (bzw. aus dem Verzeichnis, das bei der Installtion des SVWS-Servers als Datenverzeichnis angegeben wurde).
+-Es werden jetzt automatisch die Angaben aus der Datei  "C:\ProgramData\SVWS-Server\res\svwsconfig.json" ausgelesen (bzw. aus dem Verzeichnis, das bei der Installtion des SVWS-Servers als Datenverzeichnis angegeben wurde).
 
 -Das Programm ersetzt im Prinzip die Punkte 1 und 2 in MigrateDB.exe
 
 
 SchILD3
 ========
-Version 3.0.66
+Version 3.0.68
+--------------
+-Beim Export für die Statistik kam es zu merkwürdigen Fehlermeldungen, die möglicherweises auf den für den Datenbankzugriff (auf die StatistikDB.mdb) verwendeten Access-ODBC-Treiber zurückzuführen sind. Daher wurde der Datenbankzugriff für den Statistik-Export wieder auf ADO geändert (wie auch in SchILD2).
+
+-Bei den Programmeinstellungen ("Verwaltung>>Einstellungen>>Globale Einstellungen") können jetzt Ortsnamen definiert werden, für die beim Start des Programmes die Straßennamen aus dem NRW-Straßenkatalog geladen werden sollen. In der Regel wird man darin die eigene Kommune und einige benachbarte Kommunen eintragen. Dadurch kann der Speicherbedarf des Programmes drastisch reduziert werden (gegenüber dem Laden aller NRW-Straßen).
+
+-Weitere Fehler aus Github behoben.
+
+
+Version 3.0.67
 --------------
 -Die Markierung und die Filterung auf dieselbe wurde nach einem Brainstorming nochmal überarbeitet. Die "temporäre Schülerliste" ist wieder entfernt worden, dafür wird aber die "Häkchen-Markierung" für die Dauer der Sitzung intern gespeichert. Die Markierungen können dauerhaft gespeichert werden, bei Programmende erscheint eine entsprechende Abfrage (sofern Markierungen vorhanden sind). 
 Wichtig: Die Speicherung erfolgt benutzer-bezogen.
