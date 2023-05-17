@@ -51,6 +51,17 @@ Version 2.0.5
 
 SchILD3
 ========
+Version 3.0.69
+--------------
+-Beim Laden der Gliederungsangaben vom SVWS-Server kam es zu einer Fehlermeldung, wenn bei einer Gliederung ein Wert für "Gültig von" oder "Gültig Bis" übergeben wurde. Nun behoben.
+
+-Bei der Neuanlage eines "Schuljahresabschnittes" werden nun bei den neuen Klassen-Datensätzen die Klassenleitungen wie folgt aus dem aktuellen Abschnitt übernommen:
+Wenn bei einer Klasse eine Folgeklasse eingetragen ist, wird im neuen Abschnitt diese Klassenleitung der Folgeklasse zugeordnet (Beispiel: Klassenleitung der aktuellen 05a wird zur Klassenleitung der neuen 06a, wenn diese die Folgeklasse ist)
+Wenn bei einer Klasse keine  Folgeklasse eingetragen ist oder die Klasse ihre eigene Folgeklasse ist, wird die Klassenleitung übernommen
+
+-Weitere Fehler aus Github behoben.
+
+
 Version 3.0.68
 --------------
 -Beim Export für die Statistik kam es zu merkwürdigen Fehlermeldungen, die möglicherweises auf den für den Datenbankzugriff (auf die StatistikDB.mdb) verwendeten Access-ODBC-Treiber zurückzuführen sind. Daher wurde der Datenbankzugriff für den Statistik-Export wieder auf ADO geändert (wie auch in SchILD2).
