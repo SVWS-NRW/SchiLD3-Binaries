@@ -36,6 +36,10 @@ Version 1.0.11
 
 SchILD_DBConfig
 ===============
+Version 2.0.7
+--------------
+-Wenn für den SVWS-Server eine vom Standard (443) abweichende Portangabe verwendet wurde, so wurde diese nicht korrekt in der Konfigurationsdatei gespeichert, nun korrigiert.
+
 Version 2.0.6
 --------------
 -Das Verzeichnis <SVWS-Arbeitsverzeichnis>\sdbcfg wurde auf <SVWS-Arbeitsverzeichnis>\Connection-Files, die Dateiendung der Datenbankkonfigurationsdateien auf .con umgestellt.
@@ -51,6 +55,14 @@ Version 2.0.5
 
 SchILD3
 ========
+Version 3.0.70
+--------------
+-Beim Filtern von Schülern und Lehrkräften auf Statistik-Fehler kam es zu einer Fehlermeldung. Nun behoben.
+
+-Beim Start wird nun geprüft, ob im Programmverzeichnis eine Datei "server.json" liegt. Diese enhält die Information, welche Version des SVWS-Servers vom Programm erwartet wird. Wenn die Datei existiert und die gefundene Version von der erwarteten abweicht, erscheint eine Meldung "Die vorliegende Version des SVWS-Servers ist eine andere als die Version, die vom Programm erwartet wird. Dies kann zu Problemen führen.".
+
+-Weitere Fehler aus Github behoben.
+
 Version 3.0.69
 --------------
 -Beim Laden der Gliederungsangaben vom SVWS-Server kam es zu einer Fehlermeldung, wenn bei einer Gliederung ein Wert für "Gültig von" oder "Gültig Bis" übergeben wurde. Nun behoben.
