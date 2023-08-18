@@ -57,6 +57,14 @@ SchILD3
 ========
 Version 3.0.70
 --------------
+-Neue Optionen für das Sichern und Wiederherstellen von Datenbanken (Eintrag "Datenbank" unter "Verwaltung"). Derzeit ist das Sichern (als SQLite-Datei) und das Wiederherstellen aus eine SQLite-Datei umgesetzt. 
+
+-Programmeinstellungen: Die Einstellungen werden nun über API-Aufrufe vom SVWS-Server geholt. Wichtig: Dazu ist die SVWS-Server-Version ab 0.6.17 notwendig!
+
+-Weitere Fehler aus Github behoben.
+
+Version 3.0.70
+--------------
 -Beim Filtern von Schülern und Lehrkräften auf Statistik-Fehler kam es zu einer Fehlermeldung. Nun behoben.
 
 -Beim Start wird nun geprüft, ob im Programmverzeichnis eine Datei "server.json" liegt. Diese enhält die Information, welche Version des SVWS-Servers vom Programm erwartet wird. Wenn die Datei existiert und die gefundene Version von der erwarteten abweicht, erscheint eine Meldung "Die vorliegende Version des SVWS-Servers ist eine andere als die Version, die vom Programm erwartet wird. Dies kann zu Problemen führen.".
