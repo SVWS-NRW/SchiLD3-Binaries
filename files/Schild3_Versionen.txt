@@ -55,6 +55,14 @@ Version 2.0.5
 
 SchILD3
 ========
+Version 3.0.71
+--------------
+-Weitere Datenbank-Funktionen umgesetzt
+
+-Der Wechsel der verschiedenen Karteireiter/Menüpunkte wurde nochmals überarbeitet, da es beim Klicken z.B. durch die Kataloge manchmal zu Fehlern kam. Bitte testen.
+
+-Weitere Fehler aus Github behoben.
+
 Version 3.0.70
 --------------
 -Neue Optionen für das Sichern und Wiederherstellen von Datenbanken (Eintrag "Datenbank" unter "Verwaltung"). Derzeit ist das Sichern (als SQLite-Datei) und das Wiederherstellen aus eine SQLite-Datei umgesetzt. 
