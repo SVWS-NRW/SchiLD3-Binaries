@@ -1,0 +1,19 @@
+Hinweis: Alle Programme wurden auf die aktuelle Version 11.3 der Entwicklungsumgebung umgestellt.
+
+SchILD_DBConfig
+===============
+Version 2.0.7
+--------------
+-Wenn für den SVWS-Server eine vom Standard (443) abweichende Portangabe verwendet wurde, so wurde diese nicht korrekt in der Konfigurationsdatei gespeichert, nun korrigiert.
+
+Version 2.0.6
+--------------
+-Das Verzeichnis <SVWS-Arbeitsverzeichnis>\sdbcfg wurde auf <SVWS-Arbeitsverzeichnis>\Connection-Files, die Dateiendung der Datenbankkonfigurationsdateien auf .con umgestellt.
+
+Version 2.0.5
+---------------
+-Es stehen jetzt nur noch die Datenbankformate "MARIADB" und "SQLITE" zur Verfügung
+
+-Es werden jetzt automatisch die Angaben aus der Datei  "C:\ProgramData\SVWS-Server\res\svwsconfig.json" ausgelesen (bzw. aus dem Verzeichnis, das bei der Installtion des SVWS-Servers als Datenverzeichnis angegeben wurde).
+
+-Das Programm ersetzt im Prinzip die Punkte 1 und 2 in MigrateDB.exe
