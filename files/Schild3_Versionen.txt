@@ -55,7 +55,7 @@ Version 2.0.5
 
 SchILD3
 ========
-Version 3.0.71
+Version 3.0.72
 --------------
 -Weitere Datenbank-Funktionen umgesetzt
 
