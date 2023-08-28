@@ -1,60 +1,8 @@
-Hinweis: Alle Programm wurden auf die aktuelle Version 11.3 der Entwicklungsumgebung umgestellt.
-
-MigrateDB
-=========
-Version 1.0.16
---------------
--Das Verzeichnis <SVWS-Arbeitsverzeichnis>\sdbcfg wurde auf <SVWS-Arbeitsverzeichnis>\Connection-Files, die Dateiendung der Datenbankkonfigurationsdateien auf .con umgestellt.
-
-Version 1.0.15
---------------
--Im "Expertenmodus" wurde die Datenbank-Konfigurationsdatei (sdbcfg) manchmal zweimal angelegt (einmal mit dem Schema-Namen, einmal mit dem Namen der UDL-Datei, die dabei verwendet wurde). Nun korrigiert.
-
-Version 1.0.14
---------------
--Im "Expertenmodus" kann nun der Name der Datenbank-Konfigurationsdatei (sdbcfg) eingegeben werden, Vorgabe ist der jeweilige Schema-Name.
-
-Version 1.0.13
---------------
--Im "Expertenmodus" wurde das Arbeitsverzeichnis nicht korrekt ermittelt, nun korrigiert.
-
-Version 1.0.12
---------------
--Es steht ein weiterer "Use case" zur Verfügung:
-"Lokale Programminstallation, Datenbank läuft auf Server"
-Bei dieser Option sind alle Parameter manuell einzugeben, da ja kein Zugriff auf die Konfigurationsdatei des SVWS-Servers besteht.
-
-
-Version 1.0.11
---------------
--Es stehen jetzt drei "Use cases" zur Verfügung.
-	1. Installation auf Einzelplatzrechner
-	2. Installation auf einem Server der Schule
-	3. Expertenmodus I
-
--Die erzeugten sdbcfg-Dateien werden nun im Arbeitsverzeichnis abgelegt. Das setzt voraus, dass das Programm im Verzeichnis von SchILD3.0 ausgeführt wird (um das Arbeitsverzeichnis ermitteln zu können).
-
-SchILD_DBConfig
-===============
-Version 2.0.7
---------------
--Wenn für den SVWS-Server eine vom Standard (443) abweichende Portangabe verwendet wurde, so wurde diese nicht korrekt in der Konfigurationsdatei gespeichert, nun korrigiert.
-
-Version 2.0.6
---------------
--Das Verzeichnis <SVWS-Arbeitsverzeichnis>\sdbcfg wurde auf <SVWS-Arbeitsverzeichnis>\Connection-Files, die Dateiendung der Datenbankkonfigurationsdateien auf .con umgestellt.
-
-Version 2.0.5
----------------
--Es stehen jetzt nur noch die Datenbankformate "MARIADB" und "SQLITE" zur Verfügung
-
--Es werden jetzt automatisch die Angaben aus der Datei  "C:\ProgramData\SVWS-Server\res\svwsconfig.json" ausgelesen (bzw. aus dem Verzeichnis, das bei der Installtion des SVWS-Servers als Datenverzeichnis angegeben wurde).
-
--Das Programm ersetzt im Prinzip die Punkte 1 und 2 in MigrateDB.exe
-
+Hinweis: Alle Programme wurden auf die aktuelle Version 11.3 der Entwicklungsumgebung umgestellt.
 
 SchILD3
 ========
+
 Version 3.0.72
 --------------
 -Weitere Datenbank-Funktionen umgesetzt
@@ -63,7 +11,7 @@ Version 3.0.72
 
 -Weitere Fehler aus Github behoben.
 
-Version 3.0.70
+Version 3.0.71
 --------------
 -Neue Optionen für das Sichern und Wiederherstellen von Datenbanken (Eintrag "Datenbank" unter "Verwaltung"). Derzeit ist das Sichern (als SQLite-Datei) und das Wiederherstellen aus eine SQLite-Datei umgesetzt. 
 
