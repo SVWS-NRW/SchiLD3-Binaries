@@ -1,5 +1,3 @@
-Hinweis: Alle Programme wurden auf die aktuelle Version 11.3 der Entwicklungsumgebung umgestellt.
-
 SchILD3
 ========
 
