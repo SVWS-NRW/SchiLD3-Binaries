@@ -1,5 +1,8 @@
 SchILD3
 ========
+Version 3.0.73
+--------------
+-Anpassungen an Version 0.7 des SVWS-Servers
 
 Version 3.0.72
 --------------
