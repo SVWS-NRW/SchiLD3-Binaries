@@ -1,5 +1,11 @@
 SchILD3
 ========
+Version 3.0.74
+--------------
+-Die Spaltenbreiten von Standard-Katalogen (ohne eigenes Anzeigefenster) werden nun mit einem verbesserten Algorithmus ermittelt. Um das testen zu können, ist es notwendig, die vorhandenen Einträge in der Registry zu löschen, entweder über regedit.exe (Schlüssel ist HKEY_CURRENT_USER\Software\Schild3000) oder in den Programmeinstellungen von SchILD (Schalter "Individuelle Einstellungen ...zurücksetzen").
+
+-Weitere Fehler aus Github behoben.
+
 Version 3.0.73
 --------------
 -Anpassungen an Version 0.7 des SVWS-Servers
