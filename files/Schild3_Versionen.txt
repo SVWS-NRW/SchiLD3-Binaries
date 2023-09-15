@@ -1,5 +1,17 @@
 SchILD3
 ========
+Version 3.0.75
+--------------
+-Diverse Issues aus Github bearbeitet.
+
+-Die Fenster für die folgenden Export sind nun in das Hauptfenster integriert (keine "schwebenden" Fenster mehr):
+Logineo NRW
+Logineo LMS
+Iserv
+Microsoft Teams
+
+
+
 Version 3.0.74
 --------------
 -Die Spaltenbreiten von Standard-Katalogen (ohne eigenes Anzeigefenster) werden nun mit einem verbesserten Algorithmus ermittelt. Um das testen zu können, ist es notwendig, die vorhandenen Einträge in der Registry zu löschen, entweder über regedit.exe (Schlüssel ist HKEY_CURRENT_USER\Software\Schild3000) oder in den Programmeinstellungen von SchILD (Schalter "Individuelle Einstellungen ...zurücksetzen").
