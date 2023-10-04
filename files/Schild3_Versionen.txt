@@ -1,5 +1,12 @@
 SchILD3
 ========
+Version 3.0.76
+--------------
+-Diverse Issues aus Github bearbeitet.
+
+-Die in SchILD2 durchgeführten Anpassungen an die neuen Prüfungsordnungen wurden nun auch in SchILD3 umgesetzt.
+
+
 Version 3.0.75
 --------------
 -Diverse Issues aus Github bearbeitet.
@@ -9,7 +16,6 @@ Logineo NRW
 Logineo LMS
 Iserv
 Microsoft Teams
-
 
 
 Version 3.0.74
