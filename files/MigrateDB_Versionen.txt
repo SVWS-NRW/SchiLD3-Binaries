@@ -1,7 +1,9 @@
-Hinweis: Alle Programme wurden auf die aktuelle Version 11.3 der Entwicklungsumgebung umgestellt.
-
 MigrateDB
 =========
+Version 1.0.18
+--------------
+-Anpassungen an Version 0.7.8 des SVWS-Servers
+
 Version 1.0.16
 --------------
 -Das Verzeichnis <SVWS-Arbeitsverzeichnis>\sdbcfg wurde auf <SVWS-Arbeitsverzeichnis>\Connection-Files, die Dateiendung der Datenbankkonfigurationsdateien auf .con umgestellt.

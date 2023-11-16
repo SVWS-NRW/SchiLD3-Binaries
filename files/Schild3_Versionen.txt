@@ -1,5 +1,16 @@
 SchILD3
 ========
+Version 3.0.77
+--------------
+-Anpassungen an Version 0.7.8 des SVWS-Servers
+
+-Es ist nun ein Benutzerkennwort zwingend notwendig
+
+-Neuanmeldungen im 1. Hj. an Grundschulen für nächstes Schuljahr überarbeitet
+
+-Diverse Issues aus Github bearbeitet.
+
+
 Version 3.0.76
 --------------
 -Diverse Issues aus Github bearbeitet.
