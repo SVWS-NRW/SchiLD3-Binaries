@@ -1,5 +1,11 @@
 SchILD3
 ========
+Version 3.0.78
+--------------
+-Die zwingende Notwendigkeit eines Benutzerkennwortes wurde wieder deaktiviert. Diese war eingeführt worden, weil ein Wiederherstellen der Datenbank aus einer SQlite-Sicherung ohne Benutzerkennwort zu einer Fehlermeldung führt. Stattdessen wird nun beim Versuch, eine Sicherung einzuspielen, geprüft, ob ein Benutzerkennwort vorhanden ist. Falls das nicht so ist, wird die Meldung "Ein Wiederherstellen ist ohne Benutzerkennwort nicht möglich!" ausgegeben.
+
+-Es gibt nun bei den individuellen Einstellungen die Möglichkeit, die Farbe der Überschriften bei statistik-relevanten Feldern auszuwählen.
+
 Version 3.0.77
 --------------
 -Anpassungen an Version 0.7.8 des SVWS-Servers
