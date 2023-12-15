@@ -2,6 +2,10 @@ Hinweis: Alle Programme wurden auf die aktuelle Version 11.3 der Entwicklungsumg
 
 SchILD_DBConfig
 ===============
+Version 2.0.10
+--------------
+-Unter bestimmten Bedingungen wurden beim Laden einer .con-Datei die Parameter nicht korrekt ausgewertet. Nun Korrigiert.
+
 Version 2.0.7
 --------------
 -Wenn für den SVWS-Server eine vom Standard (443) abweichende Portangabe verwendet wurde, so wurde diese nicht korrekt in der Konfigurationsdatei gespeichert, nun korrigiert.

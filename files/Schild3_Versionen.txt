@@ -1,5 +1,18 @@
 SchILD3
 ========
+Version 3.0.79
+--------------
+-Schülerfilter:
+Die "Comboboxen mit Checkliste" wurden um einige Eigenschaften erweitert:
+-Wenn man einen Buchstaben eintippt, geht die Liste automatisch auf und springt zu dem ersten Eintrag, der mit dem eingegebenen Text übereinstimmt
+-Über "Esc" kann man die Liste wieder schließen
+-Wenn man bei aufgeklappter Liste die "Enter"-Taste drückt, wird das Häkchen beim ausgewählten Eintrag aktiviert bzw. deaktiviert (je nach Zustand)
+-Mit den Pfeiltasten kann man sich in der Liste bewegen
+-Über die "Entf"-Taste können alle Häkchen zurückgesetzt werden.
+
+-Diverse Issues aus Github bearbeitet.
+
+
 Version 3.0.78
 --------------
 -Die zwingende Notwendigkeit eines Benutzerkennwortes wurde wieder deaktiviert. Diese war eingeführt worden, weil ein Wiederherstellen der Datenbank aus einer SQlite-Sicherung ohne Benutzerkennwort zu einer Fehlermeldung führt. Stattdessen wird nun beim Versuch, eine Sicherung einzuspielen, geprüft, ob ein Benutzerkennwort vorhanden ist. Falls das nicht so ist, wird die Meldung "Ein Wiederherstellen ist ohne Benutzerkennwort nicht möglich!" ausgegeben.
