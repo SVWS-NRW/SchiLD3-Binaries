@@ -1,5 +1,18 @@
 SchILD3
 ========
+Version 3.0.80
+--------------
+-Einige Korrekturen/Anpassungen für den BK-Bereich
+
+-Das Schullogo wird nun in einer separaten Tabelle verwaltet
+
+-Die Programmeinstellungen aus SchILD2 werden vom SVWS-Server nun in einen anderen Bereich der Datenbank migriert, aus diesem werden die Einstellungen nun beim ersten Start von SchILD3 geladen
+
+-Diverse Issues aus Github bearbeitet.
+
+-Wichtig: Diese Version benötigt die Version "0.8.8" (oder höher) des SVWS-Servers
+
+
 Version 3.0.79
 --------------
 -Schülerfilter:
