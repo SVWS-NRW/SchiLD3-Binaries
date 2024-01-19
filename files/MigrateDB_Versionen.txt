@@ -1,5 +1,9 @@
 MigrateDB
 =========
+Version 1.0.19
+--------------
+-Einige Überschriftungen und Meldungen wurden vereinheitlicht
+
 Version 1.0.18
 --------------
 -Anpassungen an Version 0.7.8 des SVWS-Servers

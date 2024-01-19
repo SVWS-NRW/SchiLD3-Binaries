@@ -1,5 +1,11 @@
 SchILD3
 ========
+Version 3.0.81
+--------------
+-Wenn bei der Migration keine Programmeinstellungen aus SchILD2 übernommmen wurden (kann bi frisch anonymisierten Datenbanken der Fall) sein, hing sich SchILD3 beim Start in einer Endlosschleife auf,, nun korrigiert.
+
+-Das Layout des Kataloges "Klassen/Versetzungstabelle" wurde optimiert
+
 Version 3.0.80
 --------------
 -Einige Korrekturen/Anpassungen für den BK-Bereich
