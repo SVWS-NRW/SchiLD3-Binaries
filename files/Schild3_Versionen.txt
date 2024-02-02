@@ -1,148 +1,147 @@
-SchILD3
-========
-Version 3.0.82
---------------
--Bei der tabllersichen Zuwesiung von Kursen trat ein Fehler auf, nun behoben
+# SchILD3
 
--Einige Layout-Änderungen der Benutzeroberfläche
+## Version 3.0.82
+
+- Bei der tabellarischen Zuweisung von Kursen trat ein Fehler auf, nun behoben
+
+- Einige Layout-Änderungen der Benutzeroberfläche
+
+- Diverse Issues aus Github bearbeitet.
+
+- Versionsgeschichte auf MarkDown umgestellt.
+
+## Version 3.0.81
+
+- Wenn bei der Migration keine Programmeinstellungen aus SchILD2 übernommmen wurden (kann bei frisch anonymisierten Datenbanken der Fall) sein, hing sich SchILD3 beim Start in einer Endlosschleife auf,, nun korrigiert.
+
+- Das Layout des Kataloges "Klassen/Versetzungstabelle" wurde optimiert
+
+
+## Version 3.0.80
+
+- Einige Korrekturen/Anpassungen für den BK-Bereich
+
+- Das Schullogo wird nun in einer separaten Tabelle verwaltet
+
+- Die Programmeinstellungen aus SchILD2 werden vom SVWS-Server nun in einen anderen Bereich der Datenbank migriert, aus diesem werden die Einstellungen nun beim ersten Start von SchILD3 geladen
+
+- Diverse Issues aus Github bearbeitet.
+
+-Wichtig: Diese ## Version benötigt die ## Version "0.8.8" (oder höher) des SVWS-Servers
+
+
+## Version 3.0.79
+
+- Schülerfilter: Die "Comboboxen mit Checkliste" wurden um einige Eigenschaften erweitert:
+	- Wenn man einen Buchstaben eintippt, geht die Liste automatisch auf und springt zu dem ersten Eintrag, der mit dem eingegebenen Text übereinstimmt
+	- Über "Esc" kann man die Liste wieder schließen
+	- Wenn man bei aufgeklappter Liste die "Enter"-Taste drückt, wird das Häkchen beim ausgewählten Eintrag aktiviert bzw. deaktiviert (je nach Zustand)
+	- Mit den Pfeiltasten kann man sich in der Liste bewegen
+	- Über die "Entf"-Taste können alle Häkchen zurückgesetzt werden.
 
 -Diverse Issues aus Github bearbeitet.
 
 
-Version 3.0.81
---------------
--Wenn bei der Migration keine Programmeinstellungen aus SchILD2 übernommmen wurden (kann bei frisch anonymisierten Datenbanken der Fall) sein, hing sich SchILD3 beim Start in einer Endlosschleife auf,, nun korrigiert.
+## Version 3.0.78
 
--Das Layout des Kataloges "Klassen/Versetzungstabelle" wurde optimiert
+- Die zwingende Notwendigkeit eines Benutzerkennwortes wurde wieder deaktiviert. Diese war eingeführt worden, weil ein Wiederherstellen der Datenbank aus einer SQlite-Sicherung ohne Benutzerkennwort zu einer Fehlermeldung führt. Stattdessen wird nun beim Versuch, eine Sicherung einzuspielen, geprüft, ob ein Benutzerkennwort vorhanden ist. Falls das nicht so ist, wird die Meldung "Ein Wiederherstellen ist ohne Benutzerkennwort nicht möglich!" ausgegeben.
 
-Version 3.0.80
---------------
--Einige Korrekturen/Anpassungen für den BK-Bereich
+- Es gibt nun bei den individuellen Einstellungen die Möglichkeit, die Farbe der Überschriften bei statistik-relevanten Feldern auszuwählen.
 
--Das Schullogo wird nun in einer separaten Tabelle verwaltet
+## Version 3.0.77
 
--Die Programmeinstellungen aus SchILD2 werden vom SVWS-Server nun in einen anderen Bereich der Datenbank migriert, aus diesem werden die Einstellungen nun beim ersten Start von SchILD3 geladen
+- Anpassungen an ## Version 0.7.8 des SVWS-Servers
 
--Diverse Issues aus Github bearbeitet.
-
--Wichtig: Diese Version benötigt die Version "0.8.8" (oder höher) des SVWS-Servers
-
-
-Version 3.0.79
---------------
--Schülerfilter:
-Die "Comboboxen mit Checkliste" wurden um einige Eigenschaften erweitert:
--Wenn man einen Buchstaben eintippt, geht die Liste automatisch auf und springt zu dem ersten Eintrag, der mit dem eingegebenen Text übereinstimmt
--Über "Esc" kann man die Liste wieder schließen
--Wenn man bei aufgeklappter Liste die "Enter"-Taste drückt, wird das Häkchen beim ausgewählten Eintrag aktiviert bzw. deaktiviert (je nach Zustand)
--Mit den Pfeiltasten kann man sich in der Liste bewegen
--Über die "Entf"-Taste können alle Häkchen zurückgesetzt werden.
-
--Diverse Issues aus Github bearbeitet.
-
-
-Version 3.0.78
---------------
--Die zwingende Notwendigkeit eines Benutzerkennwortes wurde wieder deaktiviert. Diese war eingeführt worden, weil ein Wiederherstellen der Datenbank aus einer SQlite-Sicherung ohne Benutzerkennwort zu einer Fehlermeldung führt. Stattdessen wird nun beim Versuch, eine Sicherung einzuspielen, geprüft, ob ein Benutzerkennwort vorhanden ist. Falls das nicht so ist, wird die Meldung "Ein Wiederherstellen ist ohne Benutzerkennwort nicht möglich!" ausgegeben.
-
--Es gibt nun bei den individuellen Einstellungen die Möglichkeit, die Farbe der Überschriften bei statistik-relevanten Feldern auszuwählen.
-
-Version 3.0.77
---------------
--Anpassungen an Version 0.7.8 des SVWS-Servers
-
--Es ist nun ein Benutzerkennwort zwingend notwendig
+- Es ist nun ein Benutzerkennwort zwingend notwendig
 
 -Neuanmeldungen im 1. Hj. an Grundschulen für nächstes Schuljahr überarbeitet
 
+- Diverse Issues aus Github bearbeitet.
+
+
+## Version 3.0.76
+
 -Diverse Issues aus Github bearbeitet.
 
+- Die in SchILD2 durchgeführten Anpassungen an die neuen Prüfungsordnungen wurden nun auch in SchILD3 umgesetzt.
 
-Version 3.0.76
---------------
+
+## Version 3.0.75
+
 -Diverse Issues aus Github bearbeitet.
 
--Die in SchILD2 durchgeführten Anpassungen an die neuen Prüfungsordnungen wurden nun auch in SchILD3 umgesetzt.
+- Die Fenster für die folgenden Export sind nun in das Hauptfenster integriert (keine "schwebenden" Fenster mehr):
+	- Logineo NRW
+	- Logineo LMS
+	- Iserv
+	- Microsoft Teams
 
 
-Version 3.0.75
---------------
--Diverse Issues aus Github bearbeitet.
+## Version 3.0.74
 
--Die Fenster für die folgenden Export sind nun in das Hauptfenster integriert (keine "schwebenden" Fenster mehr):
-Logineo NRW
-Logineo LMS
-Iserv
-Microsoft Teams
+- Die Spaltenbreiten von Standard- Katalogen (ohne eigenes Anzeigefenster) werden nun mit einem verbesserten Algorithmus ermittelt. Um das testen zu können, ist es notwendig, die vorhandenen Einträge in der Registry zu löschen, entweder über regedit.exe (Schlüssel ist HKEY_CURRENT_USER\Software\Schild3000) oder in den Programmeinstellungen von SchILD (Schalter "Individuelle Einstellungen ...zurücksetzen").
 
+- Weitere Fehler aus Github behoben.
 
-Version 3.0.74
---------------
--Die Spaltenbreiten von Standard-Katalogen (ohne eigenes Anzeigefenster) werden nun mit einem verbesserten Algorithmus ermittelt. Um das testen zu können, ist es notwendig, die vorhandenen Einträge in der Registry zu löschen, entweder über regedit.exe (Schlüssel ist HKEY_CURRENT_USER\Software\Schild3000) oder in den Programmeinstellungen von SchILD (Schalter "Individuelle Einstellungen ...zurücksetzen").
+## Version 3.0.73
 
--Weitere Fehler aus Github behoben.
+- Anpassungen an Version 0.7 des SVWS-Servers
 
-Version 3.0.73
---------------
--Anpassungen an Version 0.7 des SVWS-Servers
+## Version 3.0.72
 
-Version 3.0.72
---------------
--Weitere Datenbank-Funktionen umgesetzt
+- Weitere Datenbank-Funktionen umgesetzt
 
 -Der Wechsel der verschiedenen Karteireiter/Menüpunkte wurde nochmals überarbeitet, da es beim Klicken z.B. durch die Kataloge manchmal zu Fehlern kam. Bitte testen.
 
 -Weitere Fehler aus Github behoben.
 
-Version 3.0.71
---------------
--Neue Optionen für das Sichern und Wiederherstellen von Datenbanken (Eintrag "Datenbank" unter "Verwaltung"). Derzeit ist das Sichern (als SQLite-Datei) und das Wiederherstellen aus eine SQLite-Datei umgesetzt. 
+## Version 3.0.71
 
--Programmeinstellungen: Die Einstellungen werden nun über API-Aufrufe vom SVWS-Server geholt. Wichtig: Dazu ist die SVWS-Server-Version ab 0.6.17 notwendig!
+- Neue Optionen für das Sichern und Wiederherstellen von Datenbanken (Eintrag "Datenbank" unter "Verwaltung"). Derzeit ist das Sichern (als SQLite-Datei) und das Wiederherstellen aus eine SQLite-Datei umgesetzt. 
 
--Weitere Fehler aus Github behoben.
+- Programmeinstellungen: Die Einstellungen werden nun über API-Aufrufe vom SVWS-Server geholt. Wichtig: Dazu ist die SVWS-Server-## Version ab 0.6.17 notwendig!
 
-Version 3.0.70
---------------
--Beim Filtern von Schülern und Lehrkräften auf Statistik-Fehler kam es zu einer Fehlermeldung. Nun behoben.
+- Weitere Fehler aus Github behoben.
 
--Beim Start wird nun geprüft, ob im Programmverzeichnis eine Datei "server.json" liegt. Diese enhält die Information, welche Version des SVWS-Servers vom Programm erwartet wird. Wenn die Datei existiert und die gefundene Version von der erwarteten abweicht, erscheint eine Meldung "Die vorliegende Version des SVWS-Servers ist eine andere als die Version, die vom Programm erwartet wird. Dies kann zu Problemen führen.".
+## Version 3.0.70
 
--Weitere Fehler aus Github behoben.
+- Beim Filtern von Schülern und Lehrkräften auf Statistik-Fehler kam es zu einer Fehlermeldung. Nun behoben.
 
-Version 3.0.69
---------------
+- Beim Start wird nun geprüft, ob im Programmverzeichnis eine Datei "server.json" liegt. Diese enhält die Information, welche ## Version des SVWS-Servers vom Programm erwartet wird. Wenn die Datei existiert und die gefundene ## Version von der erwarteten abweicht, erscheint eine Meldung "Die vorliegende ## Version des SVWS-Servers ist eine andere als die ## Version, die vom Programm erwartet wird. Dies kann zu Problemen führen.".
+
+- Weitere Fehler aus Github behoben.
+
+## Version 3.0.69
+
 -Beim Laden der Gliederungsangaben vom SVWS-Server kam es zu einer Fehlermeldung, wenn bei einer Gliederung ein Wert für "Gültig von" oder "Gültig Bis" übergeben wurde. Nun behoben.
 
 -Bei der Neuanlage eines "Schuljahresabschnittes" werden nun bei den neuen Klassen-Datensätzen die Klassenleitungen wie folgt aus dem aktuellen Abschnitt übernommen:
 Wenn bei einer Klasse eine Folgeklasse eingetragen ist, wird im neuen Abschnitt diese Klassenleitung der Folgeklasse zugeordnet (Beispiel: Klassenleitung der aktuellen 05a wird zur Klassenleitung der neuen 06a, wenn diese die Folgeklasse ist)
 Wenn bei einer Klasse keine  Folgeklasse eingetragen ist oder die Klasse ihre eigene Folgeklasse ist, wird die Klassenleitung übernommen
 
--Weitere Fehler aus Github behoben.
+- Weitere Fehler aus Github behoben.
 
 
-Version 3.0.68
---------------
--Beim Export für die Statistik kam es zu merkwürdigen Fehlermeldungen, die möglicherweises auf den für den Datenbankzugriff (auf die StatistikDB.mdb) verwendeten Access-ODBC-Treiber zurückzuführen sind. Daher wurde der Datenbankzugriff für den Statistik-Export wieder auf ADO geändert (wie auch in SchILD2).
+## Version 3.0.68
 
--Bei den Programmeinstellungen ("Verwaltung>>Einstellungen>>Globale Einstellungen") können jetzt Ortsnamen definiert werden, für die beim Start des Programmes die Straßennamen aus dem NRW-Straßenkatalog geladen werden sollen. In der Regel wird man darin die eigene Kommune und einige benachbarte Kommunen eintragen. Dadurch kann der Speicherbedarf des Programmes drastisch reduziert werden (gegenüber dem Laden aller NRW-Straßen).
+- Beim Export für die Statistik kam es zu merkwürdigen Fehlermeldungen, die möglicherweises auf den für den Datenbankzugriff (auf die StatistikDB.mdb) verwendeten Access-ODBC-Treiber zurückzuführen sind. Daher wurde der Datenbankzugriff für den Statistik-Export wieder auf ADO geändert (wie auch in SchILD2).
 
--Weitere Fehler aus Github behoben.
+- Bei den Programmeinstellungen ("Verwaltung>>Einstellungen>>Globale Einstellungen") können jetzt Ortsnamen definiert werden, für die beim Start des Programmes die Straßennamen aus dem NRW-Straßenkatalog geladen werden sollen. In der Regel wird man darin die eigene Kommune und einige benachbarte Kommunen eintragen. Dadurch kann der Speicherbedarf des Programmes drastisch reduziert werden (gegenüber dem Laden aller NRW-Straßen).
+
+- Weitere Fehler aus Github behoben.
 
 
-Version 3.0.67
---------------
--Die Markierung und die Filterung auf dieselbe wurde nach einem Brainstorming nochmal überarbeitet. Die "temporäre Schülerliste" ist wieder entfernt worden, dafür wird aber die "Häkchen-Markierung" für die Dauer der Sitzung intern gespeichert. Die Markierungen können dauerhaft gespeichert werden, bei Programmende erscheint eine entsprechende Abfrage (sofern Markierungen vorhanden sind). 
+## Version 3.0.67
+
+- Die Markierung und die Filterung auf dieselbe wurde nach einem Brainstorming nochmal überarbeitet. Die "temporäre Schülerliste" ist wieder entfernt worden, dafür wird aber die "Häkchen-Markierung" für die Dauer der Sitzung intern gespeichert. Die Markierungen können dauerhaft gespeichert werden, bei Programmende erscheint eine entsprechende Abfrage (sofern Markierungen vorhanden sind). 
 Wichtig: Die Speicherung erfolgt benutzer-bezogen.
 
-Bitte mal testen.
-
--Direkt nach einer Migration wurde bei einer Neueingabe das kommende Schuljahr nicht korrekt bezeichnet (im Fenster, wo das Schuljahr ausgewählt wird), nun behoben.
+- Direkt nach einer Migration wurde bei einer Neueingabe das kommende Schuljahr nicht korrekt bezeichnet (im Fenster, wo das Schuljahr ausgewählt wird), nun behoben.
 
 
-Version 3.0.65
---------------
--Testweise wurde die Option geschaffen eine "temporäre Schülerliste" zu verwalten. Diese ist vergleichbar mit der aus SchILD2 bekannten "dauerhaften" Markierung (und wird auch z.B. über Doppelklick aktiviert). Im Gegensatz zu SchILD2 ist das nun aber auf die Dauer der Sitzung beschränkt. Es gibt damit folgende Möglichkeiten, bestimmte Datensätze individuell zu markieren:
+## Version 3.0.65
+
+- Testweise wurde die Option geschaffen eine "temporäre Schülerliste" zu verwalten. Diese ist vergleichbar mit der aus SchILD2 bekannten "dauerhaften" Markierung (und wird auch z.B. über Doppelklick aktiviert). Im Gegensatz zu SchILD2 ist das nun aber auf die Dauer der Sitzung beschränkt. Es gibt damit folgende Möglichkeiten, bestimmte Datensätze individuell zu markieren:
 
 Über Kontrollhäkchen im Schülercontainer ("Markierung im engeren Sinne")
 "Lebensdauer": Kurz, verschwindet mit der nächsten Filterung
@@ -154,58 +153,58 @@ Die betreffenden Datensätze werden mit Fettschrift angezeigt
 Über eine in indivduelle Schülerliste
 "Lebensdauer": Lang, wird in der Datenbank gespeichert
 
--Die Logik bei der Filterung wurde nochmal überarbeitet. Es konnte vorkpommen, dass bei Aufruf des Reiters "Auswahl" sowohl die "Standard-Filteroptionen" (Status, Klasse, Jahrgang usw.) und die Optionen des Filter I zur Verfügung standen. Das macht keinen Sinn und ist nun überarbeitet worden.
+- Die Logik bei der Filterung wurde nochmal überarbeitet. Es konnte vorkpommen, dass bei Aufruf des Reiters "Auswahl" sowohl die "Standard-Filteroptionen" (Status, Klasse, Jahrgang usw.) und die Optionen des Filter I zur Verfügung standen. Das macht keinen Sinn und ist nun überarbeitet worden.
 
--Weitere Fehler aus Github behoben.
+- Weitere Fehler aus Github behoben.
 
-Version 3.0.64
---------------
--Bei den Verkehrssprachen war versehentlich ein falsches Schlüsselfeld verwendet worden, so dass die aus SchILD2 übernommenen Einträge nicht angezeigt wurden, nun korrigiert.
+## Version 3.0.64
 
--Weitere Fehler aus Github behoben.
+- Bei den Verkehrssprachen war versehentlich ein falsches Schlüsselfeld verwendet worden, so dass die aus SchILD2 übernommenen Einträge nicht angezeigt wurden, nun korrigiert.
 
-Version 3.0.63
---------------
--Die Anwendung ist nun nicht mehr "dpi-aware", das sollte dazu führen, dass der Wechsel zu einer anderen Bildschirm-Ausflösung nun flüssiger abläuft und viele der genannten Darstellungsprobleme behoben sind.
+- Weitere Fehler aus Github behoben.
 
--Es wird nun eine neue "Ribbon-Komponenten" verwendet, diese ist besser konfigurierbar als die bisherige. 
+## Version 3.0.63
 
--Die Liste der "Actions" wurde aufgeräumt, die Beschriftungen und Icons der meisten Schaltflächen können über eine kleinen externe Datenbank (Schild_Icons.db3 im Verzeichnis \Keytabs) konfiguriert werden, ohne dass eine Änderung im Programmcode notwendig ist.
+- Die Anwendung ist nun nicht mehr "dpi-aware", das sollte dazu führen, dass der Wechsel zu einer anderen Bildschirm-Ausflösung nun flüssiger abläuft und viele der genannten Darstellungsprobleme behoben sind.
 
--Die Reportvorlagen für den "Schnellzugriff" werden nun personen-bezogen verwaltet. Es können aber nur Reportvorlage in die Schnellzugriffsliste übernommen werden, die im Verzeichnis "\SchILD-Reports\Standard\Schnellzugriff" liegen.
+- Es wird nun eine neue "Ribbon-Komponenten" verwendet, diese ist besser konfigurierbar als die bisherige. 
 
--Weitere Fehler aus Github behoben.
+- Die Liste der "Actions" wurde aufgeräumt, die Beschriftungen und Icons der meisten Schaltflächen können über eine kleinen externe Datenbank (Schild_Icons.db3 im Verzeichnis \Keytabs) konfiguriert werden, ohne dass eine Änderung im Programmcode notwendig ist.
 
-Version 3.0.60
---------------
--Die Sortierung der neuen dynamischen Datenquellen arbeitete manchmal nicht korrekt, nun behoben
+- Die Reportvorlagen für den "Schnellzugriff" werden nun personen-bezogen verwaltet. Es können aber nur Reportvorlage in die Schnellzugriffsliste übernommen werden, die im Verzeichnis "\SchILD-Reports\Standard\Schnellzugriff" liegen.
 
--Letzte "dpi-aware" Version. Die dynamische Anpassung an die Bildschirmauflösung bringt nach allen Erfahrungen nur Probleme, daher wird in Zukunft wieder auf das nicht ganz so elegante, aber gut funktionierende Verfahren ähnlich wie in SchILD2 zurückgestellt. Bis dahein brauchen Darstellungsprobleme nicht mehr gemeldet zu werden.
+- Weitere Fehler aus Github behoben.
 
--Weitere Fehler aus Github behoben.
+## Version 3.0.60
+
+- Die Sortierung der neuen dynamischen Datenquellen arbeitete manchmal nicht korrekt, nun behoben
+
+- Letzte "dpi-aware" ## Version. Die dynamische Anpassung an die Bildschirmauflösung bringt nach allen Erfahrungen nur Probleme, daher wird in Zukunft wieder auf das nicht ganz so elegante, aber gut funktionierende Verfahren ähnlich wie in SchILD2 zurückgestellt. Bis dahein brauchen Darstellungsprobleme nicht mehr gemeldet zu werden.
+
+- Weitere Fehler aus Github behoben.
  
-Version 3.0.59
---------------
--Bei der Durchführung der Gesamtprüfung für die Statistik kam es zu einem Fehler bei der PDF-Ausgabe und der Erstellung der Exportdateien. Grund war eine Inkompatibilität der Compilereinstellung von SchILD und den Statistik-Komponenten von IT-NRW. Nun funktioniert es.
+## Version 3.0.59
 
--Weitere Ergänzungen für Datenquellen, deren Definition dynamisch vom SVWS-Server geliefert werden (siehe https://github.com/SVWS-NRW/Schild3-BetaTest/issues/436). 
+- Bei der Durchführung der Gesamtprüfung für die Statistik kam es zu einem Fehler bei der PDF-Ausgabe und der Erstellung der Exportdateien. Grund war eine Inkompatibilität der Compilereinstellung von SchILD und den Statistik-Komponenten von IT-NRW. Nun funktioniert es.
 
--Bestimmte Programmeinstellungen (Breite von Tabellenspalten, Splitter-Positionen) werden nun unabhängig von der jeweiligen Bildschirmauflösung gespeichert.
+- Weitere Ergänzungen für Datenquellen, deren Definition dynamisch vom SVWS-Server geliefert werden (siehe https://github.com/SVWS-NRW/Schild3-BetaTest/issues/436). 
 
--Weitere Fehler aus Github behoben.
+- Bestimmte Programmeinstellungen (Breite von Tabellenspalten, Splitter-Positionen) werden nun unabhängig von der jeweiligen Bildschirmauflösung gespeichert.
 
-Version 3.0.56
---------------
--Das Verzeichnis <SVWS-Arbeitsverzeichnis>\sdbcfg wurde auf <SVWS-Arbeitsverzeichnis>\Connection-Files, die Dateiendung der Datenbankkonfigurationsdateien auf .con umgestellt.
+- Weitere Fehler aus Github behoben.
 
--Weitere Ergänzungen für Datenquellen, deren Definition dynamisch vom SVWS-Server geliefert werden (siehe https://github.com/SVWS-NRW/Schild3-BetaTest/issues/436)
+## Version 3.0.56
+
+- Das Verzeichnis <SVWS-Arbeitsverzeichnis>\sdbcfg wurde auf <SVWS-Arbeitsverzeichnis>\Connection-Files, die Dateiendung der Datenbankkonfigurationsdateien auf .con umgestellt.
+
+- Weitere Ergänzungen für Datenquellen, deren Definition dynamisch vom SVWS-Server geliefert werden (siehe https://github.com/SVWS-NRW/Schild3-BetaTest/issues/436)
 
 
-Version 3.0.55
---------------
--Ergänzungen für Datenquellen, deren Definition dynamisch vom SVWS-Server geliefert werden (siehe https://github.com/SVWS-NRW/Schild3-BetaTest/issues/436)
+## Version 3.0.55
 
--Die Definitionen der für den Text-/Excel-Export verfügbaren Felder werden jetzt auch durch den SVWS-Server bereitgestellt. Wegen der geänderten Datenbankstruktur mussten dabei größere Anpassungen bei den Felddefinitionen gemacht werden. Daher bitte den Export mal testen. In Fällen, wo eine Abfrage für ein Feld zu einem Fehler führt, wird in die Exportdatei nicht der jeweilige Feldinhalt, sondern eine Fehlermeldung ausgegeben. Die Meldungen müssen gesammelt und in einer Folgeversion des SVWS-Servers korrigiert werden.
+- Ergänzungen für Datenquellen, deren Definition dynamisch vom SVWS-Server geliefert werden (siehe https://github.com/SVWS-NRW/Schild3-BetaTest/issues/436)
+
+- Die Definitionen der für den Text-/Excel-Export verfügbaren Felder werden jetzt auch durch den SVWS-Server bereitgestellt. Wegen der geänderten Datenbankstruktur mussten dabei größere Anpassungen bei den Felddefinitionen gemacht werden. Daher bitte den Export mal testen. In Fällen, wo eine Abfrage für ein Feld zu einem Fehler führt, wird in die Exportdatei nicht der jeweilige Feldinhalt, sondern eine Fehlermeldung ausgegeben. Die Meldungen müssen gesammelt und in einer Folge## Version des SVWS-Servers korrigiert werden.
 
 -Klassen und Klassenleitungen
 Bei der Bearbeitung der Klassen ("Kataloge>>Klassen/Versetzungstabelle") kann jetzt auf jeden vergangenen Abschnitt zugegriffen werden (z.B. um nächträglich die Klassenleitungen zu bearbeiten).
@@ -214,21 +213,21 @@ Wichtig: Die Angaben können hier nicht geändert werden, es gibt keine "schüle
 
 -Weitere Fehler aus Github behoben.
 
-Version 3.0.54
---------------
+## Version 3.0.54
+
 -Einige Anpassungen für hochauflösende Monitore (noch nicht abgeschlossen!). Bitte prüfen, ob sich das Programm auf solchen Monitoren jetzt starten lässt.
 
 
-Version 3.0.53
---------------
+## Version 3.0.53
+
 Durch die Umstellung auf die neue IDE kam es zu einem Fehler in einer Komponente, der sich u.a. bei Aufruf von Filter I äußerte. Nun behoben.
 
-Version 3.0.52
---------------
+## Version 3.0.52
+
 Es wurden auch die Schlüsseltabellen "Statkue_Herkunftsart" und "Statkue_Herkunftsschulform" auf API-Aufrufe umgestellt.
 
-Version 3.0.51
---------------
+## Version 3.0.51
+
 Es wurden die folgenden Schlüsseltabellen auf PI-Aufrufe des SVWS-Servers umgestellt:
 Statkue_Abgangsart
 Statkue_SchuelerErsteSchulformSekI
@@ -238,8 +237,8 @@ Statkue_ZulJahrgaenge
 Statkue_ZulKuArt
 
 
-Version 3.0.50
---------------
+## Version 3.0.50
+
 Es wurden alle Schlüsseltabellen mit "Lehrer-Daten" auf API-Aufrufe des SVWS-Servers umgestellt. Noch nicht umgestellt sind folgende Tabellen:
 Statkue_Abgangsart
 Statkue_SchuelerErsteSchulformSekI
@@ -253,8 +252,8 @@ Statkue_ZulKuArt
 Bei den Lehrkräften wurde das Feld für den Masern-Impfnachweis entfernt.
 
 
-Version 3.0.49
---------------
+## Version 3.0.49
+
 Es wurden weitere Kataloge/Tabellen/Views auf API-Aufrufe des SVWS-Servers umgestellt:
 -Länder
 -Status der SuS
@@ -282,12 +281,12 @@ Es können nun auch Daten für dynamisch erzeugte Report-Datenquellen ausgegeben
 Die Reihenfolge der "RibbonTabs" im Hauptfenster wurde verändert
 
 
-Version 3.0.48
---------------
+## Version 3.0.48
+
 Einige Fehlerkorrekturen bei den API-Aufrufen
 
-Version 3.0.47
---------------
+## Version 3.0.47
+
 Es wurden weitere Kataloge/Tabellen/Views auf API-Aufrufe des SVWS-Servers umgestellt:
 -Statkue_Fachklasse
 -Statkue_Einschulungsart
@@ -305,14 +304,14 @@ Es wurden weitere Kataloge/Tabellen/Views auf API-Aufrufe des SVWS-Servers umges
 -SchulleitungFunktion
 -Klassenarten
 
-WICHTIG: Es muss die Version 0.2.21 des SVWS-Servers installiert sein
+WICHTIG: Es muss die ## Version 0.2.21 des SVWS-Servers installiert sein
 
 Es wurde die Möglichkeit geschaffen, Datenquellen für die Reportausgabe dynamisch über einen API-Aufruf des SVWS-Servers zu erstellen. 
 
 Weitere Fehler aus Github behoben.
 
-Version 3.0.46
---------------
+## Version 3.0.46
+
 -Der Zugriff aus folgende allgemeine Kataloge wurde umgestellt auf API-Aufrufe des SVWS-Servers:
 Schulgliederungen
 Förderschwerpunkte
@@ -323,17 +322,17 @@ Konfessionen
 allgem. Merkmale
 
 Damit sind nicht die "schuleigenen" Kataloge gemeint (z.B. Schulgliederungen der eigenen Schule), sondern die "Basiskataloge", aus denen für die schuleigenen Kataloge ausgewählt wird.
-Wichtig: Damit das funktioniert muss die Version 0.2.18 des SVWS-Servers installiert sein.
+Wichtig: Damit das funktioniert muss die ## Version 0.2.18 des SVWS-Servers installiert sein.
 
-Version 3.0.45
---------------
+## Version 3.0.45
+
 -Das Laden des Statistik-Gliederungskataloges wurde als erstes Beispiel für einen direkten API-Aufruf beim SVWS-Server umgesetzt. Das setzt natürlich voraus, dass der SVWS-Server auch erreichbar ist. Falls dies nicht der Fall ist, wird beim Start ein Fehlerprotokoll ausgegeben. Das Programm läuft aber trotzdem weiter. Der Gliederungskatalog wird bei den allgemeinen Angaben zur Schule verwendet.
 
 -Weitere Fehler aus Github behoben
 
 
-Version 3.0.44
---------------
+## Version 3.0.44
+
 -Der neue Halb- und Schuljahreswechsel war versehentlich nur in der Entwicklungsumgebung verfügbar, jetzt ist er freigeschaltet.
 
 -Weitere Exporte umgesetzt:
@@ -348,18 +347,18 @@ KommMit-Export (dito)
 -Diverse Fehler aus Github behoben
 
 
-Version 3.0.43
---------------
+## Version 3.0.43
+
 -Der Halb- und Schuljahreswechsel wurde komplett neu als "Wizard" konzipiert, es ist jetzt u.a. möglich, neue Lernabschnitte (optional mit Fächerübernahme) für den neuen Abschnitt anzulegen, ohne die SuS auch zu versetzen.
 
 -Filter I wurde optisch noch etwas "verschönert"
 
--Beim der "Schnellfilter in neuer Version" wird jetzt nicht mehr automatisch gefiltert, sondern erst nach Aktvierung des "Häkchen-Schalters" (wie beim "Schnellfilter nach SchILD2-Art")
+-Beim der "Schnellfilter in neuer ## Version" wird jetzt nicht mehr automatisch gefiltert, sondern erst nach Aktvierung des "Häkchen-Schalters" (wie beim "Schnellfilter nach SchILD2-Art")
 
 -Diverse Fehler aus Github behoben.
 
-Version 3.0.42
---------------
+## Version 3.0.42
+
 -Export für Lernplattformen umgesetzt (Ausnahme: Logineo XML)
 
 -Duplikatsabgleich für BKs überarbeitet
@@ -367,8 +366,8 @@ Version 3.0.42
 -Weitere Fehler aus Github bearbeitet.
 
 
-Version 3.0.41
---------------
+## Version 3.0.41
+
 -Diverse Fehler in Github bearbeitet.
 
 -Es stehen nun die Bearbeitungsmöglichkeiten für Lernplattformen (Katalog, SuS, LuL, Schnittstellen-Export und -Import) zur Verfügung.
@@ -376,12 +375,12 @@ Hinweis: Der Export in den Formaten Logineo, IServ und SDS ist noch nicht umgese
 
 -Reportverwaltung: Die Datenquelle "Schueler" wird nun an die Datenquellen "Kurs" und "Klassen" gekoppelt. Sie fungiert dann als Unterdatenquelle, sie kann die Datenquellen "KursSchueler", "KursSchueler_mit_Fotos", "KlassenSchueler" ersetzen, die mittelfristig wegfallen werden.
 
-Version 3.0.40
---------------
+## Version 3.0.40
+
 -Der Export für de Statistik wurde an die geänderte Datenbankstruktur angepasst.
 
-Version 3.0.39
---------------
+## Version 3.0.39
+
 Es wurden folgende Anpassungen an der Oberfläche durchgeführt:
 -Im Hauptfenster wird immer die gleiche Überschrift (mit der Information zur Datenbank) gezeigt.
 
@@ -411,8 +410,8 @@ Bitte mal mit unterschiedlichen Konstellationen ausprobieren und die optimalen S
  
 
 
-Version 3.0.37
---------------
+## Version 3.0.37
+
 -Weitere Gruppenprozesse (für ZP10) angepasst
 
 -Der Export im "Schnittstellenformat SchILD-NRW" wude an die geänderte Datenbankstruktur angepasst.
@@ -421,15 +420,15 @@ Version 3.0.37
 
 -Filterung auf Abteilungen und Standorte wurde umgesetzt.
 
-Version 3.0.36
---------------
+## Version 3.0.36
+
 -Der Speicherort für die sdbcfg-Dateien wurde geändert. Diese werden nun im Verzeichnis \sdbcfg unterhalb des Arbeitsverzeichnisses verwaltet.
 Wichtig: Um auf die bisher verwendeten Datenbanken zugreifen zu können, muss daher der Ordner \sdbcfg aus dem Programmverzeichnis in das Arbeitsverzeichnis verschoben werden.
 
 
 
-Version 3.0.35
---------------
+## Version 3.0.35
+
 -Die "jährliche Löschfunktion" (automatisch im Dezember aufgerufen oder manuell über "Verwaltung>>Werkzeuge>>Daten gemäß Löschfristen löschen") wurde an die geänderte Datenbankstruktur angepasst.
 
 -Der Vorgang "Ankreuzkompetenzen holen" wurde überarbeitet und an die geänderte Datenbankstruktur angepasst.
@@ -440,13 +439,13 @@ Version 3.0.35
 
 -Gruppenprozesse für Abitur jetzt verfügbar.
 
--Die Verbindung zum SVWS-Server sollte jetzt wieder funktionieren (getestet mit Server-Version 0.2.10)
+-Die Verbindung zum SVWS-Server sollte jetzt wieder funktionieren (getestet mit Server-## Version 0.2.10)
 
 -Diverse Fehler in Github bearbeitet.
 
 
-Version 3.0.34
---------------
+## Version 3.0.34
+
 -Die Abfrage für die Anzeige der Schülerdaten wurde nochmals überarbeitet, was jetzt einen deutlichen Geschwindigkeitszuwachs bei Scrollen zur Folge haben sollte. Bitte mal Erfahrungswerte mitteilen.
 
 -Der Schülername wird jetzt immer oberhalb der "Detail-Karteireiter" angezeigt
@@ -457,8 +456,8 @@ Hinweis: In Kürze wird es diesen Prozess auch als "Vorbereitung für das nächs
 -Einige Githaub-Fehler behoben.
 
 
-Version 3.0.33
---------------
+## Version 3.0.33
+
 -Mehrere berichtete Fehler korrigiert
 
 -Bei einer BK-Datenbank kam es bei der Druckausgabe zu einer Fehlermeldung "Feld Fachklasse nicht gefunden", nun beseitigt
@@ -470,8 +469,8 @@ Version 3.0.33
 -Die URL für den SVWS-Server wurde geändert, die Verbindung sollte jetzt wieder funktionieren
 
 
-Version 3.0.32
---------------
+## Version 3.0.32
+
 -Es wurden diverse Fehlermeldungen, die bei BK-Datenbanken auftraten, behoben.
 
 -Das Layout wurde in bestimmten Bereichen an die Bildschirmauflösung angepasst. So wird z.B. der Bereich "Aktuelle Laubahndaten" bei einer Bildschirmauflösung > 1400 Pixeln breiter dargstellt.
@@ -481,12 +480,12 @@ Version 3.0.32
 -In der Reporting wurde ein (durch einen falschen Datenbankeintrag verursachter) Fehler in Zusammenhang mit den "Schuljahresabschnitten" abgefangen.
 
 
-Version 3.0.31
---------------
+## Version 3.0.31
+
 -Die Gruppenprozesse in den Bereichen "Allgemeines" und "Fächer" (bis einschl. "Kurse zuweisen (mehrere)") wurden überarbeitet und an die geänderte Datenbankstruktur angepasst.
 
-Version 3.0.30
---------------
+## Version 3.0.30
+
 -Es wurden noch einige Fehler im Filter I behoben
 Hinweis: Bei den "Checked Comobobox"-Komponenten (zur Mehrfachauswahl von Optionen) bewirkt das reine Anklicken eines Eintrages noch keine Auswahl desselben, dazu muss das Häkchen angeklickt werden. Ansonsten würde bei der Taststurbedienung das Häkchen automatsich aktiviert, wenn man mit den Pfeiltasten der Tastatur zwischen den Einträgen wechselt. Wenn bei Tastaturbedienung ein Eintrag aktiviert werden woll, muss die Eingabetaste gedrückt werden.
 
@@ -495,12 +494,12 @@ Hinweis: Bei den "Checked Comobobox"-Komponenten (zur Mehrfachauswahl von Option
 -Der Gruppenprozess "Individualdaten ändern" wurde an die neue Datenbankstruktur angepasst
 
 
-Version 3.0.29
---------------
+## Version 3.0.29
+
 -Anpassung aller Optionen in Filter I an die neue Datenbankstruktur
 
-Version 3.0.28
---------------
+## Version 3.0.28
+
 -Anpassung der Benutzerverwaltung an die neue Datenbankstruktur
 Hinweis: In der Benutzerverwaltung stehen die Optionen zum Bearbeiten einzelner Benutzer (Anlegen, Bearbeiten, demnächst auch Löschen) über die rechte Maustaste zur Verfügung.
 Beim Neuanlegen von Benutzern wird derzeit der Benutzername als Kennwort eingetragen. Das kann in Zukunft auch durch ein zufällig erzeugtes Initialkennwort ersetzt werden, dazu muss aber erst eine Datenquelle mit Benutzerdaten geschaffen werden, damit diese Informationen auch ausgegeben werden können.
@@ -509,8 +508,8 @@ Beim Neuanlegen von Benutzern wird derzeit der Benutzername als Kennwort eingetr
 Einige Optionen (im wesentlichen solche, die sich auf Stammdaten und den aktuellen Abschnitt beziehen) wurden auf die neue Datenbankstruktur angepasst
 
 
-Version 3.0.27
---------------
+## Version 3.0.27
+
 -Korrektur einiger in Jira genannten Reportprobleme
 
 -Anpassung aller Lehrerdatenquellen an neue DB-Struktur
@@ -528,8 +527,8 @@ K_AllgAdr
 -Anpassung der Report-Datenquellen zu diesen Tabellen
 
 
-Version 3.0.26
---------------
+## Version 3.0.26
+
 Weitere Anpassungen an neue DB-Struktur
 -Daten der Lehrkräfte können bearbeitet werden
 
@@ -539,14 +538,14 @@ Weitere Anpassungen an neue DB-Struktur
 
 
 
-Version 3.0.23
---------------
+## Version 3.0.23
+
 -Die neue Struktur der Tabelle "SchuelerSprachenfolge" wurde an allen relevanten Stellen angepasst
 
 -Es gibt nun auf dem Karteireiter "Laufbahninfo" auch einen Bereich für die Eingabe von Sprachprüfungen
 
-Version 3.0.22
---------------
+## Version 3.0.22
+
 An folgenden Stellen wurde das Programm an die neue Struktur der Tabelle "SchuelerSprachenfolge" angepasst:
 -Programmoberfläche
 -Reportausgabe
@@ -558,24 +557,24 @@ An folgenden Punkten sind noch Anpassungen notwendig:
 -LuPO-Export
 -Übergabe an Abituralgorithmus
 
-Version 3.0.21
---------------
+## Version 3.0.21
+
 -Die Verwendung des Feldes "SchulnrEigner" wurde komplett aus dem Programm entfernt.
 
 -Alle Adressangaben wurden auf eine getrennte Speicherung von Straßenname und Hausnr. umgestellt.
 
-Version 3.0.20
---------------
+## Version 3.0.20
+
 -Es gibt keine durch die Schule bearbeitbaren Kataloge für Staatsangehörigkeiten und Verkehrssprachen mehr. Es wird nun auf die entsprechenden "Statistik-Kataloge" zugegriffen.
 
 -Die Eingabe der Schulleitung (bei den allgemeinen Angaben der Schule) wurde geändert. Es ist nun auch möglich, eine Historie zu verwalten.
-Wichtig: Da hier auf neue Tabellen in der Datenbank zugegriffen wird, funktioniert das nur mit einer Datenbank, die mit einer aktuellen Version des SVWS-Servers migriert wurde.
+Wichtig: Da hier auf neue Tabellen in der Datenbank zugegriffen wird, funktioniert das nur mit einer Datenbank, die mit einer aktuellen ## Version des SVWS-Servers migriert wurde.
  
 -Es wurden weitere in Github gemeldete Fehler behoben.
 
 
-Version 3.0.19
---------------
+## Version 3.0.19
+
 -In manchen Fällen wurden Schüler- oder Lehrerfotos nicht angezeigt, obwohl sie korrekt in der Datenbank gespeichert waren. Nun korrigiert.
 
 -Das Programm greift nun bei den Adressen der Schüler und Erziehungsberechtigten auf eine NRW-Straßenliste zu. Bei der Auswahl erfolgt eine automatische Filterung auf den Ortsnamen, daher muss dieser auch bei Eingabe der Straße schon vorhanden sein. Der Katalog ist aber nur eine "Vorschlagsliste", d.h. es können auch weiterhin Einträge gemacht werden, die nicht im Katalog enthalten sind.
@@ -589,8 +588,8 @@ HINWEIS: Bei den Ertiehungsberechtigten gab es noch keine separaten Felder für 
 -Es wurden weitere in Github gemeldete Fehler behoben.
 
 
-Version 3.0.18
---------------
+## Version 3.0.18
+
 -Der Bereich "Werkzeuge" wurde überarbeitet. Bei allen "Werkzeug-Einträgen" in der Menüliste, die über kein eigenes Fenster verfügen, wird nun (beim Aufruf) ein Informationstext im rechten Fensterteil angezeigt.
 Beispiel "Fehlende Abschnittsdaten anlegen":
 "Es wird geprüft, ob es für alle Schüler mit Status "Aktiv" einen Eintrag für den aktuellen Abschnitt (Halbjahr, Quartal, Semester) gibt. Falls ein solcher nicht existiert, wird er mit den aktuellen Angaben bei den Individualdaten (z.B. Jahrgang, Klasse) angelegt. Wenn schon ein Eintrag für den aktuellen Abschnitt existiert, so wird dieser nicht verändert."
@@ -602,16 +601,16 @@ Korrekturen und Verbesserungsvorschläge für die Formulierugen der Hinweise sin
 
 -Es wurden einige in Github gemeldete Fehler behoben.
 
-Version 3.0.17
---------------
+## Version 3.0.17
+
 -Die Verwaltung der Kataloge wude nochmals überarbeitet. Alle Kataloge (allgemeine und schulbezogen) sind nun über ein "Backstage-Menü" aufrufbar. Die Kataloge wurden auch von den "Ribbob-Bars" getrennt und haben nun einen eigenen Bereich mit (jeweils auf den betreffenden Katalog bezognenen) Bearbeitungskomponenten.
 
 -Bei manchen Katalogen wurden "eingefrorene" Spalten definiert (z.B. Schulkatalog). Dies bedeutet, dass bestimmte Spalten am Anfang des Tabellengitters immer sichtbar sind, auch wenn man weiter nach rechts scrollt, weil der verfügbare Platt nicht ausreicht, um das Tabllngitter komplett darzustellen.
 
 -Diverse Korrekturen und Designanpassungen an der Programoberfläche.
 
-Version 3.0.16
---------------
+## Version 3.0.16
+
 -Es wurde eine Anzahl von Fenstern, die bisher separat (als "schwebende" Fenster) erschienen, in die Programmoberfläche integriert. Weitere werden noch folgen.
 
 -Die Katalogverwaltung wurde komplett überarbeitet. Die Auswahl der Einzelkataloge (Staatsangehörigkeiten, Verkehrsprachen usw.) erfolgt jetzt über ein "Backstage-Menü" (ähnlich wie bei "Verwaltung") auf der linken Seite des Programmfensters. In den Ribbons erfolgt nur noch die Auswahl der "Katalog-Rubrik" (Allgemeine Kataloge, Schulbezogen Kataloge)
@@ -622,8 +621,8 @@ Version 3.0.16
 
 -Es wurden einige in Github gemeldete Fehler behoben.
 
-Version 3.0.15
---------------
+## Version 3.0.15
+
 -Der Test, ob eine Verbindung zum SVWS-Server hergstellt werden kann, wurde nochmal überarbeitet. Damit dieser ausgeführt werden kann, muss aber in der betreffenden sdbcfg-Datei (die die Datenbankparameter enthält) auch die URL des SVWS-Servers enthalten sein. Dazu entweder die Datei mit dem Programm "SchILD_DBConfig.exe" öffnen, bearbeiten und speichern oder über einen Editor in der Datei die Zeile
 SVWSServerURL=localhost
 ergänzen. Sofern der SVWS-Server nicht lokal läuft, muss statt "localhost" der Name des betreffenden Servers eingetragen werden.
@@ -633,8 +632,8 @@ ergänzen. Sofern der SVWS-Server nicht lokal läuft, muss statt "localhost" der
 -Im "Filter-Baum" wird jetzt für die Kursauswahl zusätzlich zur Kursbezeichnung auch der Jahrgang angezeigt.
 
 
-Version 3.0.14
---------------
+## Version 3.0.14
+
 -Der Test, ob eine Verbindung zum SVWS-Server hergstellt werden kann, wird jetzt immer beim Start (bzw. nach Auswahl einer Datenbank) durchgeführt. Es wird jetzt ein Testbefehl verwendet, der keine root- bzw. sa-Berechtigung erfordert, es muss daher auch kein Kennwort mehr eingegeben werden. In der Titelzeile des Hauptfensters wird dann angezeigt, ob der Verbindungstest erfolgreich war.
 
 -Im Reportexplorer wird ja die Breite der Spalten gespeichert. Es ist in manchen Fällen vorgekommen, dass für die Breite der Verzeichnisliste viel zu hohe Werte gespeichert wurden, was beim nächsten Aufruf dazu führte, dass die Reportliste nicht angezeigt werden konnte. Das ist nun unterbunden, wenn die Breiten beim Laden zu hoch sind (im Verhältnis zur Bildschirmbreite), werden sie passend reduziert.
@@ -645,8 +644,8 @@ Version 3.0.14
 
 -Es wurden diverse Schreibfehler korrigiert
 
-Version 3.0.13
---------------
+## Version 3.0.13
+
 -Es wurden diverse Jira-Tickets bearbeitet
 
 -Für die Testphase wurde der Zwang zur Verwendung eines regelkonformen Kennwortes ausgesetzt
@@ -662,8 +661,8 @@ SchILD30.exe -SVWSServerTest:
 Es erscheint dann ein Dialogfenster, in dem das Kennwort für den Datenbankbenutzer "root" (bei MariaDB) oder "sa" (bei MSSQL) eingegeben werden kann. Als URL ist derzeit "https://localhost" fest vorgegeben. Es wird dann versucht, eine Verbindung zum SVWS-Server herzustellen und eine entsprechende Meldung ausgegeben. 
  
 
-Version 3.0.12
---------------
+## Version 3.0.12
+
 -Alle "Ja/Nein"-Optionen bei Filter I und dem Gruppenprozess "Allgemeine Angaben ändern" wurden auf "Boolean-Selector" geändert
 
 -Die Erweiterungen bei KAoA-Eingabe für BKs wurden umgesetzt, bitte prüfen, ob das Feld "BK_Anlagen" in der Tabelle "Schildintern_KAoA_Merkmal" enthalten ist.
@@ -678,19 +677,19 @@ Hinweis: Bei einer SQLite-Datenbank kommt es beim Aufruf von "Aktuelle Datenbank
 -Beim Gruppenprozess "Noten, Mahnungen, Fehlstunden eingeben" kam es zu einer Fehlermeldung, nun behoben.
 
 
-Version 3.0.11
---------------
+## Version 3.0.11
+
 -Diverse Änderungen/Korrekturen aufgrund der Meldungen bei Github
 
-Version 3.0.10
---------------
+## Version 3.0.10
+
 -Es gibt keine "Ribbongroups" mehr für den Aufruf der verschiedenen Berechnungsalgorithmen (Versetzung/Abschluss, FHR, BK-Abschluss, Abitur usw.). Es finden sich jetzt vielmehr oberhalb der entsprechenden Grids für die Fächer (z.B. Abiturfächer) Toolbars mit Schaltern für die jeweiligen Funktionen (ähnlich wie in SchILD2). Bitte mal prüfen, ob das den Arbeitsablauf besser unterstützt.
 
 -Das Layout für der Karteireiter "Akt. Halbjahr>>Allgemeine Angaben" wurde überarbeitet. Für die unterschiedlichen Bemerkungsfelder (Zeugnsibemerkungen, Arbeits- und Sozialverhalten usw.) gibt es nun einen eigenen Karteireiter"Bemerkungen".
 
 -Der Bereich "Zeugnis/Abschluss" ist jetzt auf dem Karteireiter "Akt. Halbjahr" immer sichtbar (wie in SchILD2), unabhängig davon, welcher "Unterreiter" (Allgemeine Angaben, Leistungsdate usw.) ausgewählt ist.
 
-Version 3.0.9
+## Version 3.0.9
 -------------
 -Alle Bezüge auf das Feld "Bildungsgang" in der Tabelle "SchuelerLernabschnitte" wurden entfernt
 
@@ -714,7 +713,7 @@ Version 3.0.9
 
 
 
-Version 3.0.8
+## Version 3.0.8
 -------------
 -Bei allen Grafiken (Fotos, Schullogo) wird nun auf die Base64-Felder in der Datenbank zugegriffen (gilt auch für die Darstellung in Reports). Beim Speichern in der Datenbank werden die jpg/png-Dateien "on the fly" ins Base64-Format konvertiert, bei der Darstellung umgekehrt wieder von Base64 in das jeweilige Grafikformat.
 Im Prinzip könnten damit die bisherigen Felder aus der Datenbank entfern werden.
@@ -724,7 +723,7 @@ Im Prinzip könnten damit die bisherigen Felder aus der Datenbank entfern werden
 -Die "Ribbongroups" für den Aufruf der verschiedenen Berechnungsalgorithmen (Versetzung/Abschluss, FHR, BK-Abschluss, Abitur) wurden vereinheitlicht
 
 -Die Spaltenbreiten für Tabellendarstellungen werden nun benutzerbezogen in der Registry gespeichert.
-Wichtig: Das Verfahren wurde gegenüber der Vorgängerversion geändert, d.h. die gewünschten Spaltenbreiten müssen nochmals (einmalig) angepasst werden.
+Wichtig: Das Verfahren wurde gegenüber der Vorgänger## Version geändert, d.h. die gewünschten Spaltenbreiten müssen nochmals (einmalig) angepasst werden.
 
 -Bei der Auswahl von Lehrkräften (z.B. als Klassenlehrer, Fachlehrer, Abteilungsleiter) reagierte nicht auf Tastatureingaben, ist nun korrigiert.
 
@@ -740,7 +739,7 @@ Wichtig: Das Verfahren wurde gegenüber der Vorgängerversion geändert, d.h. di
 SchILD_DBConfig
 ===============
 
-Version 2.0.5
+## Version 2.0.5
 -------------
 -Es kann jetzt auch die URL des SVWS-Servers eingegeben werden, diese wird auch in die sdbcfg-Datei geschrieben. 
 
@@ -749,23 +748,23 @@ Version 2.0.5
 MigrateDB
 =========
 
-Version 1.0.10
---------------
+## Version 1.0.10
+
 Wenn eine MDB manuell zur Migration ausgewählt wurde und der Dateipfad Leerzeichen enthielt, kam es zu einer Fehlermeldung. Nun behoben.
 
-Version 1.0.8
+## Version 1.0.8
 -------------
 In die erzeugten sdbcfg-Dateien wird jetzt auch die URL des SVWS-Servers geschrieben.
 
-Version 1.0.7 
+## Version 1.0.7 
 -------------
 -Es kann jetzt auch in eine MSSQL-Datenbank migriert werden.
-Wichtig: Dies funktioniert nur, wenn der SVWS-Server in der aktuellen Entwicklungsversion läuft.
+Wichtig: Dies funktioniert nur, wenn der SVWS-Server in der aktuellen Entwicklungs## Version läuft.
 
-Version 1.0.6 
+## Version 1.0.6 
 -------------
 -Es gibt im Startfenster nun einen Schalter "Migration ist schon erfolgt, nur Datenbank-Konfigurationsdatei für SchILD3 anlegen". Damit kann für ein Datenbankschema, in das bereits bei der Installation des svws-Servers migriert wurde, eine sdbcfg-Konfigurationsdatei angelegt werden, damit ein Zugriff über SchILD3 möglich ist. Als Dateiname wird der Name des Schemas verwendet.
 
-Version 1.0.8
+## Version 1.0.8
 -------------
 Es wird jetzt auch die URL zum SVWSServer in der .sdbcfg-Datei gespeichert.
