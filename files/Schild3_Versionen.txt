@@ -1,8 +1,17 @@
 SchILD3
 ========
+Version 3.0.82
+--------------
+-Bei der tabllersichen Zuwesiung von Kursen trat ein Fehler auf, nun behoben
+
+-Einige Layout-Änderungen der Benutzeroberfläche
+
+-Diverse Issues aus Github bearbeitet.
+
+
 Version 3.0.81
 --------------
--Wenn bei der Migration keine Programmeinstellungen aus SchILD2 übernommmen wurden (kann bi frisch anonymisierten Datenbanken der Fall) sein, hing sich SchILD3 beim Start in einer Endlosschleife auf,, nun korrigiert.
+-Wenn bei der Migration keine Programmeinstellungen aus SchILD2 übernommmen wurden (kann bei frisch anonymisierten Datenbanken der Fall) sein, hing sich SchILD3 beim Start in einer Endlosschleife auf,, nun korrigiert.
 
 -Das Layout des Kataloges "Klassen/Versetzungstabelle" wurde optimiert
 
