@@ -1,5 +1,20 @@
 # SchILD3
 
+## Version 3.0.83
+
+- Für die Statistik-Erstellung wurden folgende Änderungen durchgeführt:
+ - Alle für die Statistik benötigten Dateien werden jetzt im Verzeichnis \IT-NRW unterhalb des Programmverzeichnisses erwartet (bisher waren diese auf die Verzeichnisse \LDS und \Keytabs verteilt).Der Installer wurde auch entsprechend angepasst.
+ - Bei einer vorhandenen Installation muss das Verzeichnis \LDS in \IT-NRW umbenannt werden, die Dateien ASDTABS.MDB und SCHULVER.MDB müssen aus dem Verzeichnis \Keytabs in das Verzeichnis \IT-NRW übertragen werden. Außerdem müssen die "Statistik-DLLs" neu registriert werden, das geschieht am einfachsten in SchILD3 über "Verwaltung>>Statistik IT.NRW>>Hilfe bei Problemen".
+
+- Die Vermerke haben jetzt eigenene Karteireiter, wenn eine Schule nicht mit Vermerken arbeiten möchte, kann der Reiter auch bei den globalen Programmeinstllungen ausgeblendet werden.
+
+- Bei den individuellen Programmeinstellungen gibt es nun die Option "Schüler-Infobereich zeigen". Wenn diese Option deaktiviert ist, wird auf den Karteireitern "Indidivualdaten I" und "Individualdaten II" der Bereich, in dem u.a. das Foto dargestellt wird, nicht angezeigt. Das kann bei kleinen Bildschirmauflösungen von Vorteil sein.
+
+- Einige Layout-Verbesserungen.
+
+- Einige Issues aus Github bearbeitet.
+
+
 ## Version 3.0.82
 
 - Bei der tabellarischen Zuweisung von Kursen trat ein Fehler auf, nun behoben
