@@ -1,5 +1,9 @@
 # SchILD3
 
+## Version 3.0.84
+
+- Schulver.mdb wird nun im Installer auch in den Ordner \IT-NRW kopiert.
+
 ## Version 3.0.83
 
 - Für die Statistik-Erstellung wurden folgende Änderungen durchgeführt:
