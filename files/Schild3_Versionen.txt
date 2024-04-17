@@ -1,5 +1,16 @@
 # SchILD3
 
+## Version 3.0.85
+
+-Die kürzlich in SchILD2 durchgeführten Ergänzungen wurde nun auch in SchILD3 umgesetzt.
+
+-Es wurden einige Fehler bei den Abschluss-/Versetzungsberechnungen korrigiert, die durch die Umstellung auf die REST-API-Aufrufe entstanden waren.
+
+-Auf dem Karteireiter "BK-Abschluss" wurde das Layout bei bestimmten Gliederungen überarbeitet.
+
+- Einige Issues aus Github bearbeitet.
+
+
 ## Version 3.0.83
 
 - Für die Statistik-Erstellung wurden folgende Änderungen durchgeführt:
