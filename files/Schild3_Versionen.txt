@@ -1,5 +1,16 @@
 # SchILD3
 
+## Version 3.0.87
+
+- Die Vorgehensweise beim Mahnungsdruck wurde nochmals überarbeitet.
+
+- Wird bei den Filteroptionen ein Jahrgang ausgewählt, so werden die Kurse (für eine Filterung auf diese) auch nach dem gewählten Jahrgang gefiltert.
+Hinweis: Wenn auf zwei (oder mehr) Jahrgänge gefiltert wird, so werden nur die Kurse angezeigt, bei denen beide Jahrgänge (als "mehrere Jahrgänge") eingetragen sind!
+
+- BK: Beim Abituralgorithmus wurde die Prüfung der Fremdsprachenmarkierung überarbeitet.
+
+- Weitere Issues aus Github bearbeitet.
+
 ## Version 3.0.85
 
 - Die kürzlich in SchILD2 durchgeführten Ergänzungen wurde nun auch in SchILD3 umgesetzt.

@@ -1,5 +1,9 @@
 MigrateDB
 =========
+Version 1.0.20
+--------------
+-Im "Expertenmodus" kann nun auch ein anderer Benutzer mit root-Berechtigung eingetragen werden.
+
 Version 1.0.19
 --------------
 -Einige Überschriftungen und Meldungen wurden vereinheitlicht
