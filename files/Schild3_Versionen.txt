@@ -1,5 +1,18 @@
 # SchILD3
 
+## Version 3.0.88
+
+- Das Feld "Bemerkungen" bei den Schülerstammdaten ist weggefallen und wurde durch einen Eintrag in der "Vermerke-Tabelle" ersetzt
+
+- Beim Holen der ZP10-Fächer gibt es jetzt eine zusätzliche Option "Noten ignorieren, nur Fächer holen"
+
+- Beim Datenexport für das externe Notenmodul werden die Daten nicht mehr als verschlüsselte Zip-Dateien, sondern als verschlüsselte JSON-Dateien gespeichert. Das Kennwort für die Verschlüsselung wird intern vergeben.
+
+- Weitere Issues aus Github bearbeitet.
+
+Wichtig: Diese Version funktioniert nur mit einer Version 0.8.15 (oder höeher) des SVWS-Servers 
+
+
 ## Version 3.0.87
 
 - Die Vorgehensweise beim Mahnungsdruck wurde nochmals überarbeitet.
