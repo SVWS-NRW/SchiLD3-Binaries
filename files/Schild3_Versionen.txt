@@ -6,11 +6,11 @@
 
 - Beim Holen der ZP10-Fächer gibt es jetzt eine zusätzliche Option "Noten ignorieren, nur Fächer holen"
 
-- Beim Datenexport für das externe Notenmodul werden die Daten nicht mehr als verschlüsselte Zip-Dateien, sondern als verschlüsselte JSON-Dateien gespeichert. Das Kennwort für die Verschlüsselung wird intern vergeben.
+- Beim Datenexport für das externe Notenmodul werden die Daten nicht mehr als verschlüsselte Zip-Dateien, sondern als verschlüsselte JSON-Dateien gespeichert.
 
 - Weitere Issues aus Github bearbeitet.
 
-Wichtig: Diese Version funktioniert nur mit einer Version 0.8.15 (oder höeher) des SVWS-Servers 
+Wichtig: Diese Version funktioniert nur mit einer Version 0.8.15 (oder höher) des SVWS-Servers 
 
 
 ## Version 3.0.87
