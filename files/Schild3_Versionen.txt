@@ -1,5 +1,13 @@
 # SchILD3
 
+## Version 3.0.89
+
+- Beim Speichern von Schüler-Stammdaten kam es zu einer Fehlermeldung, da im Update-Befehl noch das (nun weggefallene) Feld "Bemerkungen" enthalten war. Das ist nun behoben.
+
+- Testweise wurden die "Telefonfelder" (bei den Stammdaten und in der separaten Telefonnummern-Tabelle) so konfiguriert, dass nur noch Zifferneingaben möglich sind. Vorhandene Nummern, die nicht-numerische Zeichen enthalten, werden aber korrekt angezeigt. Das ist eine Vorbereitung auf eine kommende Suche nach Telefonnummern. Diese erfordert eine einheitliche Schreibweise der Nummern.
+
+- Weitere Issues aus Github bearbeitet.
+
 ## Version 3.0.88
 
 - Das Feld "Bemerkungen" bei den Schülerstammdaten ist weggefallen und wurde durch einen Eintrag in der "Vermerke-Tabelle" ersetzt
