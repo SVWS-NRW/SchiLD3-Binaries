@@ -1,5 +1,15 @@
 # SchILD3
 
+## Version 3.0.91
+
+- Die Interpretation der Folgeklassen (im akt. Abschnitt) wurde geändert. Die entsprechenden IDs wurden bisher aus den Klassendaten des aktuellen Schuljahresabschnittes genommen, nun wird auf die Klassendaten des kommenden Schuljahresabschnittes zugegriffen( bei Bedarf werden diese angelegt). Dies hat größeren Einfluss auf den Schuljahreswechsel und die Bearbeitung von Nachprüfungen. Daher bitte diese Punkte mal testen.
+
+- Es gibt jetzt die Option, die Dateien des neuen Notenmoduls zu importieren ("Verwaltung>Import>Externes Notenmodul"). Da mir das neue externe Notenmodul noch nicht zur Verfügung steht, konnte ich die Funktionsweise nur mit Dateien testen, die von SchILD3 erzeugt wurden, ohne Bearbeitung durch das Notenmodul.
+
+- Die E-Mail-Daten (Name, Adresse usw.) des angemeldeten Benutzers werden nun über Funktionen des SVWS-Servers geladen und gespeichert.
+
+- Weitere Issues aus Github bearbeitet.
+
 ## Version 3.0.89
 
 - Beim Speichern von Schüler-Stammdaten kam es zu einer Fehlermeldung, da im Update-Befehl noch das (nun weggefallene) Feld "Bemerkungen" enthalten war. Das ist nun behoben.
