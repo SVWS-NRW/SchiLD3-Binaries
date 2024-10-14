@@ -1,5 +1,11 @@
 # SchILD3
 
+## Version 3.0.93
+
+- Diverse Kataloge wurden auf ein neues Verfahren des SVWS-Servers umgestellt. Das hat zur Folge, dass diese Programmversion nur noch mit einer Version des SVWS-Servers 0.9.3 oder höher funktioniert.
+
+- Einige Issues aus Github bearbeitet.
+
 ## Version 3.0.91
 
 - Die Interpretation der Folgeklassen (im akt. Abschnitt) wurde geändert. Die entsprechenden IDs wurden bisher aus den Klassendaten des aktuellen Schuljahresabschnittes genommen, nun wird auf die Klassendaten des kommenden Schuljahresabschnittes zugegriffen( bei Bedarf werden diese angelegt). Dies hat größeren Einfluss auf den Schuljahreswechsel und die Bearbeitung von Nachprüfungen. Daher bitte diese Punkte mal testen.
