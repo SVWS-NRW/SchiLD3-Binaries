@@ -1,5 +1,11 @@
 # SchILD3
 
+## Version 3.1.0
+
+- Erstes "public beta"
+
+- Einige Issues aus Github bearbeitet.
+
 ## Version 3.0.93
 
 - Diverse Kataloge wurden auf ein neues Verfahren des SVWS-Servers umgestellt. Das hat zur Folge, dass diese Programmversion nur noch mit einer Version des SVWS-Servers 0.9.3 oder höher funktioniert.
