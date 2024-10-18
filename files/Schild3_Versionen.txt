@@ -4,7 +4,7 @@
 
 - Erstes "public beta"
 
-- Einige Issues aus Github bearbeitet.
+- Einige Issues aus Github bearbeitet
 
 ## Version 3.0.93
 
