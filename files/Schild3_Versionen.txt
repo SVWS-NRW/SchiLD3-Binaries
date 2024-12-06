@@ -1,5 +1,11 @@
 # SchILD3
 
+## Version 3.1.2
+
+- Das Anlegen, Bearbeiten und Löschen von Benutzern erfolgt nun über Funktionen des SVWS-Servers.
+
+- Diverse Issues aus Github bearbeitet
+
 ## Version 3.1.0
 
 - Erstes "public beta"
@@ -14,7 +20,7 @@
 
 ## Version 3.0.91
 
-- Die Interpretation der Folgeklassen (im akt. Abschnitt) wurde geändert. Die entsprechenden IDs wurden bisher aus den Klassendaten des aktuellen Schuljahresabschnittes genommen, nun wird auf die Klassendaten des kommenden Schuljahresabschnittes zugegriffen( bei Bedarf werden diese angelegt). Dies hat größeren Einfluss auf den Schuljahreswechsel und die Bearbeitung von Nachprüfungen. Daher bitte diese Punkte mal testen.
+- Die Interpretation der Folgeklassen (im akt. Abschnitt) wurde geändert. Die entsprechenden IDs wurden bisher aus den Klassendaten des aktuellen Schuljahresabschnittes genommen, nun wird auf die Klassendaten des kommenden Schuljahresabschnittes zugegriffen (bei Bedarf werden diese angelegt). Dies hat größeren Einfluss auf den Schuljahreswechsel und die Bearbeitung von Nachprüfungen. Daher bitte diese Punkte mal testen.
 
 - Es gibt jetzt die Option, die Dateien des neuen Notenmoduls zu importieren ("Verwaltung>Import>Externes Notenmodul"). Da mir das neue externe Notenmodul noch nicht zur Verfügung steht, konnte ich die Funktionsweise nur mit Dateien testen, die von SchILD3 erzeugt wurden, ohne Bearbeitung durch das Notenmodul.
 
