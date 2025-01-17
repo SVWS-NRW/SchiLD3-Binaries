@@ -1,7 +1,9 @@
-Hinweis: Alle Programme wurden auf die aktuelle Version 11.3 der Entwicklungsumgebung umgestellt.
-
 SchILD_DBConfig
 ===============
+Version 2.1.2
+-------------
+-Es können jetzt auch Angaben zu einem Proxy-Server in die .con-Datei eingetragen werden.
+
 Version 2.0.10
 --------------
 -Unter bestimmten Bedingungen wurden beim Laden einer .con-Datei die Parameter nicht korrekt ausgewertet. Nun Korrigiert.

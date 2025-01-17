@@ -1,5 +1,11 @@
 # SchILD3
 
+## Version 3.1.4
+- Beim Speichern von Textfeldern werden Leerzeichen am Anfang und Ende des Textes entfernt. Felder mit leerem Inhalt werden als NULL gespeichert
+
+- Diverse Issues aus Github bearbeitet
+
+
 ## Version 3.1.2
 
 - Das Anlegen, Bearbeiten und Löschen von Benutzern erfolgt nun über Funktionen des SVWS-Servers.
