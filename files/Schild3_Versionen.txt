@@ -1,5 +1,12 @@
 # SchILD3
 
+## Version 3.1.6
+- Beim Halbjahres- und Schuljahreswechsel wurden externe SuS nicht berücksichtigt, nun behoben
+
+- Beim Gruppenprozess "Individualdaten ändern" werden bei Änderung des Abschnittes nun auch neue "Lernabschnittsdaten" angelegt. Es wird aber nicht empfohlen, diesen Gruppenprozess für Änderungen des Schuljahres zu verwenden, da dies eigentlich einer Versetzung entsprechen würde. Wenn beim Gruppenprozess ein Schuljahreswechsel erkannt wird, erscheint ein entsprechender Hinweis.
+
+- Diverse Issues aus Github bearbeitet
+
 ## Version 3.1.4
 - Beim Speichern von Textfeldern werden Leerzeichen am Anfang und Ende des Textes entfernt. Felder mit leerem Inhalt werden als NULL gespeichert
 
