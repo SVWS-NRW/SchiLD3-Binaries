@@ -51,25 +51,11 @@ task copyFiles(type: Copy) {
 task signSchild3(type:Exec) {
 	dependsOn "copyFiles"
 	workingDir file("${buildDir}/output")
-	commandLine System.getenv("SVWS_SIGNTOOL_PATH"), "sign", "/fd", "sha256", "/f", System.getenv("SVWS_CERTIFICATE_PATH"), "/p", System.getenv("SVWS_CERTIFICATE_PASSWORD"), "-tr", "http://timestamp.digicert.com", "-td", "sha256", "Schild30.exe" 
-}
-
-task signMigrateDB(type:Exec) {
-	dependsOn "copyFiles"
-	workingDir file("${buildDir}/output")
-	commandLine System.getenv("SVWS_SIGNTOOL_PATH"), "sign", "/fd", "sha256", "/f", System.getenv("SVWS_CERTIFICATE_PATH"), "/p", System.getenv("SVWS_CERTIFICATE_PASSWORD"), "-tr", "http://timestamp.digicert.com", "-td", "sha256", "MigrateDB.exe" 
-}
-
-task signSchiLDDBConfig(type:Exec) {
-	dependsOn "copyFiles"
-	workingDir file("${buildDir}/output")
-	commandLine System.getenv("SVWS_SIGNTOOL_PATH"), "sign", "/fd", "sha256", "/f", System.getenv("SVWS_CERTIFICATE_PATH"), "/p", System.getenv("SVWS_CERTIFICATE_PASSWORD"), "-tr", "http://timestamp.digicert.com", "-td", "sha256", "SchiLD_DBConfig.exe" 
+	commandLine System.getenv("SVWS_SIGNTOOL_PATH"), "sign", "/fd", "sha256", "/td", "sha256", "/tr", "http://timestamp.digicert.com", "/n", '"Ministerium für Schule und Bildung des Landes NRW"', "Schild30.exe", "SchiLD_DBConfig.exe", "MigrateDB.exe" 
 }
 
 task doZip(type: Zip) {
 	dependsOn "signSchild3"
-	dependsOn "signMigrateDB"
-	dependsOn "signSchiLDDBConfig"
     archiveFileName = "files.zip"
     destinationDirectory = file("$buildDir")
     from "$buildDir/output"
