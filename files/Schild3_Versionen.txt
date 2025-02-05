@@ -1,5 +1,12 @@
 # SchILD3
 
+## Version 3.1.8
+- Farben von Fächergruppen können wieder geändert und gespeichert werden.
+
+- Bei Grundschulen wurden Änderungen für die geänderten Jahrgänge 01 und 02 (früher E1 und E2) gemacht
+
+- Diverse weitere Issues aus Github bearbeitet
+
 ## Version 3.1.7
 - Beim Halbjahreswechsel mit Übernahme der Fächer kam es zu einer Fehlermeldung, nun behoben
 
