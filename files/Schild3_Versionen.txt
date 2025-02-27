@@ -1,5 +1,10 @@
 # SchILD3
 
+## Version 3.1.9
+- Anpassungen bei Abiturfunktionen
+
+- Diverse weitere Issues aus Github bearbeitet
+
 ## Version 3.1.8
 - Farben von Fächergruppen können wieder geändert und gespeichert werden.
 
