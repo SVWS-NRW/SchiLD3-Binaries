@@ -1,5 +1,52 @@
 # SchILD3
 
+## Version 3.1.12
+
+- BAN-Export ergänzt
+- ENM-Export: JSON-Dateien werden nach Verschlüsselung gelöscht
+- Actions und Gruppenprozesse an Benutzerrechte angepasst (noch ausstehend: "BK-Abschluss/ZP10")
+- Personen einer Personengruppen: Excel-Export über rechte Maustaste
+- Meister-Bafög und Online-Anmeldung mit "-" vorbelegt
+- Gesamtschule: Zuweisungen  überarbeitet
+- Anzeige der bei Auswahl des Anmeldejahres gemachten Angaben (z.B. für Klasse) bei einem gerade im Insert-Modus befindlichen Schülerdatensatzes
+- Optionale StopWatch für Zeitprotokollierung
+- Korrektur Abschlussberechnung Gy.
+- Feld "EPJahre" aus Tabelle "Schueler" entfernt
+- EP-Jahre nun in Tabelle SchuelerLernabschnittsdaten und auf Karteireiter "Akt. Halbjahr"
+- Feld "Schulbesuchsjahre" auf Karteireiter "Akt. Halbjahr" ausgeblendet (fällt demnächst weg)
+- Filterung auf EPJahre (bei Grundschule) nun dort auf Karteireiter "Lernabschnitt/Leistungsdaten"
+- Feld EPJahre in Report-Datenquelle Lernabschnitte
+- Schulbesuchsjahre bei Gruppenprozess "Individualdaten ändern" ausgeblendet
+- EPJahre nun bei Gruppenprozess "Individualdaten ändern" auf Karteireiter "Lernabschnitte" (bei Grundschule)
+- Grundschulen: Jahrgangszuweisung bei Klassen angepasst
+- Feld "Schulbesuchsjahre" auf Karteireiter "Individualdaten I" ausgeblendet
+- Grundschuljahrgänge bei Floskeleingabe korrigiert
+- Katalog "EP-Jahre" auf API umgestellt (bei Lernabschnittsdaten, Gruppenprozess "individualdaten ändern", Schüler-Filter)
+- RAP-Funktion "FilterLaufbahnJahr" korrigiert
+- EP-Jahre bei Grundschulen in Auswahlliste für Schülercontainer
+- Gruppenprozess "Versetzung/Übertragung ins neue Halbjahr oder Abschluss" überarbeitet für den Fall, dass alle SuS in den Abschluss kommen (z.B. frühzeitige Ausschulung der Q2)
+- Datenquelle "Schueler" Feld "JahrgangsKrz" wird nun befüllt
+- Datenquelle "Kursschueler_mit_Fotos" korrigiert
+- Fehler bei Schuljahreswechsel behoben
+- Überschriften "EP-Jahr" angepasst
+- Bei Ausklappen des Kataloges für die EP-Jahre wird das Kürzel und der Klartext angezeigt
+- Schuljahreswechsel: Problem mit nicht vorhandenen oder unsichtbaren Folgeklassen behoben
+- Schüler-Abfrage angepasst, damit EPJahre korrekt erscheinen
+- Sichtbarkeit der EP-Jahre hängt nun davon ab, on Primarjahrgänge vorhanden sind
+- Feld "Sichtbar" in Tabelle "Klassen" entfernt
+- Neue Datenquelle "LehrerDSVGOEinwilligungen"
+- Neue berechnete Felder für die Reportausgabe in folgenden Datenquellen: Schueler, Schueler_der_Klasse, KursSchueler
+AlleVornamen
+Rufname
+NameAlleVornamen
+NameRufname
+AlleVornamenName
+RufnameName
+- istErsatzPflichtFS bei Prüfung, ob ein Fach als Sprachprüfungsfach in Frage kommt, entfernt
+- EP-Jahre bei Schnittstellenimport angepasst
+- Versetzungsprozedur bei Grundschulen und weiteren Schulen mit Primarstufe (Primus) angepasst.
+- Mahnung bei Schnittstellenexport und -import berücksichtigt
+
 ## Version 3.1.11
 - Diverse Issues aus Github bearbeitet
 
