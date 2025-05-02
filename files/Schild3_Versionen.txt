@@ -1,5 +1,17 @@
 # SchILD3
 
+## Version 3.1.13
+
+- EP-Jahre bei GS-Versetzung angepasst
+- Fehler bei Filter auf "Status" bei SchILD3-Filterverfahren korrigiert 
+- Zwei Fehler bei Versetzungen korrigiert
+- Import LehrkraefteSonderzeiten.dat korrigiert (es werden jetzt auch vorhandene Datensätze aktualisiert)
+- ZP10-Ansicht beim WBK korrigiert (Anpassung an neue Statistik-Jahrgänge)
+- Bei Schulen mit Primarstufe wird jetzt das EP-Jahr auch auf dem Karteireiter Individualdaten I" angezeigt (rechts oben, nur Ansicht)
+- Gruppenprozess "Schulbesuchsjahre berechnen" ausgeblendet (Schulbesuchsjahre werden ja nicht mehr angezeigt)
+- Schnittstellen-Import von Lehrerdaten, bei Neuimport wurde Fehler "MasernImpfnachweis" behoben
+- Neue Felder in Datenquelle "SchildUmgebung" für verschiedene Formate von Schuljahr/Abschnitt
+
 ## Version 3.1.12
 
 - BAN-Export ergänzt
