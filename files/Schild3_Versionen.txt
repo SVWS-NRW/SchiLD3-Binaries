@@ -1,5 +1,34 @@
 # SchILD3
 
+## Version 3.1.14
+
+- Suche nach Erziehernamen verlor Focus, behoben
+- Rechteprüfung bei Teilleistungen angepasst
+- Datum bei Sprachprüfung nicht eingebbar, korrigiert
+- Fehler bei Abiturzulassung korrigiert (Prüfung auf Anzahl Grundkurse)
+- Kopieren von markierten Fächern korrigiert
+- Anpassung bei Planspielmodus für Prognoseberechnung
+- Sprachenfolge WBK: Jahrgänge ergänzt
+- Holen der Abiturdaten: Abitur-Jahr wird automatisch eingetragen
+- Berechtigung bei Lehrerbearbeitung überarbeitet
+- Anzeige ZP10-Reiter in WBK korrigiert
+- Scrollbox im Fächerkatalog ergänzt
+- Personengruppen: Bearbeitung und Reportausgabe überarbeitet/korrigiert
+- Gruppenprozesse für Teilleistungen nun auch für Grundschulen verwendbar
+- WBK: ZP10-Karteireiter auch für Jahrgänge S5 und S6 sichtbar
+- Bei Gruppenprozess "Kurse zuweisen" wurden bei der Kursartauswahl die "allgemeinen Kursarten" zur Verfügung gestellt. Es werden nun die "schülerbezogenen Kursarten" zur Verfügung gestellt.
+- BK: Gliederung B08, B09 und B10: Anpassung an Kursarten E, EWFA und EWF
+- Neuaufnahme von Schüler: Bei der ermitlung der Klassen im Zielabschnitt wurde noch das Feld "Sichtbar" verwendet, das mit der Version 1.0.8 des SVW-Servers weggefallen ist.
+- Hochschreiben von Klassenlehrern: Wenn im Zielabschnitt schon bei einer Klasse Einträge für Klassenlehrer vorhanden sind, werden für diese Klasse keine KL hinzugefügt
+- Anzeige der Vorgänger- und Folgeklassen bei der Klassenbearbeitung überarbeitet
+- Weitere Optionen beim gruppenweisen Ändern von Versetzungsdaten im Rahmen des Schuljahreswechsels hinzugefügt (z.B. Prüfungsordnung)
+- Fehler beim Erzeugen der Notendateien behoben
+- Texte im Fenster für den Schuljahreswechsel/Halbjahreswechsel situations- und schulformbezogen angepasst
+- Bei Filterung auf Lehrkräfte mit Statistikfehlern kam es zu einer Fehlermeldung, nun behoben.
+- Bei der Neueingabe eines Schülers kam es zu einer Fehlermeldung, wenn gleichzeitig eine PLZ eingegeben wurde.
+- Teilleistungen können jetzt gruppenweise für eine Fach/Kursart-Kombination gelöscht werden (Gruppenprozess "Teilleistungen fachbezogen löschen")
+- Datenquelle "SchuelerAdressen" testweise so konfiguriert, dass sie als Hauptdatenquelle in einem Serienbrief an Betriebe genutzt werden kann (mit DQ Schueler als UnterDQ)
+
 ## Version 3.1.13
 
 - EP-Jahre bei GS-Versetzung angepasst
