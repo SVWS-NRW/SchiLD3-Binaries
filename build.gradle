@@ -4,7 +4,7 @@ plugins {
 }
 
 group = 'de.nrw.schule.svws'
-version = '3.1.13'
+version = '3.1.14'
 
 
 
