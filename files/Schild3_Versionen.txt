@@ -2,6 +2,7 @@
 
 ## Version 3.1.15
 
+- Anpassungen an die Version 1.0.10 des SVWS-Servers
 - Versetzungsberechnung nun auch für vergangene Abschnitte möglich
 - Versetzungsalgorithmen: Falls bei einem Fach keine Fachgruppe vom SVWS-Server geliefert wird, wird diese aus den Einstellungen beim jeweiligen Fach geholt
 - Excel-/Text-Export: Feldlänge für Staatsangehörigkeiten und Verkehrssprachen erweitert
