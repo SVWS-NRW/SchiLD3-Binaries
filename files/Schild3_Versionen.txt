@@ -1,5 +1,32 @@
 # SchILD3
 
+## Version 3.1.15
+
+- Versetzungsberechnung nun auch für vergangene Abschnitte möglich
+- Versetzungsalgorithmen: Falls bei einem Fach keine Fachgruppe vom SVWS-Server geliefert wird, wird diese aus den Einstellungen beim jeweiligen Fach geholt
+- Excel-/Text-Export: Feldlänge für Staatsangehörigkeiten und Verkehrssprachen erweitert
+- GER-Berechnung überarbeitet
+- Fehler bei Eingabe von ZP10-Noten behoben
+- Gruppenprozess Abinoteneingabe: Lehrkraft bei Kursauswahl sichtbar
+- Anzeige Abiturmeldungen überarbeitet
+- Es erfolgt jetzt immer eine Berechnung des Abiturergebnisses (auch bei fehlenden Angaben, z.B. mdl. Noten)
+- Anpassung am Bildschirmauflösung überarbeitet
+- Fehler bei Filterung auf Abschlussoptionen behoben
+- Auswahl Referenzniveaus an Änderung im SVWS-Server angepasst
+- Katalog "Klassen/Versetzungstabelle": Sternchen bei statistik-relevanten Feldern nun vorhanden
+- Schuljahreswechsel: Änderungen bei einzelnen SuS wurde nicht übernommen, nun korrigiert
+- ZP10-Export bei WBK überarbeitet
+- Filterung auf Vermerkarten überarbeitet
+- Gruppenweise Kurse zuweisen: Sortieroption für Schüler hinzugefügt
+- Bei den Versetzungsberechnungen wurde der Versetzungsvermerk nicht immer eingetragen, nun korrigiert. Wichtig: Der Versetzungsvermerk wird nur im 2. Hj. eingetragen (Ausnahme: WBK)
+- Auf dem Karteireiter "Schulbesuch" werden die Abschlüsse an der eigenen Schule nun entsprechend dem Entlassdatum gefiltert.
+- Bei mehrfacher Versendung von Report-Serienmails wurde die Signatur mehrfach ausgegeben, nun behoben.
+- Anlegen eines neuen Kurses ohne Lehrkraft führt zu Fehlermeldung, nun behoben
+- Neue Symbole für "Filter ausführen" und "Filter aufheben". 
+- Bei der gruppenweisen Zuweisung von Kursen gibt es nun die Möglichkeit, die Schüler entweder nach Jahrgang, Name und Klasse oder nach Jahrgang, Klasse und Name sortieren zu lassen.
+- Wenn der Karteireiter "Aktuelles Halbjahr" ausgewählt war und in der Schülerliste über das Eingabefeld "Suche…" ein Schüler gesucht wurde, so wurden die Abschnittsdaten des gefundenen Schülers nicht automatisch aktualisiert. Dies ist nun behoben. Wichtig: Die Suche erfolgt sequentiell. Das hat zur Folge, dass derzeit für jeden durchlaufenen Schüler auch die "abhängigen Daten" (z.B. Leistungsdaten) geladen werden (sofern man sich auf einem Karteireiter befindet, auf dem diese Daten angezeigt werden). Das hat dann zur Folge, dass die Suche um so länger dauert, je weiter unten ein Schüler in der Liste steht. Es wird aber nach einer besseren Lösung gesucht.
+
+
 ## Version 3.1.14
 
 - Suche nach Erziehernamen verlor Focus, behoben
