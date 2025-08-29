@@ -1,5 +1,30 @@
 # SchILD3
 
+## Version 3.1.17
+
+- Filterung auf Sonderpädagoge umgesetzt
+- Verwaltung der Lehrer-Lehrbefähigungen komplett auf SVWS-Server-API umgestellt.
+- Bei der Abschlussberechnung an der Gesamtschule können jetzt auch die Quartalsnoten ausgewählt werden.
+- BK und WBKs: In Das Feld "Beruf" kann nun auch ein Freitext eingegeben werden.
+- Auf dem Karteireiter "Schulbesuch" werden die Abschlüsse an der Herkunftsschule nun entsprechend dem Entlassdatum gefiltert.
+- Bei Neueingaben wurde manchmal das falsche Schuljahr/Halbjahr eingetragen, nun behoben.
+- Beim Gruppenprozess für die Versetzungs-/Abschlussberechnung an der Gesamtschule (und allen Schulformen, wo eine Quartalsprognose möglich ist) erscheint nun ein Dialog, wo man festlegen kann, welche Noten (Quartals- oder Zeugnisnoten) verwendet werden sollen.
+- Bei den Lehrer-Lehrämtern wurde testweise mal die Option freigeschaltet, neue Datensätze auch ohne Verwendung der "Plus"-Schalters anzulegen.
+- Bei Filterung auf einen Status wurde der Button zum Ausführen der Filterung nicht angezeigt, nun behoben.
+- Anpassung an Version 1.0.11 des SVWS-Servers
+- Filterung der Abschlüsse auf dem Karteireiter "Schulbesuch" wurde überarbeitet
+- Beim Start wird nun geprüft, ob die Tabelle "Schuljahresabschnitte" korrekt ist. Folgendes wird geprüft: Mehrfacheinträge, Lücken, falsche Reihenfolge
+- Vor dem Löschen einer Klasse wird geprüft, ob darin SuS enthalten sind. Sollte dies der Fall sein, ist ein Löschen nicht möglich.
+- "Man kann nun wieder (wie bei SchILD2) ein Zeitintervall für ein Ping zum Datenbankserver definieren. Dadurch kann verhindert werden, dass die Datenbankverbindung nach einer gewissen Zeit der Untätigkeit vom Datenbanktreiber gekappt wird.
+- Dazu in der Datei ""Admin.Ini"" den folgenden Eintrag machen (der Wert ist der Zeitabstand in Minuten)
+[Administration]
+KeepConnectionAliveInterval=5
+- Bei der Kursart "PUT" wurde die "Statistik-Nummer" als "0" anstelle "00" gespeichert, nun behoben
+- Bei Grundschulen ist es wieder möglich, Quartalsnoten zu aktivieren
+- Die GeR-Berechnung bei der dritter Fremdsprache in Sek1 war nicht korrekt, nun behoben
+- Die Suche in der aktuellen Schülerauswahl wurde überarbeitet. Sie arbeitet nun auch dann flüssig, wenn der Karteireiter "Akt. Halbjahr" ausgewählt ist. Um die Suche nach Eingabe des Suchtextes zu aktivieren, muss die Eingabetaste gedrückt werden.
+
+
 ## Version 3.1.15
 
 - Anpassungen an die Version 1.0.10 des SVWS-Servers
