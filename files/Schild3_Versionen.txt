@@ -1,6 +1,6 @@
 # SchILD3
 
-## Version 3.1.17
+## Version 3.1.18
 
 - Anpassungen an die Version 1.0.12 des SVWS-Servers
 - Filterung auf Sonderpädagoge umgesetzt
@@ -31,7 +31,7 @@ KeepConnectionAliveInterval=5
 - Die GeR-Berechnung bei der dritter Fremdsprache in Sek1 war nicht korrekt, nun behoben
 - Die Suche in der aktuellen Schülerauswahl wurde überarbeitet. Sie arbeitet nun auch dann flüssig, wenn der Karteireiter "Akt. Halbjahr" ausgewählt ist. Um die Suche nach Eingabe des Suchtextes zu aktivieren, muss die Eingabetaste gedrückt werden.
 - Die Anzeige und Eingabe von Straße, Hausnummer und Hausnr.-Zusatz erfolgt nun (wie beim Web-Client) zusammen in einem Eingabefeld. Beim Speichern werden daraus drei separate Werte für den Straßennamen, die Hausnummer und den Hausnr.-Zusatz ermittelt und in den zugehörigen Feldern der Datenbank abgelegt.
-- Bei Kursen, die schon belegt sind, ist keine Jahrgangsänderung mehr möglich, da dies zu Inkonsistenzen (der Jahrgang bei den SuS ist dann ein anderer als der beim Kurs) führen würde, die dann wieder zu Probleme beim Abschnittswechsel führen würden. Wenn der Jahrgangsbezug eines schon belegten Kurses geändert werden muss, so ist der Kurs zu löschen und mit neuem Jahrgangsbezug neu anzulegen).
+- Bei Kursen, die schon belegt sind, ist keine Jahrgangsänderung mehr möglich, da dies zu Inkonsistenzen führen würde (der Jahrgang bei den SuS ist dann ein anderer als der beim Kurs), die dann wieder zu Probleme beim Abschnittswechsel führen würden. Wenn der Jahrgangsbezug eines schon belegten Kurses geändert werden muss, so ist der Kurs zu löschen und mit neuem Jahrgangsbezug neu anzulegen).
 - Die Filterung der Kurse nach einer Neueingabe eines Kurses wurde überarbeitet.
 - Bei der Report-Datenquelle "KursSchueler" können nun folgende Sortieroptionen gewählt werden:
 Status, Name, Vorname
@@ -46,6 +46,8 @@ Beispiel: L-1_10_L7_WPIGY_Kieß_2025-09-12_1649.pdf
 - Die Berechtigungen für den "Text-/Excel-Export" und für den "BAN-Export" waren falsch gesetzt, nun behoben.
 - Beim WBK waren die Texte "Semesterwechsel (in Sommersemester)" und "Semesterwechsel (in Wintersemester)" vertauscht, nun korrigiert.
 - Beim E-Mail-Versand über SMTP konnten die Parameter "Benutzername" und "Kennwort" unter bestimmten Bedingungen nicht eingetragen werden. Das funktioniert jetzt wieder.
+- Beim Menüpunkt "Info" wird jetzt auch die Version des SVWS-Servers ausgegeben
+- Beim Gruppenprozess "Eingabe der Prüfungsergebnisse zum Abitur" wurde die Sortierung nicht immer korrekt ausgeführt, nun behoben.
 
 ## Version 3.1.15
 
