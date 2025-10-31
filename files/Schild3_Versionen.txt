@@ -1,5 +1,17 @@
 # SchILD3
 
+## Version 3.2.0
+
+- Neues Login-Fenster
+- Schnittstellenimport: Wenn bei den Basisdaten keine Klasse eingetragen war, wurde die betreffende Person beim Import weiterer Daten nicht gefunden. Nun behoben.
+- Fehlermeldung bei "Daten gemäß Löschfristen löschen" behoben.
+- Bei der Datenquelle KursSchueler wird jetzt auch die Collation berücksichtigt (Sortierung)
+- Abfrage für Datenquelle KursSchueler korrigiert
+- Bei den SMTP-Einstellungen gibt es jetzt eine weitere Option "Konfiguration automatisch anpassen". Wenn diese aktiviert ist, werden möglicherweise widersprüchliche SMTP-Einstellungen automatisch korrigiert. Das war bisher implizit der Fall. Dieses Verhalten kann nun deaktiviert werden.
+- Es wird jetzt standardmäßig ein "KeepConnectionAliveIntervall" von 10 Minuten verwendet. Das kann über einen Eintrag in der Datei Admin.ini aber auch geändert werden. 
+
+
+
 ## Version 3.1.18
 
 - Anpassungen an die Version 1.0.12 des SVWS-Servers
