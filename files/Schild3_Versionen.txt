@@ -1,5 +1,16 @@
 # SchILD3
 
+## Version 3.2.1
+
+- Karteireiter "Schulbesuch": Bei "Entlassung von eigener Schule" wurde bei BKs die Liste der Abschlussarten nicht korrekt gefiltert. Dies ist nun behoben.
+- Karteireiter "Schulbesuch": Bei "Vor der Aufnahme besuchte Schule" bei einem BK als Herkunftsschule die Fachklasse nicht eingetragen werden. Es gibt nun wieder einen Schalter, mit dem die Fachklasse ausgewählt werden kann.
+- Schnittstellenimport der Datei "SchuelerZusatzdaten.dat": Wenn die Datei Angaben zu Ortsteilen enthielt, kam es beim Import zu einer Fehlermeldung, die Ursache wurde behoben.
+- Schülerfilter: Bei Verwendung "besonderer Merkmale" als Filterkriterium kam es zu einer Fehlermeldung, die Ursache wurde behoben.
+- Schnittstellenexport: In der Liste der zu exportierenden Schüler konnte die Klasse bearbeitet werden, dies ist nun nicht mehr möglich.
+- Bei den Lehrkräften gab es einen Schalter "Lehrkräfte importieren" bzw. "Importieren", der keine Funktion aufwies. Dieser Schalter wurde entfernt.
+  Hinweis: Über den Schalter konnte ursprünglich mal eine aus ASDPC exportierte Datei mit Daten von Lehrkräften importiert werden. Da sich in der SchILD3-Datenbank die Datenstruktur vor Kurzem verändert hat, steht diese Option derzeit nicht zur Verfügung. 
+- Bei Realschulen stand auf dem Karteireiter "Akt. Halbjahr" keine Eingabemöglichkeit für den Schwerpunkt zur Verfügung. Diese ist nun vorhanden. 
+
 ## Version 3.2.0
 
 - Neues Login-Fenster
@@ -7,9 +18,8 @@
 - Fehlermeldung bei "Daten gemäß Löschfristen löschen" behoben.
 - Bei der Datenquelle KursSchueler wird jetzt auch die Collation berücksichtigt (Sortierung)
 - Abfrage für Datenquelle KursSchueler korrigiert
-- Bei den SMTP-Einstellungen gibt es jetzt eine weitere Option "Konfiguration automatisch anpassen". Wenn diese aktiviert ist, werden möglicherweise widersprüchliche SMTP-Einstellungen automatisch korrigiert. Das war bisher implizit der Fall. Dieses Verhalten kann nun deaktiviert werden.
-- Es wird jetzt standardmäßig ein "KeepConnectionAliveIntervall" von 10 Minuten verwendet. Das kann über einen Eintrag in der Datei Admin.ini aber auch geändert werden. 
-
+- Bei den SMTP-Einstellungen gibt es jetzt eine weitere Option "Konfiguration automatisch anpassen". Wenn diese aktiviert ist, werden möglicherweise widersprüchliche SMTP-Einstellungen automatisch korrigiert. Das war bisher implizit immer der Fall. Dieses Verhalten kann nun deaktiviert werden.
+- Es wird jetzt standardmäßig ein "KeepConnectionAliveIntervall" von 10 Minuten verwendet. Das kann über einen Eintrag in der Datei Admin.ini aber auch geändert werden. Dadurch wird verhindert, dass die Datenbankverbindung nach einer gewissen Zeit der Untätigkeit vom Datenbanktreiber gekappt wird.
 
 
 ## Version 3.1.18
