@@ -1,6 +1,6 @@
 # SchILD3
 
-## Version 3.2.1
+## Version 3.3.0
 
 - Beim Fächerkatalog gib es jetzt auch die Option "Nur sichtbare Einträge zeigen"
 - In der Rubrik "Verwaltung>>Datenbanken" wurden alle Optionen, für die eine root-Berechtigung benötigt wird, entfernt. Bitte verwenden Sie stattdessen für solche Funktionen den Admin-Client.
