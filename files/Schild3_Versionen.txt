@@ -2,6 +2,15 @@
 
 ## Version 3.2.1
 
+- Beim Fächerkatalog gib es jetzt auch die Option "Nur sichtbare Einträge zeigen"
+- In der Rubrik "Verwaltung>>Datenbanken" wurden alle Optionen, für die eine root-Berechtigung benötigt wird, entfernt. Bitte verwenden Sie stattdessen für solche Funktionen den Admin-Client.
+- Anpassungen an die Version 1.2 des SVWS-Servers
+- Neue Datenquelle für Sprachenprüfungen
+- Erweiterungen bei den Datenquellen für die Schuljahresübersichten (Leistungsdaten pro Schuljahr)
+- Diverse Issues aus Github bearbeitet
+
+## Version 3.2.1
+
 - Karteireiter "Schulbesuch": Bei "Entlassung von eigener Schule" wurde bei BKs die Liste der Abschlussarten nicht korrekt gefiltert. Dies ist nun behoben.
 - Karteireiter "Schulbesuch": Bei "Vor der Aufnahme besuchte Schule" bei einem BK als Herkunftsschule die Fachklasse nicht eingetragen werden. Es gibt nun wieder einen Schalter, mit dem die Fachklasse ausgewählt werden kann.
 - Schnittstellenimport der Datei "SchuelerZusatzdaten.dat": Wenn die Datei Angaben zu Ortsteilen enthielt, kam es beim Import zu einer Fehlermeldung, die Ursache wurde behoben.
