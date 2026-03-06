@@ -1,10 +1,21 @@
 # SchILD3
 
+## Version 3.3.1
+
+- Die GeR-Berechnung an der gymn. Oberstufe funktionierte nicht, das ist nun behoben.
+- Das Laden des Kataloges für die Verkehrssprachen wurde an die Version 1.2.1 des SVWS-Servers angepasst.
+- Beim Anlegen eines neuen Eintrags in der Wiedervorlage kam es zu einer Fehlermeldung, nun behoben.
+- Es können jetzt auch SVG-Grafiken als Schullogo verwendet werden
+- Beim Anlegen eines Eintrages in die Wiedervorlage kam es zu einer Fehlermeldung, nun behoben.
+- Bei den Sprachprüfungen steht jetzt ein Feld "Zeugnisbezeichnung" zur Verfügung. Dieses ist auch in der zugehörigen Datenquelle "Sprachpruefungen" enthalten.
+- Diverse Issues aus Github bearbeitet
+
+
 ## Version 3.3.0
 
 - Beim Fächerkatalog gib es jetzt auch die Option "Nur sichtbare Einträge zeigen"
-- In der Rubrik "Verwaltung>>Datenbanken" wurden alle Optionen, für die eine root-Berechtigung benötigt wird, entfernt. Bitte verwenden Sie stattdessen für solche Funktionen den Admin-Client.
-- Anpassungen an die Version 1.2 des SVWS-Servers
+- In der Rubrik "Verwaltung>>Datenbanken" wurden alle Optionen, für die eine root-Berechtigung benötigt wird, entfernt. Bitte verwenden Sie stattdessen für solche Funktionen den Admin-Client. Dieser kann aus SchILD3 heraus über "Verwaltung>>Datenbank>>Admin-Client aufrufen" gestartet werden.
+- Anpassungen an die Version 1.2.0 des SVWS-Servers
 - Neue Datenquelle für Sprachenprüfungen
 - Erweiterungen bei den Datenquellen für die Schuljahresübersichten (Leistungsdaten pro Schuljahr)
 - Diverse Issues aus Github bearbeitet
