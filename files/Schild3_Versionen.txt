@@ -1,15 +1,47 @@
 # SchILD3
 
+## Version 3.4.0
+
+- Die Verwaltung der Textfloskeln und Ankreuzkompetenzen erfolgt nun über die API des SVWS-Servers.
+- Eine Ankreuzfloskel kann nun mehreren Jahrgängen zugeordnet werden.
+- Der Export-/Import von ENM-Dateien wurde an die aktuelle Version des SVWS-Servers angepasst.
+- In der Übersicht der Lehrkräfte kann nun auch (ähnlich wie bei den Schülern) ausgewählt werden, welche Spalten angezeigt werden sollen.
+- Die Zuweisung eines anderen Schuljahres auf dem Karteireiter "Individualdaten I" wurde überarbeitet.
+- Die tabellarische Bearbeitung im Fächerkatalog wurde überarbeitet.
+- Der Prozess "Fehlstundensummen berechnen" wurde überarbeitet.
+- Bei der Ersetzung von Platzhaltern bei der Reportausgabe werden nun auch die vor kurzem neu eingeführten "Namensfelder" berücksichtigt.
+- Beim Export für eine Lernplattform wurde bei der Wahl mehrerer Statuswerte nur einer berücksichtigt. Das ist nun korrigiert.
+- Beim Statistik-Export kam es unter bestimmten Bedingungen zu einer Fehlermeldung. Das ist nun korrigiert.
+- SchILD3 prüft nun beim Speichern eines Schülerdatensatzes, ob "Deutsch" als zweite Staatsangehörigkeit eingetragen ist. Wenn dies der Fall ist, werden die Staatsangehörigkeiten "getauscht".
+- Nach Aufruf des Kataloges "Schulen in NRW" wurde ein Filter nicht korrekt zurückgesetzt. Das ist nun korrigiert.
+- Wenn im Katalog "Andere Schulen und Schulnummern" ein neuer Datensatz hinzugefügt werden sollte, wurde eine leere Auswahlliste angezeigt. Das ist nun korrigiert.
+- Bei der Ausgabe einer Kursliste für ein vergangenes Halbjahr wurden keine Schüler angezeigt. Das ist nun korrigiert.
+- In der Datenquelle "Klassen" war das Feld "LAnrede" falsch belegt, nun wird die korrekte Anrede ausgegeben.
+- Bei Verwendung der Funktion "SetzeSortierung" in einer Reportvorlage kam es unter bestimmten Bedingungen zu einer Fehlermeldung. Das ist nun korrigiert.
+- In Reports wurde die zweite Staatsangehörigkeit falsch ausgegeben. Das ist nun korrigiert.
+- Bei der Ausgabe von Kurslisten reagierte der Filter (z.B. auf Jahrgang) nicht korrekt. Das ist nun korrigiert.
+- Der Speichervorgang für eine neu angelegte Reportvorlage wurde überarbeitet, es erscheint nun keine Meldung mehr "Operation abgebrochen".
+- Bei der Ausgabe der "informationellen Selbstauskunft" für einen Schüler kam es zu einer Fehlermeldung. Das ist nun korrigiert.
+- Beim Halbjahreswechsel vom 1. Hj. ins 2. Hj. wurden fälschlicherweise Mahnungen aus dem 2. Hj. des vorherigen Schuljahres übernommen. Das ist nun korrigiert.
+- Bei der Eingabe von Punkten (statt Noten) stehen jetzt auch Einträge wie "AT", "E3" usw. zur Verfügung.
+- Grundschulen: Bei der Auswahl eines Kindergartens steht nun ein neuer Dialog zur Verfügung, der auch eine Filterfunktion beinhaltet.
+- Gesamtschulen: Beim "Spielmodus" für die Versetzungs-/Abschlussberechnung wurde die neue Prüfungsordnung 2020 nicht berücksichtigt. Das ist nun korrigiert.
+- Gesamtschule: Die "Zuweisungen" im aktuellen Halbjahr wurden überarbeitet.
+- Berufskollegs: Ein Fehler im Abituralgorithmus (zu viele Defizite in der neu einsetzenden Fremdsprache) wurde korrigiert.
+- Berufskollegs: Die Checkbox "Berufsausbildung vorhanden" steht nun immer zur Verfügung.
+- Berufskollegs: Die Fachklasse und der Schwerpunkt können nun als Gruppenprozess geändert werden.
+
+
+
+
 ## Version 3.3.1
 
-- Die GeR-Berechnung an der gymn. Oberstufe funktionierte nicht, das ist nun behoben.
-- Das Laden des Kataloges für die Verkehrssprachen wurde an die Version 1.2.1 des SVWS-Servers angepasst.
+- Beim Versuch, einen Report auszugeben, der die Datenquelle "Lehrer" verwendet, kam es zu einer Fehlermeldung. Die Ursache ist nun behoben.
 - Beim Anlegen eines neuen Eintrags in der Wiedervorlage kam es zu einer Fehlermeldung, nun behoben.
 - Es können jetzt auch SVG-Grafiken als Schullogo verwendet werden
-- Beim Anlegen eines Eintrages in die Wiedervorlage kam es zu einer Fehlermeldung, nun behoben.
-- Bei den Sprachprüfungen steht jetzt ein Feld "Zeugnisbezeichnung" zur Verfügung. Dieses ist auch in der zugehörigen Datenquelle "Sprachpruefungen" enthalten.
-- Diverse Issues aus Github bearbeitet
-
+- Bei der Bearbeitung der Lehrkräfte kann nun auch (wie bei den Schülern) ausgewählt werden, welche Informationen in der Übersichtstabelle angezeigt werden sollen.
+- Die GeR-Berechnung an der gymn. Oberstufe funktionierte nicht, das ist nun behoben.
+- Diverse weitere Issues aus Github bearbeitet
 
 ## Version 3.3.0
 
