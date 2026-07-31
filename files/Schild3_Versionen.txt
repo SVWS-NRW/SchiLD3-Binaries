@@ -1,5 +1,51 @@
 # SchILD3
 
+## Version 3.5.0
+
+- Bei der Hochschulung in das neue Schuljahr wurden bestimmte Angaben aus dem aktuellen Abschnitt nicht übernommen (z.B. Organisationsform), das ist nun behoben.
+- Bei den Grundschulen gibt es die Versetzungsart "Abschluss" für den Jahrgang 04 nicht mehr, es ist nun "Versetzt" zu verwenden. Der Algorithmus für den Schuljahreswechsel wurde entsprechend angepasst.
+- In der Kontrollansicht vor Durchführung des Schülerwechsels wurde die Sortierung an die im Hauptfenster angepasst.
+- Bei Berufskollegs und Weiterbildungskollegs kann jetzt auch auf den Beginn und die Dauer des Bildungsganges gefiltert werden.
+- Beim Katalog "Lernplattformen" wurde die Sortieroption entfernt, da sie dort keinen Sinn macht.
+- Bei Grundschulen gibt es unter "Werkzeuge" eine neue Option "EP-Jahre abgleichen". Dabei wird das höchste EP-Jahr aus den Lernabschnittsdaten/Halbjahren ermittelt und bei den Individualdaten eingetragen.
+- Beim ZP10-Export kam es unter bestimmten Bedingungen zu einer Fehlermeldung, nun behoben.
+- Der Import der Basisdaten im "SchILD-NRW-Schnittstellenformat" schlug fehl, wenn in der Importdatei Angaben zur Verkehrssprache in der Familie standen. Der Fehler wurde korrigiert.
+- Beim Gruppenprozess zur Eingabe von Teilleistungen musste bisher zwingend ein Datum der Teilleistung eingetragen werden. Dies ist nun nicht mehr notwendig.
+- In der Verwaltung der Lehrkräfte gibt es nun eine Suchoption.
+- Im Bereich "Schulbesuch/allgemeine Herkunft des Schülers" wurde die Nomenklatur der Sekundarschule überarbeitet.
+- Beim Löschen des letzten Faches eines Schüler kam es zu einer Fehlermeldung, die Ursache wurde behoben.
+- An Grundschulen ist die Eingabe eines Kommentares für die Schulformempfehlung nur noch im ersten Halbjahr und bei Kindern im Jahrgang 04 möglich.
+- Bei der Bearbeitung von Fördermaßnahmen kam es zu einer Fehlermeldung, wenn ein Doppelklick in eines der Kommentarfelder ausgeführt wurde. Die Ursache ist nun behoben.
+- Für das Löschen von Noten stehen nun erweiterte Optionen zur Verfügung (z.B. ob auch Quartalsnoten gelöscht werden sollen).
+- Bei Personengruppen kann nun eine Email an mehrere Personen verschickt werden.
+- In der Wiedervorlage wurden bestimmte Sonderzeichen nicht korrekt angezeigt, das wurde behoben.
+- Beim "Schulwechselexport" (Schnittstelle SchILD-NRW) wurde ein Fehler behoben.
+- Beim Holen abgeschlossener Fächer werden jetzt auch eventuell vorhandene fachbezogene Bemerkungen berücksichtig.
+- Die Liste bei "Erste Schulform in Sek. I" wurde erweitert.
+- Auf dem Karteireiter "BK-Abschluss" werden jetzt Minderleistungen optisch hervorgehoben.
+- In der Übersicht ist es nun möglich, ein einzelnes abgeschlossenes Fach zu löschen.
+- Beim Text-/Excel-Export stehen jetzt auch Angaben zum Klassenlehrer bzw. stv. Klassenlehrer zur Verfügung.
+- Im Fächerkatalog steht jetzt auch die Option "Ist prüfungsordnungs-relevant" zur Verfügung.
+- Die benutzerdefinierte Sortierung im Katalog "Klassen/Versetzungstabelle" funktioniert nicht korrekt, das ist nun behoben.
+- Beim Hinzufügen eines neuen Datensatzes in den Betriebskatalog kam es zu einer Fehlermeldung, die Ursache ist behoben.
+- Die Bearbeitung der "schulinternen Funktionen" wurde aus dem Bereich "Lehrkräfte" in den Bereich "Kataloge" verschoben.
+- Bei "Daten gemäß Löschfristen löschen" funktionierte die Option "Basisdaten für die "Ehemaligen-Verwaltung" behalten" nicht korrekt. Dies ist nun behoben.
+- Bei der Reportausgabe wurde in der Datenquelle "Schueler" einige Felder nicht befüllt (z.B. Einschulungsart_ASDText").
+- In einer Reportvorlage wird der Befehl "SetzeSortierung" nur noch dann berücksichtigt, wenn sich dieser auf die Hauptdatenquelle des Reports bezieht.
+- Die RAP-Funktion "Notendurchschnitt" wurde überarbeitet.
+- In Zeugnissen wurden "Pseudonoten" (z.B. AT=Attest) nicht korrekt ausgegeben, das ist nun korrigiert.
+- Die Funktion der Datenquelle "WiederholteAbschnitte" wurde überarbeitet.
+- Bisher wurde für die Anzeige von RTF-Dateien in der Reportverwaltung standardmäßig das Programm "WordPad" aufgerufen. Dieses Programm gehört aber seit einiger Zeit nicht mehr zum normalen Umfang von Windows, daher wird in der Reportverwaltung nun das Programm aufgerufen, das im System für die Anzeige von RTF-Dateien eingestellt ist.
+
+
+
+
+
+
+
+
+
+
 ## Version 3.4.0
 
 - Die Verwaltung der Textfloskeln und Ankreuzkompetenzen erfolgt nun über die API des SVWS-Servers.
