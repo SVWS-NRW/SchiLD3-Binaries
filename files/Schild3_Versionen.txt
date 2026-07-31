@@ -1,41 +1,98 @@
-# SchILD3
+# SchILD-NRW 3
 
-## Version 3.5.0
+## Version 3.5.0 – Juli 2026
 
-- Bei der Hochschulung in das neue Schuljahr wurden bestimmte Angaben aus dem aktuellen Abschnitt nicht übernommen (z.B. Organisationsform), das ist nun behoben.
-- Bei den Grundschulen gibt es die Versetzungsart "Abschluss" für den Jahrgang 04 nicht mehr, es ist nun "Versetzt" zu verwenden. Der Algorithmus für den Schuljahreswechsel wurde entsprechend angepasst.
-- In der Kontrollansicht vor Durchführung des Schülerwechsels wurde die Sortierung an die im Hauptfenster angepasst.
-- Bei Berufskollegs und Weiterbildungskollegs kann jetzt auch auf den Beginn und die Dauer des Bildungsganges gefiltert werden.
-- Beim Katalog "Lernplattformen" wurde die Sortieroption entfernt, da sie dort keinen Sinn macht.
-- Bei Grundschulen gibt es unter "Werkzeuge" eine neue Option "EP-Jahre abgleichen". Dabei wird das höchste EP-Jahr aus den Lernabschnittsdaten/Halbjahren ermittelt und bei den Individualdaten eingetragen.
-- Beim ZP10-Export kam es unter bestimmten Bedingungen zu einer Fehlermeldung, nun behoben.
-- Der Import der Basisdaten im "SchILD-NRW-Schnittstellenformat" schlug fehl, wenn in der Importdatei Angaben zur Verkehrssprache in der Familie standen. Der Fehler wurde korrigiert.
-- Beim Gruppenprozess zur Eingabe von Teilleistungen musste bisher zwingend ein Datum der Teilleistung eingetragen werden. Dies ist nun nicht mehr notwendig.
-- In der Verwaltung der Lehrkräfte gibt es nun eine Suchoption.
-- Im Bereich "Schulbesuch/allgemeine Herkunft des Schülers" wurde die Nomenklatur der Sekundarschule überarbeitet.
-- Beim Löschen des letzten Faches eines Schüler kam es zu einer Fehlermeldung, die Ursache wurde behoben.
-- An Grundschulen ist die Eingabe eines Kommentares für die Schulformempfehlung nur noch im ersten Halbjahr und bei Kindern im Jahrgang 04 möglich.
-- Bei der Bearbeitung von Fördermaßnahmen kam es zu einer Fehlermeldung, wenn ein Doppelklick in eines der Kommentarfelder ausgeführt wurde. Die Ursache ist nun behoben.
-- Für das Löschen von Noten stehen nun erweiterte Optionen zur Verfügung (z.B. ob auch Quartalsnoten gelöscht werden sollen).
-- Bei Personengruppen kann nun eine Email an mehrere Personen verschickt werden.
-- In der Wiedervorlage wurden bestimmte Sonderzeichen nicht korrekt angezeigt, das wurde behoben.
-- Beim "Schulwechselexport" (Schnittstelle SchILD-NRW) wurde ein Fehler behoben.
-- Beim Holen abgeschlossener Fächer werden jetzt auch eventuell vorhandene fachbezogene Bemerkungen berücksichtig.
-- Die Liste bei "Erste Schulform in Sek. I" wurde erweitert.
-- Auf dem Karteireiter "BK-Abschluss" werden jetzt Minderleistungen optisch hervorgehoben.
-- In der Übersicht ist es nun möglich, ein einzelnes abgeschlossenes Fach zu löschen.
-- Beim Text-/Excel-Export stehen jetzt auch Angaben zum Klassenlehrer bzw. stv. Klassenlehrer zur Verfügung.
-- Im Fächerkatalog steht jetzt auch die Option "Ist prüfungsordnungs-relevant" zur Verfügung.
-- Die benutzerdefinierte Sortierung im Katalog "Klassen/Versetzungstabelle" funktioniert nicht korrekt, das ist nun behoben.
-- Beim Hinzufügen eines neuen Datensatzes in den Betriebskatalog kam es zu einer Fehlermeldung, die Ursache ist behoben.
-- Die Bearbeitung der "schulinternen Funktionen" wurde aus dem Bereich "Lehrkräfte" in den Bereich "Kataloge" verschoben.
-- Bei "Daten gemäß Löschfristen löschen" funktionierte die Option "Basisdaten für die "Ehemaligen-Verwaltung" behalten" nicht korrekt. Dies ist nun behoben.
-- Bei der Reportausgabe wurde in der Datenquelle "Schueler" einige Felder nicht befüllt (z.B. Einschulungsart_ASDText").
-- In einer Reportvorlage wird der Befehl "SetzeSortierung" nur noch dann berücksichtigt, wenn sich dieser auf die Hauptdatenquelle des Reports bezieht.
-- Die RAP-Funktion "Notendurchschnitt" wurde überarbeitet.
-- In Zeugnissen wurden "Pseudonoten" (z.B. AT=Attest) nicht korrekt ausgegeben, das ist nun korrigiert.
-- Die Funktion der Datenquelle "WiederholteAbschnitte" wurde überarbeitet.
-- Bisher wurde für die Anzeige von RTF-Dateien in der Reportverwaltung standardmäßig das Programm "WordPad" aufgerufen. Dieses Programm gehört aber seit einiger Zeit nicht mehr zum normalen Umfang von Windows, daher wird in der Reportverwaltung nun das Programm aufgerufen, das im System für die Anzeige von RTF-Dateien eingestellt ist.
+Mit Version 3.5.0 wurden zahlreiche Funktionen erweitert und Fehler behoben. Schwerpunkte des Updates sind der Schuljahreswechsel, Verbesserungen für Grundschulen und Berufskollegs, die Überarbeitung verschiedener Im- und Exporte sowie zahlreiche Korrekturen im Bereich der Reports.
+
+## Schuljahreswechsel und Hochschulung
+
+* Beim Schuljahreswechsel werden die Angaben aus dem aktuellen Lernabschnitt nun vollständig in den neuen Lernabschnitt übernommen. Dies betrifft unter anderem die Organisationsform, die Prüfungsordnung sowie Angaben zum zieldifferenten Lernen, zu AO-SF, Autismus und Schwerstbehinderung. (#1835, #1837)
+* Bei Grundschulen wird für Schülerinnen und Schüler des Jahrgangs 04 nicht mehr die Versetzungsart **„Abschluss“** verwendet. Beim Schuljahreswechsel ist stattdessen **„Versetzt“** einzutragen. Die Hochschulung wurde entsprechend angepasst. (#1811, #1833)
+* Die Sortierung in der Kontrollansicht vor der Durchführung des Schuljahreswechsels entspricht nun der Sortierung im Hauptfenster. (#1822)
+* Die Vorgänger- und Nachfolgeklassen werden im Klassenkatalog wieder korrekt zugeordnet. (#1717)
+* Schulinterne Klassenbezeichnungen mit mehr als sechs Zeichen werden bei den Vorgänger- und Nachfolgeklassen vollständig verarbeitet und angezeigt. (#1741)
+* In der Klassen- und Versetzungstabelle können an Grundschulen die vorgesehenen Jahrgänge wieder ausgewählt werden. (#1799)
+
+## Grundschulen und EP-Jahre
+
+* Das laufende Schulbesuchsjahr wird an Grundschulen und Schulen der Sekundarstufe I wieder angezeigt. Es wird aus den vorhandenen Schülerdaten berechnet und kann nicht manuell bearbeitet werden. (#1738)
+* Die EP-Jahre werden nun auch an Schulen der Sekundarstufe I angezeigt. (#1738)
+* Für Grundschulen steht unter **Werkzeuge** die neue Funktion **„EP-Jahre abgleichen“** zur Verfügung. Dabei wird für jeden Schüler das höchste in den Lernabschnitten beziehungsweise Halbjahren eingetragene EP-Jahr ermittelt und in die Individualdaten übernommen.
+* Kommentare zur Schulformempfehlung können an Grundschulen nur noch im ersten Halbjahr des Jahrgangs 04 eingegeben werden.
+
+## Schülerdaten und Schulbesuch
+
+* Im Bereich **Schulbesuch – Allgemeine Herkunft des Schülers** wurden die Bezeichnungen für die Sekundarschule überarbeitet. (#1807)
+* Die Auswahlliste **„Erste Schulform in Sekundarstufe I“** wurde erweitert. (#1780)
+* Das Feld **„Für Weitergabe gesperrt“** kann bei den Telefonnummern von Erziehungsberechtigten wieder bearbeitet werden. (#1763)
+* Beim Löschen des letzten Faches eines Schülers tritt keine Fehlermeldung mehr auf. (#1806)
+* Beim Übernehmen abgeschlossener Fächer werden vorhandene fachbezogene Bemerkungen nun ebenfalls übernommen. (#1788)
+* Ein einzelnes abgeschlossenes Fach kann in der Schülerübersicht gezielt gelöscht werden. (#1765)
+* Ein Doppelklick in ein Kommentarfeld einer Fördermaßnahme führt nicht mehr zu einer Fehlermeldung. (#1804)
+
+## Sprachenfolge und Sprachprüfungen
+
+* Bei Sprachprüfungen steht die zusätzliche Angabe **„Zeugnisbezeichnung“** zur Verfügung. (#1660)
+* In der Sprachenfolge kann bei Weiterbildungskollegs angegeben werden, ob ein Eintrag als Nachweis gilt. (#1660)
+
+## Fächer, Leistungen und Gruppenprozesse
+
+* Der Gruppenprozess zur Berechnung der Fehlstundensummen berechnet die Werte nun korrekt. (#1653)
+* Beim Gruppenprozess zur Eingabe von Teilleistungen ist die Angabe eines Datums nicht mehr zwingend erforderlich. (#1809)
+* Beim Löschen von Noten kann nun genauer festgelegt werden, welche Daten entfernt werden sollen. Dabei kann unter anderem ausgewählt werden, ob auch Quartalsnoten gelöscht werden. (#1801)
+* Im Fächerkatalog steht die Option **„Ist prüfungsordnungsrelevant“** zur Verfügung. (#1767)
+* Ein nicht mehr benötigter Hinweis zum Leeren des Feldes **Teamteaching** wurde aus dem Gruppenprozess entfernt. (#1802)
+
+## Ankreuzkompetenzen
+
+* Neue Ankreuzkompetenzen können wieder dauerhaft im Katalog angelegt werden. (#1813)
+* Für Ankreuzkompetenzen stehen ein Excel-Import und ein Excel-Export zur Verfügung. (#1740)
+* Die Zuordnung **„Beide Halbjahre“** wird wieder korrekt gespeichert und zwischen SchILD-NRW 3 und dem SVWS-Client abgeglichen. (#1743)
+* Die für Ankreuzkompetenzen eingerichteten Bewertungsstufen werden vollständig angezeigt und korrekt verarbeitet. (#1744)
+* Beim Entfernen einer Bewertungsstufe werden die zugehörigen Einträge bei den Schülerinnen und Schülern korrekt berücksichtigt. (#1744)
+
+## Lehrkräfte und Personengruppen
+
+* In der Lehrkräfteverwaltung steht eine Suchfunktion zur Verfügung. (#1808)
+* Die Bearbeitung der **schulinternen Funktionen** wurde aus dem Bereich **Lehrkräfte** in den Bereich **Kataloge** verschoben. (#1774)
+* Beim Import der Datei `Lehrersonderzeiten.dat` werden bestehende Angaben zu Mehrarbeit, Minderleistung und Anrechnungsstunden berücksichtigt und aktualisiert. (#1072)
+* Über Personengruppen kann eine E-Mail an mehrere ausgewählte Personen versendet werden. (#1800)
+
+## Kataloge und Verwaltung
+
+* Im Katalog **Lernplattformen** wurde die nicht benötigte benutzerdefinierte Sortierung entfernt. (#1829)
+* Die benutzerdefinierte Sortierung im Katalog **Klassen- und Versetzungstabelle** funktioniert wieder korrekt. (#1769)
+* Beim Anlegen eines neuen Datensatzes im Betriebskatalog tritt keine Fehlermeldung mehr auf. (#1779)
+* Der Katalog **Schulen in NRW** wurde aktualisiert und um fehlende Schulen ergänzt. (#1824)
+* Bei der Funktion **„Daten gemäß Löschfristen löschen“** arbeitet die Option **„Basisdaten für die Ehemaligenverwaltung behalten“** wieder korrekt. (#1757)
+* Sonderzeichen werden in der Wiedervorlage wieder korrekt dargestellt.
+
+## Berufskollegs und Weiterbildungskollegs
+
+* Bei Berufskollegs und Weiterbildungskollegs kann nach Beginn und Dauer des Bildungsgangs gefiltert werden. (#1834)
+* Herkunftsschulform, Gliederung und Fachklasse werden bei Berufskollegs wieder korrekt zur Auswahl angeboten, gespeichert und angezeigt. (#1828)
+* Minderleistungen werden im Bereich **BK-Abschluss** optisch hervorgehoben. (#1766)
+
+## Import, Export und Schnittstellen
+
+* Der ZP10-Export wurde korrigiert und führt unter den bisher problematischen Bedingungen nicht mehr zu einer Fehlermeldung. (#1778)
+* Der Import von Basisdaten im SchILD-NRW-Schnittstellenformat funktioniert nun auch, wenn Angaben zur Verkehrssprache in der Familie enthalten sind. (#1812)
+* Ein Fehler beim Schulwechselexport im SchILD-NRW-Schnittstellenformat wurde behoben. (#1794)
+* Im Schnittstellenexport `Kurse.dat` wird nun auch die Schienennummer ausgegeben. (#1704)
+* Beim IServ-Export werden bei der Auswahl mehrerer Schülerstatus alle ausgewählten Status berücksichtigt. (#1731)
+* Im zweiten Halbjahr werden Epochenfächer beim Export zu IServ und Microsoft 365 nicht mehr berücksichtigt. (#1712)
+* Beim Text- und Excel-Export stehen nun auch Angaben zur Klassenleitung und zur stellvertretenden Klassenleitung zur Verfügung. (#1753)
+
+## Reports und Zeugnisse
+
+* Mehrere bislang nicht oder nicht korrekt gefüllte Felder der Reportdatenquellen wurden korrigiert. Dazu gehören unter anderem Angaben zur Einschulungsart und zu den EP-Jahren. (#1792, #1836)
+* Das Datenfeld **„AbschlussprognoseQuartal“** steht in den betreffenden Reportdatenquellen zur Verfügung. (#1742)
+* Die Datenquelle **„Lehrer_mit_Faechern_der_Klasse“** wurde stabilisiert. (#1830)
+* Der RAP-Befehl `SetzeSortierung` wird nur noch berücksichtigt, wenn er sich auf die Hauptdatenquelle des Reports bezieht. Dadurch werden Fehler in untergeordneten Datenquellen vermieden. (#1830)
+* Die RAP-Funktion **„Notendurchschnitt“** wurde überarbeitet. (#1771)
+* Die Datenquelle **„WiederholteAbschnitte“** wurde korrigiert. (#1796)
+* Pseudonoten wie **AT**, **NB** oder **NT** werden auf Zeugnissen wieder korrekt ausgegeben. (#1819)
+* Für die Anzeige von RTF-Dateien wird in der Reportverwaltung nicht mehr fest WordPad aufgerufen. SchILD-NRW verwendet nun das unter Windows für RTF-Dateien eingestellte Standardprogramm. (#1791)
 
 
 
@@ -125,7 +182,7 @@
 - Anpassungen an die Version 1.0.12 des SVWS-Servers
 - Filterung auf Sonderpädagoge umgesetzt
 - Verwaltung der Lehrer-Lehrbefähigungen komplett auf SVWS-Server-API umgestellt.
-- Bei der Abschlussberechnung an der Gesamtschule können jetzt auch die Quartalsnoten ausgewählt werden.
+- Bei der Abschlussberechnung an der Gesamtschule können jetzt auch die snoten ausgewählt werden.
 - BK und WBKs: In Das Feld "Beruf" kann nun auch ein Freitext eingegeben werden.
 - Auf dem Karteireiter "Schulbesuch" werden die Abschlüsse an der Herkunftsschule nun entsprechend dem Entlassdatum gefiltert.
 - Bei Neueingaben wurde manchmal das falsche Schuljahr/Halbjahr eingetragen, nun behoben.
