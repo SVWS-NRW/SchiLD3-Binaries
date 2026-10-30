@@ -1,5 +1,9 @@
 SchILD_DBConfig
 ===============
+Version 2.1.3
+--------------
+-Es gibt jetzt die Möglichkeit, mehrere CON-Dateien auf einmal zu erstellen. Die notwendigen Angaben müssen in einer CSV-Datei bereitgestellt werden. Eine Formatbeschreibung der CSV-Datei erhält man, wenn man auf den Schalter "CV-Datei öffnen" klickt.
+
 Version 2.1.2
 -------------
 -Es können jetzt auch Angaben zu einem Proxy-Server in die .con-Datei eingetragen werden.
