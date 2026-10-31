@@ -1,5 +1,13 @@
 # SchILD-NRW 3
 
+## Version 3.6.0 – Oktober 2026
+
+Mit Version 3.6.0 wurden zahlreiche Funktionen erweitert und Fehler behoben.
+
+## FotoVorhanden wird nicht mehr verwendeten
+
+## Leere Kennwörter werden zur Eingabe aufgefordert.
+
 ## Version 3.5.0 – Juli 2026
 
 Mit Version 3.5.0 wurden zahlreiche Funktionen erweitert und Fehler behoben. Schwerpunkte des Updates sind der Schuljahreswechsel, Verbesserungen für Grundschulen und Berufskollegs, die Überarbeitung verschiedener Im- und Exporte sowie zahlreiche Korrekturen im Bereich der Reports.
