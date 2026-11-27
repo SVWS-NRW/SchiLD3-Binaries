@@ -3,6 +3,7 @@
 ## Version 3.6.1
 
 - Die Verwaltung der Lehrämter der Lehrkräfte wurde an die geänderte API-Syntax des SVWS-Servers angepasst.
+- Bei der Neueinrichtung einer Lehrkraft kam es zu einem Fehler, dieser wurde behoben.
 - Beim Gruppenprozess "Fächer>>Kurse zuweisen" kam es beim Click auf eine Zelle der Kursmatrix zu einer Fehlermeldung. Das Problem wurde behoben.
 - Unter bestimmten Bedingungen kam es bei der Auswahl der Kursarten an verschiedenen Stellen im Programm zu Ungereimtheiten. Diese treten nun nicht mehr auf.
 - Bei manchen Katalogen war die Möglichkeit, die Sortierung einzustellen, nicht vorhanden. Diese Option steht nun zur Verfügung.
